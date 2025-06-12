@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 19 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 19 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-18.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-20.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">19</div>
+            <div class="question-text">
+                I. Yüklenici kural olarak meydana getirilecek eseri doğrudan doğruya kendisi yapmak veya kendi yönetimi altında yaptırmakla yükümlüdür. II. Eserin meydana getirilmesinde yüklenicinin kişisel özellikleri önem taşımıyorsa, yüklenici işi başkasına yaptırabilir. III. Asıl yüklenicinin eserin tamamının veya bir kısmının meydana getirilmesi için alt yüklenici ile yaptığı sözleşme, niteliği itibariyle bir eser sözleşmesidir. IV. Alt yüklenici, asıl yüklenicinin bağımlı yardımcısı olduğu için onun üzerinde denetim ve gözetim yetkisi vardır. V. Asıl iş sahibi, asıl yüklenici ile birlikte alt yükleniciye karşı müteselsil borçlu sıfatıyla veya kefil olarak ücret ödeme borcu yüklenmiş veya garanti vermişse, alt yükleniciye karşı ücret ödeme borcu altına girmiş olur. Eser sözleşmesinde yüklenicinin eseri şahsen meydana getirme borcuna ilişkin yukarıdaki ifadelerden kaç tanesi doğrudur?
+            </div>
+            
+            <div class="options-container">
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">5</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">3</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="true">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">4</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">2</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">1</div>
+                </button>
+            </div>
+            
+            <div class="feedback" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+
+             <div class="solution-toggle">
+                <button id="solutionBtn" class="btn btn-nav">Çözümü Gör</button>
+            </div>
+
+            <div id="solutionContainer" class="solution-container" style="display: none;">
+                <h2>Detaylı Çözüm</h2>
+                <p><strong>Doğru Cevap: C) 4</strong></p>
+                <p>Soruda verilen ifadelerin doğruluğunu tek tek inceleyelim:</p>
+                <ul>
+                    <li>
+                        <strong>İfade I (Doğru):</strong> Bu ifade, Türk Borçlar Kanunu (TBK) Madde 471/3'teki ana kuralı doğru bir şekilde yansıtmaktadır: "Yüklenici, meydana getirilecek eseri bizzat yapmak veya kendi yönetimi altında yaptırmakla yükümlüdür."
+                    </li>
+                    <li>
+                        <strong>İfade II (Doğru):</strong> Bu ifade, aynı maddenin devamındaki istisnayı doğru bir şekilde belirtmektedir: "...Ancak, eserin meydana getirilmesinde yüklenicinin kişisel özellikleri önem taşımıyorsa, işi başkasına da yaptırabilir."
+                    </li>
+                    <li>
+                        <strong>İfade III (Doğru):</strong> Asıl yüklenici ile alt yüklenici arasındaki ilişki, alt yüklenicinin belirli bir işi (eseri) bir bedel karşılığında yapmayı üstlendiği, hukuki niteliği itibarıyla bağımsız bir eser sözleşmesidir.
+                    </li>
+                    <li>
+                        <strong>İfade IV (Yanlış):</strong> Bu ifade temelden hatalıdır. Alt yüklenici, asıl yüklenicinin bir çalışanı veya emir ve talimatı altında olan bir "ifa yardımcısı" değildir. Alt yüklenici, kendi işini kendi sorumluluğu altında yürüten bağımsız bir girişimcidir. Asıl yüklenicinin onun üzerinde denetim ve gözetim yetkisi değil, sözleşmeden doğan işin sonucunu talep etme hakkı vardır. Bu nedenle ifade <strong>yanlıştır</strong>.
+                    </li>
+                     <li>
+                        <strong>İfade V (Doğru):</strong> Kural olarak iş sahibi ile alt yüklenici arasında bir sözleşme ilişkisi yoktur. Ancak iş sahibi, alt yüklenicinin alacağını güvence altına almak için kefalet, garanti veya müteselsil borçluluk gibi bir taahhüt altına girerse, bu taahhüt geçerlidir ve iş sahibi alt yükleniciye karşı sorumlu olur. Bu, sözleşme özgürlüğü ilkesinin bir sonucudur.
+                    </li>
+                </ul>
+                <p>Sonuç olarak, I, II, III ve V numaralı ifadeler doğru; yalnızca IV numaralı ifade ise yanlıştır. Soru, doğru olan ifadelerin sayısını sorduğu için doğru cevap 4'tür.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answerSelected = false;
+
+        function selectAnswer(button) {
+            if (answerSelected) return;
+            answerSelected = true;
+
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.querySelector('.feedback');
+            
+            document.querySelectorAll('.option').forEach(btn => {
+                btn.style.cursor = 'default';
+                if (btn.getAttribute('data-correct') === 'true') {
+                    btn.style.backgroundColor = '#2ecc71';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#27ae60';
+                } else {
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#c0392b';
+                }
+            });
+
+            if (isCorrect) {
+                feedbackEl.textContent = 'Doğru!';
+                feedbackEl.style.color = '#27ae60';
+            } else {
+                feedbackEl.textContent = 'Yanlış. Doğru cevap yeşil ile işaretlenmiştir.';
+                feedbackEl.style.color = '#c0392b';
+            }
+        }
+
+        function goToQuestion(direction) {
+            const currentQuestion = 19;
+            let targetQuestion;
+            if (direction === 'prev') {
+                targetQuestion = currentQuestion - 1;
+            } else {
+                targetQuestion = currentQuestion + 1;
+            }
+            if (targetQuestion > 0 && targetQuestion <= 37) {
+                window.location.href = `question-${targetQuestion}.html`;
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                goToQuestion('prev');
+            } else if (event.key === 'ArrowRight') {
+                goToQuestion('next');
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            const solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

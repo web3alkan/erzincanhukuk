@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 28 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 28 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-27.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-29.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">28</div>
+            <div class="question-text">
+                Yeni bir ev alan A, evinin iç dekorasyonun yapılması konusunda alanında iyi olarak bilinen Y ile 15.06.2020 tarihinde anlaşır. Anlaşmanın üzerinden 10 gün geçtikten sonra Y geçirdiği trafik kazasında hayatını kaybeder. Babasının yarım bıraktığı işi Y'nin mimar oğlu O tamamlamak istemektedir.
+                <br><br>Bu olayla ilgili olarak;
+                <br>I. Sözleşme, Y'nin kişisel özellikleri göz önünde tutularak yapıldığı için, onun ölümüyle kendiliğinden sona erer.
+                <br>II. A, eserin tamamlanan kısmından yararlanabilecek ise, onu kabul etmek ve karşılığını vermekle yükümlüdür.
+                <br>III. A, O'nun işi tamamlamasına izin vermek zorundadır.
+                <br>IV. Sözleşme Y'nin ölümüyle sona erdiği için A'nın, Y'nin mirasçılarına karşı eserin tamamlanan kısmı için bir borcu kalmamıştır.
+                <br>V. Y'nin ölümü, sözleşmeyi sona erdirmez, borç külli halefiyet gereği mirasçısı olan O'ya geçer.
+                <br><br>ifadelerinden hangisi/hangileri <strong>yanlıştır?</strong>
+            </div>
+            
+             <div class="options-container">
+                <button class="option" onclick="selectAnswer(this)" data-correct="true">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">III, IV ve V</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">I, II, IV ve V</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">I ve II</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">Yalnız III</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">Hiçbiri</div>
+                </button>
+            </div>
+            
+            <div class="feedback" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+
+             <div class="solution-toggle">
+                <button id="solutionBtn" class="btn btn-nav">Çözümü Gör</button>
+            </div>
+
+            <div id="solutionContainer" class="solution-container" style="display: none;">
+                <h2>Detaylı Çözüm</h2>
+                <p><strong>Doğru Cevap: A) III, IV ve V</strong></p>
+                <p>Olay, yüklenicinin kişisel özelliklerinin ön planda olduğu bir eser sözleşmesinde, yüklenicinin ölümü durumunda sözleşmenin akıbetini konu almaktadır. İlgili hüküm Türk Borçlar Kanunu (TBK) Madde 486'dır.</p>
+                <p><strong>TBK Madde 486:</strong> <em>"Yüklenicinin kişisel özellikleri göz önünde tutularak yapılmış olan sözleşme, onun ölümü veya kusuru olmaksızın eseri tamamlama yeteneğini kaybetmesi durumunda kendiliğinden sona erer. Bu durumda işsahibi, eserin tamamlanan kısmından yararlanabilecek ise, onu kabul etmek ve karşılığını vermekle yükümlüdür."</em></p>
+                <p>Bu hükme göre ifadeleri değerlendirelim:</p>
+                <ul>
+                    <li>
+                        <strong>İfade I (Doğru):</strong> A'nın "alanında iyi olarak bilinen" Y ile anlaşması, sözleşmenin Y'nin kişisel yetenekleri gözetilerek yapıldığını gösterir. Bu nedenle, TBK m. 486 uyarınca Y'nin ölümüyle sözleşme kendiliğinden sona erer.
+                    </li>
+                    <li>
+                        <strong>İfade II (Doğru):</strong> Kanun maddesinin ikinci cümlesi bu durumu açıkça düzenler. İş sahibi (A), eğer tamamlanan kısım işine yarıyorsa, bunu kabul etmeli ve o kısmın bedelini Y'nin mirasçılarına ödemelidir.
+                    </li>
+                    <li>
+                        <strong>İfade III (Yanlış):</strong> Sözleşme Y'nin ölümüyle sona erdiği için A'nın, Y'nin mirasçısı olan O'nun işi tamamlamasına izin verme gibi bir zorunluluğu yoktur. Taraflar anlaşıp yeni bir sözleşme yapabilirler, ancak A buna mecbur değildir.
+                    </li>
+                    <li>
+                        <strong>İfade IV (Yanlış):</strong> Bu ifade, II. ifadenin ve kanun hükmünün tam tersidir. A, tamamlanan ve kullanılabilir olan kısım için Y'nin mirasçılarına orantılı bir bedel ödemekle yükümlüdür.
+                    </li>
+                     <li>
+                        <strong>İfade V (Yanlış):</strong> Bu, genel miras hukuku kuralının (külli halefiyet) özel bir istisnasıdır. Yüklenicinin kişisel özelliklerinin önemli olduğu bu tür sözleşmeler, kanun gereği ölümle sona erer ve borç mirasçılara geçmez.
+                    </li>
+                </ul>
+                <p>Sonuç olarak, I ve II numaralı ifadeler doğru; III, IV ve V numaralı ifadeler ise yanlıştır. Soru yanlış olanları sorduğu için doğru cevap "III, IV ve V" seçeneğidir.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answerSelected = false;
+
+        function selectAnswer(button) {
+            if (answerSelected) return;
+            answerSelected = true;
+
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.querySelector('.feedback');
+            
+            document.querySelectorAll('.option').forEach(btn => {
+                btn.style.cursor = 'default';
+                if (btn.getAttribute('data-correct') === 'true') {
+                    btn.style.backgroundColor = '#2ecc71';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#27ae60';
+                } else {
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#c0392b';
+                }
+            });
+
+            if (isCorrect) {
+                feedbackEl.textContent = 'Doğru!';
+                feedbackEl.style.color = '#27ae60';
+            } else {
+                feedbackEl.textContent = 'Yanlış. Doğru cevap yeşil ile işaretlenmiştir.';
+                feedbackEl.style.color = '#c0392b';
+            }
+        }
+
+        function goToQuestion(direction) {
+            const currentQuestion = 28;
+            let targetQuestion;
+            if (direction === 'prev') {
+                targetQuestion = currentQuestion - 1;
+            } else {
+                targetQuestion = currentQuestion + 1;
+            }
+            if (targetQuestion > 0 && targetQuestion <= 37) {
+                window.location.href = `question-${targetQuestion}.html`;
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                goToQuestion('prev');
+            } else if (event.key === 'ArrowRight') {
+                goToQuestion('next');
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            const solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

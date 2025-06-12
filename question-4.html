@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 4 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .solution-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .solution-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #34495e;
+        }
+
+        .solution-text p {
+            margin-bottom: 15px;
+        }
+
+        .solution-text strong {
+            color: #2c3e50;
+        }
+
+        .law-reference {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #16a085;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 4 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-3.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-5.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">4</div>
+            <div class="question-text">
+                Belirsiz süreli kira sözleşmesinin sona ermesine ilişkin aşağıda verilen bilgilerden hangisi yanlıştır?
+            </div>
+            
+            <div class="options-container">
+                <div class="option">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">Belirsiz süreli kira sözleşmesinin sona ermesini sağlamaya yönelik fesih beyani, varması gerekli tek taraflı bir irade beyanıyla kullanılır ve karşı tarafın hakimiyet alanına ulaştığı anda sonuç doğurur.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">Kiraya verenin mesleki faaliyeti gereği kiraya verdiği ve kiracının da özel kullanımına yarayan taşınır bir malin kiracısı, kira sözleşmesini üç aylık kira dönemi sonu için en az bir ay önceden yapacağı fesih bildirimiyle sona erdirebilir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">Taraflardan her biri bir taşınmaza veya taşınır bir yapıya ilişkin kira sözleşmesini yerel adette belirlenen kira döneminin sonu için veya böyle bir adetin bulunmaması durumunda, altı aylık kira döneminin sonu için üç aylık fesih bildirim süresine uyarak feshedebilir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">Fesih dönemlerinin hesabında kira sözleşmesinin başlangıç tarihi esas alınır.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">Taraflardan her biri bir taşınıra ilişkin kira sözleşmesini üç gün önceden yapılacak fesih bildirim süresine uyarak her zaman feshedebilir.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+
+        <div class="solution-toggle">
+            <button id="solutionBtn" class="btn">Çözümü Gör</button>
+        </div>
+
+        <div id="solutionContainer" class="solution-container" style="display: none;">
+            <h3 class="solution-title">Detaylı Çözüm</h3>
+            <div class="solution-text">
+                <p><strong>Doğru Cevap: B seçeneği</strong></p>
+                <p>Bu soruda belirsiz süreli kira sözleşmelerinin feshine ilişkin kurallar sorgulanmaktadır. Seçenekleri Türk Borçlar Kanunu (TBK 329 ve 330) çerçevesinde inceleyelim:</p>
+                <p><strong>A) Fesih beyanının niteliği:</strong> Bu ifade doğrudur. Fesih beyanı, tek taraflı ve varması gerekli bir irade beyanıdır. Bu beyan, muhatabın (karşı tarafın) hakimiyet alanına ulaştığı anda hukuki sonuçlarını doğurur. Karşı tarafın kabulüne gerek yoktur.</p>
+                <p><strong>B) Taşınır kirasında fesih bildirimi:</strong> Bu ifade <strong>yanlıştır</strong>. TBK'nın taşınır kiralarına ilişkin fesih bildirim sürelerini düzenleyen genel kuralı 330. maddedir. Bu maddeye göre, taraflardan her biri, sözleşmeyi üç gün önceden yapacağı bir fesih bildirimiyle her zaman feshedebilir. Kiraya verenin mesleki faaliyeti gereği kiraya verdiği ve kiracının özel kullanımına yarayan bir taşınırda ise bu kural uygulanmaz; bu durumda genel hükümler (Madde 328-329) devreye girer. Ancak seçenekte belirtilen "üç aylık kira dönemi sonu için en az bir ay önceden" fesih bildirimi, kanunda yer alan herhangi bir düzenleme ile örtüşmemektedir. Genel hükümlere göre taşınmaz ve taşınır yapı kiralarında fesih bildirim süresi 3 ay, fesih dönemi ise 6 aydır. Taşınırlar için özel bir düzenleme getiren TBK 330 ise süreyi 3 gün olarak belirlemiştir. Dolayısıyla bu ifade hatalıdır.</p>
+                <p><strong>C) Taşınmaz ve taşınır yapı kirasında fesih:</strong> Bu ifade doğrudur. Bu kural, TBK'nın 329. maddesinde açıkça düzenlenmiştir. Buna göre taraflar, yerel bir adet yoksa, altı aylık kira döneminin sonu için üç aylık fesih bildirim süresine uyarak sözleşmeyi feshedebilirler.</p>
+                <p><strong>D) Fesih dönemlerinin hesabı:</strong> Bu ifade doğrudur. TBK'nın 328. maddesi uyarınca, fesih dönemlerinin (örneğin 6 aylık dönem) hesabında sözleşmenin başlangıç tarihi esas alınır.</p>
+                <p><strong>E) Taşınır kirasında genel kural:</strong> Bu ifade doğrudur. TBK'nın 330. maddesinin ilk cümlesi, "Taraflardan her biri, bir taşınıra ilişkin kira sözleşmesini üç gün önceden yapılacak fesih bildirim süresine uyarak her zaman feshedebilir." hükmünü amirdir. Bu, taşınır kiraları için geçerli olan genel fesih kuralıdır.</p>
+                <div class="law-reference">
+                    <strong>Türk Borçlar Kanunu - Madde 330</strong><br>
+                    <i>"Taraflardan her biri, bir taşınıra ilişkin kira sözleşmesini üç gün önceden yapılacak fesih bildirim süresine uyarak her zaman feshedebilir.<br>
+                    Kiraya verenin mesleki faaliyeti gereği kiraya verdiği ve kiracının da özel kullanımına yarayan taşınır bir malın kiracısı, kira sözleşmesini, üç aylık kira dönemi sonu için en az bir ay önceden yapacağı bir fesih bildirimiyle sona erdirebilir. Bu durumda kiraya verenin, bu kanunun konkordato ile sermaye şirketleri ve kooperatiflerin uzlaşma yoluyla yeniden yapılandırılmasına ilişkin hükümlerinden yararlanması hâlinde, kiracıya vermiş olduğu güvencelerin geri verilmesini isteme hakkı yoktur."</i><br>
+                    <strong>Not:</strong> Madde metninin ikinci fıkrası daha spesifik bir durumu düzenlese de B seçeneğindeki ifade bu kurala tam olarak uymamaktadır ve genel kural olan 3 günlük süreden ayrılmaktadır.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    window.location.href = 'question-3.html';
+                    break;
+                case 'ArrowRight':
+                    window.location.href = 'question-5.html';
+                    break;
+                case 'Escape':
+                    window.location.href = 'index.html';
+                    break;
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            var solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 3 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .solution-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .solution-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #34495e;
+        }
+
+        .solution-text p {
+            margin-bottom: 15px;
+        }
+
+        .solution-text strong {
+            color: #2c3e50;
+        }
+
+        .law-reference {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #16a085;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 3 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-2.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-4.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">3</div>
+            <div class="question-text">
+                Taşınmaz kira sözleşmesinin tapu kütüğüne şerh edilmesi ile ilgili olarak aşağıda verilen bilgilerden hangisi yanlıştır?
+            </div>
+            
+            <div class="options-container">
+                <div class="option">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">Alt kira sözleşmesinin tapu kütüğüne şerh edilmesi mümkün değildir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">Taşınmaz kira sözleşmesinin tapu kütüğüne şerh edilebilmesi için kiracı ve kiraya verenin yazılı şerh anlaşması yapması gerekir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">Tapu kütüğüne şerh ile kira sözleşmesinden doğan alacak hakkı, kuvvetlendirilmiş bir alacak haline gelir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">Süresiz şerh ancak beş yıl için geçerlidir.</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">Taşınmaz kira sözleşmesinin tapu kütüğüne şerh edilebilmesi için taşınmazın tapuya kayıtlı bir taşınmaz olması gerekir.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+
+        <div class="solution-toggle">
+            <button id="solutionBtn" class="btn">Çözümü Gör</button>
+        </div>
+
+        <div id="solutionContainer" class="solution-container" style="display: none;">
+            <h3 class="solution-title">Detaylı Çözüm</h3>
+            <div class="solution-text">
+                <p><strong>Doğru Cevap: D seçeneği</strong></p>
+                <p>Bu soruda taşınmaz kira sözleşmesinin tapuya şerhine ilişkin ifadelerin doğruluğu test edilmektedir. Seçenekleri hukuki dayanaklarıyla inceleyelim:</p>
+                <p><strong>A) Alt kira şerhi:</strong> Bu ifade doğrudur. Tapu Kanunu ve ilgili mevzuat, tapuya şerh edilebilecek hakları sınırlı sayıda (numerus clausus) ilkesine göre belirlemiştir. Bu haklar arasında alt kira ilişkisinin şerhine olanak tanıyan bir düzenleme bulunmamaktadır. Dolayısıyla, asıl kira sözleşmesi şerh edilebilirken, bu sözleşmeye dayanılarak kurulan bir alt kira sözleşmesinin tapuya şerhi mümkün değildir.</p>
+                <p><strong>B) Şerh anlaşması:</strong> Bu ifade doğrudur. Türk Borçlar Kanunu'nun 312. maddesi, kira sözleşmesinin şerhinin taraflar arasında yapılacak bir anlaşmaya bağlı olduğunu açıkça belirtir. Bu, şerhin tapu siciline işlenebilmesi için hem kiracının hem de kiraya verenin bu konuda mutabık kalması gerektiği anlamına gelir. Genellikle bu anlaşma, kira sözleşmesinin kendisine eklenen bir madde ile veya ayrı bir yazılı protokolle yapılır.</p>
+                <p><strong>C) Hakkın kuvvetlendirilmesi:</strong> Bu ifade doğrudur. Kira hakkı, doğası gereği şahsi bir haktır ve sadece sözleşmenin tarafları arasında ileri sürülebilir. Ancak Türk Medeni Kanunu'nun 1009. maddesi uyarınca tapuya şerh edildiğinde, bu şahsi hak "kuvvetlendirilmiş" olur. Bu sayede kiracı, kira hakkını, taşınmazı sonradan devralan üçüncü kişilere (yeni maliklere) karşı da ileri sürebilir hale gelir.</p>
+                <p><strong>D) Şerh süresi:</strong> Bu ifade <strong>yanlıştır</strong>. Tapu Kanunu'nun 26. ve Tapu Sicili Tüzüğü'nün 47. maddesine göre kira sözleşmeleri, sözleşmede belirtilen süre için şerh edilebilir. Bu sürenin üst sınırı <strong>on (10) yıldır</strong>. Eğer sözleşmede beş yıldan uzun bir süre kararlaştırılmışsa (örneğin 8 yıl), şerh bu süre için geçerli olur. Eğer süresiz bir şerh anlaşması yapılmışsa, kanuni sınır olan on yıl esas alınır. Dolayısıyla "süresiz şerh ancak beş yıl için geçerlidir" ifadesi hatalıdır.</p>
+                <p><strong>E) Tapuya kayıtlı olma zorunluluğu:</strong> Bu ifade doğrudur. Bir ayni veya şahsi hakkın tapu kütüğüne şerh edilebilmesi için, işlemin konusunu oluşturan taşınmazın tapu sicilinde kayıtlı olması zorunludur. Tapusuz bir taşınmaz üzerinde tapu sicil işlemi (tescil, terkin, şerh vb.) yapılamaz.</p>
+                 <div class="law-reference">
+                    <strong>Tapu Sicili Tüzüğü - Madde 47/f</strong><br>
+                    <i>"Kira sözleşmeleri, sözleşmede belirtilen süre için, süre belirtilmemişse bir yıl için şerh verilir. Kira şerhinin süresi azami on yıldır."</i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    window.location.href = 'question-2.html';
+                    break;
+                case 'ArrowRight':
+                    window.location.href = 'question-4.html';
+                    break;
+                case 'Escape':
+                    window.location.href = 'index.html';
+                    break;
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            var solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

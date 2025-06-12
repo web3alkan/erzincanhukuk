@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 31 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 31 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-30.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-32.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">31</div>
+            <div class="question-text">
+                Sivas organize sanayi bölgesinde yeni bir fabrika kurmak isteyen P, bu konuda R ile anlaşır. P ile R arasında yapılan sözleşmeye göre fabrika iki yıl içerisinde bitirilecektir. Aradan iki ay geçtikten sonra P, hiçbir gerekçe göstermeden R'nin bütün zararlarını tazmin edeceğini söyleyerek sözleşmeyi feshettiğini söyler.
+                <br><br>Bu olayla ilgili olarak;
+                <br>I. P, hiçbir gerekçe göstermeden R ile yapılan sözleşmeyi feshedemez.
+                <br>II. P'nin, sözleşmeyi feshedebilmesi için haklı bir sebebin olması gerekir. Olayda haklı bir sebep söz konusu olmadığından fesih beyanı hüküm ve sonuç doğurmaz.
+                <br>III. P'nin, yapılan kısmın bedelini peşin ödemesi sözleşmeyi feshetmesi için yeterlidir. Bunun dışında P'nin, R'nin herhangi bir zararını tazmin etmesi gerekmez.
+                <br>IV. P'nin fabrika bitmeden sözleşmeyi feshedebilmesi, haklı bir sebebin bulunmasına ve TBK m. 123 uyarınca R'ye uygun bir süre tanıyarak bu süre içerisinde R'nin hukuka aykırılığı gidermemesine bağlıdır.
+                <br>V. P, işin yapılması esnasında her zaman yapılan kısmın bedelini ve R'nin zararlarını ödeyerek sözleşmeyi feshedebilir.
+                <br><br>ifadelerinden kaç tanesi <strong>yanlıştır?</strong>
+            </div>
+            
+             <div class="options-container">
+                <button class="option" onclick="selectAnswer(this)" data-correct="true">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">4</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">3</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">2</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">1</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">5</div>
+                </button>
+            </div>
+            
+            <div class="feedback" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+
+             <div class="solution-toggle">
+                <button id="solutionBtn" class="btn btn-nav">Çözümü Gör</button>
+            </div>
+
+            <div id="solutionContainer" class="solution-container" style="display: none;">
+                <h2>Detaylı Çözüm</h2>
+                <p><strong>Doğru Cevap: A) 4</strong></p>
+                <p>Bu soru, iş sahibinin (P'nin) eser sözleşmesini tek taraflı olarak feshetme hakkını konu almaktadır. Bu durum Türk Borçlar Kanunu (TBK) Madde 484'te özel olarak düzenlenmiştir.</p>
+                <p><strong>TBK Madde 484 (Tazminat Karşılığı Fesih):</strong> <em>"İşsahibi, eserin tamamlanmasından önce, yapılmış olan kısmın karşılığını ödemek ve yüklenicinin bütün zararlarını gidermek koşuluyla sözleşmeyi feshedebilir."</em></p>
+                <p>Bu hüküm, iş sahibine herhangi bir gerekçe göstermeksizin ve yüklenicinin bir kusuru olmaksızın, bedelini ödeyerek sözleşmeden dönme imkânı tanır. Buna "tazminat karşılığı fesih" veya "tam tazminatla fesih" denir. Bu çerçevede ifadeleri değerlendirelim:</p>
+                <ul>
+                    <li>
+                        <strong>İfade I (Yanlış):</strong> TBK m. 484, iş sahibine tam tersine, hiçbir gerekçe göstermeden fesih hakkı tanır.
+                    </li>
+                    <li>
+                        <strong>İfade II (Yanlış):</strong> Fesih için haklı bir sebep aranmaz. İş sahibinin bu hakkı kullanması tek taraflı irade beyanıyla yeterlidir ve beyan hüküm doğurur.
+                    </li>
+                    <li>
+                        <strong>İfade III (Yanlış):</strong> Fesih için sadece yapılan kısmın bedelini ödemek yetmez. Kanun açıkça "yüklenicinin bütün zararlarını gidermek" şartını koşar. Bu zarara, yüklenicinin işin tamamlanması halinde elde edeceği kâr (yoksun kalınan kâr) da dahildir.
+                    </li>
+                    <li>
+                        <strong>İfade IV (Yanlış):</strong> Bu ifade, borçlunun temerrüdüne ilişkin genel hükümlere (TBK m. 123) atıf yapmaktadır. Ancak olayda yüklenicinin (R'nin) bir temerrüdü veya kusuru yoktur. İş sahibi (P), kanunun kendisine tanıdığı özel bir fesih hakkını kullanmaktadır. Bu nedenle bu kuralın uygulanması söz konusu değildir.
+                    </li>
+                     <li>
+                        <strong>İfade V (Doğru):</strong> Bu ifade, TBK m. 484'teki kuralı doğru bir şekilde özetlemektedir. P, yapılan kısmın bedelini ve R'nin tüm zararlarını (kar kaybı dahil) ödeyerek sözleşmeyi feshedebilir.
+                    </li>
+                </ul>
+                <p>Sonuç olarak, V numaralı ifade doğru, diğer <strong>dört ifade (I, II, III, IV) ise yanlıştır.</strong> Soru yanlış ifade sayısını sorduğu için doğru cevap 4'tür.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answerSelected = false;
+
+        function selectAnswer(button) {
+            if (answerSelected) return;
+            answerSelected = true;
+
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.querySelector('.feedback');
+            
+            document.querySelectorAll('.option').forEach(btn => {
+                btn.style.cursor = 'default';
+                if (btn.getAttribute('data-correct') === 'true') {
+                    btn.style.backgroundColor = '#2ecc71';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#27ae60';
+                } else {
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#c0392b';
+                }
+            });
+
+            if (isCorrect) {
+                feedbackEl.textContent = 'Doğru!';
+                feedbackEl.style.color = '#27ae60';
+            } else {
+                feedbackEl.textContent = 'Yanlış. Doğru cevap yeşil ile işaretlenmiştir.';
+                feedbackEl.style.color = '#c0392b';
+            }
+        }
+
+        function goToQuestion(direction) {
+            const currentQuestion = 31;
+            let targetQuestion;
+            if (direction === 'prev') {
+                targetQuestion = currentQuestion - 1;
+            } else {
+                targetQuestion = currentQuestion + 1;
+            }
+            if (targetQuestion > 0 && targetQuestion <= 37) {
+                window.location.href = `question-${targetQuestion}.html`;
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                goToQuestion('prev');
+            } else if (event.key === 'ArrowRight') {
+                goToQuestion('next');
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            const solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -3,1201 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borçlar Hukuku Özel Hükümler Çıkmış Sorular</title>
+    <title>Erzincan Hukuk Borçlar Özel Çıkmış Sorular</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #2c3e50;
-        }
-
-        .container {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        .header {
-            text-align: center;
-            padding: 30px;
-            border-bottom: 2px solid #34495e;
-            background-color: #34495e;
-            color: white;
-        }
-
-        .header h1 {
-            font-size: 28px;
             margin: 0;
-            font-weight: 600;
-        }
-
-        .question {
-            display: none;
-            padding: 40px;
-        }
-
-        .question.active {
-            display: block;
-        }
-
-        .question-text {
-            font-size: 16px;
-            margin-bottom: 25px;
-            text-align: justify;
-            background-color: #f8f9fa;
             padding: 20px;
-            border-left: 4px solid #34495e;
-            border-radius: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
-
-        .options {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
         }
-
-        .options li {
-            margin: 10px 0;
-            padding: 12px 15px;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-            font-size: 15px;
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
         }
-
-        .answer-section {
-            background-color: #e8f5e8;
-            border: 1px solid #28a745;
-            border-radius: 4px;
+        .question-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .question-card {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
             padding: 20px;
-            margin-top: 25px;
-        }
-
-        .correct-answer {
-            color: #155724;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
             font-weight: bold;
             font-size: 16px;
-            margin-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
-
-        .explanation {
-            color: #2c3e50;
-            font-size: 15px;
-            line-height: 1.7;
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-decoration: none;
+            color: white;
+        }
+        .info-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
             margin-bottom: 20px;
         }
-
-        .legal-provisions {
-            background-color: #f1f3f4;
-            padding: 20px;
-            border-left: 4px solid #6c757d;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
+        .stat-item {
+            text-align: center;
         }
-
-        .legal-provisions h4 {
-            color: #495057;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 16px;
-            font-family: 'Times New Roman', serif;
-        }
-
-        .article {
-            margin-bottom: 15px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 4px;
-        }
-
-        .article-number {
+        .stat-number {
+            font-size: 24px;
             font-weight: bold;
-            color: #495057;
-            margin-bottom: 5px;
+            color: #667eea;
         }
-
-        .navigation {
-            padding: 20px 40px;
-            border-top: 1px solid #dee2e6;
-            background-color: #f8f9fa;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-btn {
-            background-color: #34495e;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 4px;
-            cursor: pointer;
+        .stat-label {
             font-size: 14px;
-            font-weight: 500;
-        }
-
-        .nav-btn:hover {
-            background-color: #2c3e50;
-        }
-
-        .nav-btn:disabled {
-            background-color: #6c757d;
-            cursor: not-allowed;
-        }
-
-        .question-counter {
-            font-size: 16px;
-            color: #495057;
-            font-weight: 500;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Borçlar Hukuku Özel Hükümler Çıkmış Sorular</h1>
-        </div>
-
-        <div class="question-container">
-            <!-- Soru 1 -->
-            <div class="question active">
-                <div class="question-text">
-                    Konut ve çatılı işyeri kiralarının iki haklı ihtara dayanarak sona erdirilmesi ile ilgili olarak aşağıdaki ifadelerden kaç tanesi doğrudur?<br><br>
-                    I. Bir yıldan kısa süreli kira sözleşmelerinde kira süresi içinde, kiracının kira bedelini ödemediği için kendisine iki haklı ihtarda bulunulması gerekir.<br>
-                    II. Bir yıl ve daha uzun süreli kira sözleşmelerinde bir kira yılı veya bir kira yılını aşan süre içinde, kiracının kira bedelini ödemediği için kendisine iki haklı ihtarda bulunulması gerekir.<br>
-                    III. İhtar, resmi yazılı şekilde gönderilmelidir. İhtarda ödenmeyen ayın kirası, bunun miktarı ve ödenme gereği belirtilmelidir.<br>
-                    IV. Kiracı, birbirini izleyen iki ayın kirasının üst üste ödememiş olsa bile, kiraya verenin her ay için ayrı ihtarda bulunması gerekir.<br>
-                    V. Kiraya veren, bir yıldan kısa süreli sözleşmelerde kira süresinin ve bir yıldan uzun süreli kiralarda ise ihtarların yapıldığı kira yılının bitiminden başlayarak bir ay içinde tahliye davası açmak zorundadır.
-                </div>
-                <ul class="options">
-                    <li>A) 5</li>
-                    <li>B) 3</li>
-                    <li>C) 1</li>
-                    <li>D) 4</li>
-                    <li>E) 2</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) 3</div>
-                    <div class="explanation">
-                        İki haklı ihtar nedeniyle tahliye davası şartları; haklı sebeplerin varlığı, ihtarın yazılı olması, ihtarın bir kira yılı içinde iki farklı aya ait olması ve kira yılının bitiminden itibaren 1 ay içinde davanın açılmış olmasıdır. Bu davanın açılabilmesi için, sayılan bütün şartların mevcut olması gerekmektedir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 2 -->
-            <div class="question">
-                <div class="question-text">
-                    Alt yüklenicilik sözleşmesi ile ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Yapılacak eserin niteliğine göre kişisel yetenek ve becerinin önemli olmadığı durumlarda, yüklenici üstlendiği eseri bir başkasına yaptırabilir.<br>
-                    II. Asıl yüklenicinin, eserin tamamının veya bir kısmının meydana getirilmesi için alt yükleniciyle yaptığı sözleşme niteliği itibariyle bir eser sözleşmesidir.<br>
-                    III. Asıl yükleniciye işin tamamı veya bir kısmını alt yükleniciye devir yetkisi sadece eser sözleşmesinin yapıldığı sırada verilebilir.<br>
-                    IV. İş sahibinin, alt yükleniciye karşı kural olarak eseri meydana getirip kendisine teslim edilmesine ilişkin herhangi bir talep hakkı yoktur.<br>
-                    V. Asıl yüklenicinin, işin tamamını veya bir kısmını alt yükleniciye devretme yetkisi bulunmaktaysa, alt yüklenici, asıl yüklenicinin çalışanı sayılır ve bunların eylemlerinden dolayı asıl yüklenici, iş sahibine karşı adam çalıştıranın sorumluluğu çerçevesinde sorumlu olur.
-                </div>
-                <ul class="options">
-                    <li>A) I, III, IV ve V</li>
-                    <li>B) II, IV ve V</li>
-                    <li>C) III ve V</li>
-                    <li>D) Yalnız IV</li>
-                    <li>E) I, IV ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C) III ve V</div>
-                    <div class="explanation">
-                        III yanlıştır çünkü devir yetkisi sözleşme sonrasında da verilebilir. V yanlıştır çünkü alt yüklenici bağımsız bir yüklenici olup, asıl yüklenicinin çalışanı değildir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 3 -->
-            <div class="question">
-                <div class="question-text">
-                    Belirli süreli konut ya da çatılı işyeri kiralarında kiraya veren aşağıdaki durumların hangisinde herhangi bir gerekçe göstermeksizin kira sözleşmesini feshedebilir?
-                </div>
-                <ul class="options">
-                    <li>A) On yıllık uzama süresi sonunda ve bu süreyi izleyen her uzama yılının bitiminden en az on beş gün önce bildirimde bulunmak koşuluyla</li>
-                    <li>B) On yıllık uzama süresi sonunda ve bu süreyi izleyen her uzama yılının bitiminden en az altı ay önce bildirimde bulunmak koşuluyla</li>
-                    <li>C) On yıllık uzama süresi sonunda ve bu süreyi izleyen her uzama yılının bitiminden en az üç ay önce bildirimde bulunmak koşuluyla</li>
-                    <li>D) On yıllık uzama süresi sonunda ve bu süreyi izleyen her uzama yılının bitiminden en az iki ay önce bildirimde bulunmak koşuluyla</li>
-                    <li>E) On yıllık uzama süresi sonunda ve bu süreyi izleyen her uzama yılının bitiminden en az bir ay önce bildirimde bulunmak koşuluyla</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C) En az üç ay önce bildirimde bulunmak koşuluyla</div>
-                    <div class="explanation">
-                        TBK m. 347 gereğince, on yıllık uzama süresi sonunda kiraya veren, herhangi bir gerekçe göstermeksizin en az üç ay önceden bildirimde bulunarak sözleşmeyi feshedebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 4 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan Binali Yıldırım Üniversitesi'nde memur olarak çalışan M, tayininin İstanbul Üniversitesi'ne çıkması üzerine İstanbul'a taşınmak zorunda kalır. M, pazarlık sonucu iki oda bir salon evi bir yıllığına aylık 1000 TL'ye kiralar. Ev sahibi ile M arasında yapılan kira sözleşmesine göre M, kira bedelini her ayın 15'inde ödeyecektir. M, daireyi kiraladıktan bir süre sonra, yağan yağmurların etkisi ile dairenin tavanında rutubet oluştuğu gibi, evin parkeleri de sökülmeye başlar. M, ev sahibini arayarak derhal bu sorunların giderilmesini ister. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Evin tavanında rutubet oluşması ve parkelerin sökülmesi kira sözleşmesinin kurulmasından sonra ortaya çıkan bir ayıptır.<br>
-                    II. Evin tavanında rutubet oluşması ve parkelerin sökülmesi durumunda M, bunları ev sahibine bildirerek tamir edilmesini isteyebilir.<br>
-                    III. Ev sahibi, evin tavanında rutubet oluşması ve parkelerin sökülmesi durumlarını uygun bir sürede tamir etmezse, M, bunların tamirini kiraya veren hesabına yapabilir ve bundan doğan alacağını kira bedelinden indirebilir.<br>
-                    IV. Evin tavanında rutubet oluşması ve parkelerin sökülmesi durumunda M, bir zarara uğramışsa bu zarar menfi bir zarar olup, ev sahibinin kusuru olmasa dahi, M, bu zararı isteyebilir.<br>
-                    V. Olayda, evin tavanında rutubet oluşması ve parkelerin sökülmesi durumunda, kural olarak M, ev sahibinden dairenin ayıpsız bir benzeri ile değiştirilmesini talep edemez.
-                </div>
-                <ul class="options">
-                    <li>A) Yalnız IV</li>
-                    <li>B) II ve V</li>
-                    <li>C) Hiçbiri</li>
-                    <li>D) II, IV ve V</li>
-                    <li>E) I, II ve III</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) Yalnız IV</div>
-                    <div class="explanation">
-                        IV. ifade yanlıştır. Evin tavanında rutubet oluşması ve parkelerin sökülmesi ayıp teşkil eder ve M'nin uğradığı zarar menfi zarar değil, müsbet zarardır. Ayrıca ev sahibinin kusuru aranır.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 5 -->
-            <div class="question">
-                <div class="question-text">
-                    Kefalet sözleşmesinin geçerliliği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Kefalet sözleşmesinin varlık ve geçerliliği güvence oluşturduğu asli bir borcun varlık ve geçerliliğine bağlıdır.</li>
-                    <li>B) Yanılma veya ehliyetsizlik sebebiyle borçlunun sorumlu olmadığı bir borç için kişisel güvence veren kişi, yükümlülük altına girdiği sırada sözleşmeyi sakatlayan eksikliği biliyorsa, kefaletle ilgili kanun hükümlerine göre sorumlu olmaz.</li>
-                    <li>C) Sınırlı ehliyetsizlerin kendi başlarına veya yasal temsilcileri aracılığıyla kefalet sözleşmesi yapmaları mümkün değildir.</li>
-                    <li>D) Kendisine yasal danışman atanan bir kimsenin kefalet sözleşmesi yapabilmesi için yasal danışmanın izin vermesi gerekir.</li>
-                    <li>E) Geçerli bir kefalet sözleşmesinin söz konusu olabilmesi için kefilin tam ehliyetli olması gerekir.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C</div>
-                    <div class="explanation">
-                        B şıkkı yanlıştır. Kefalet hükümlerine tabi olur çünkü bilerek kabul ediyor.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 6 -->
-            <div class="question">
-                <div class="question-text">
-                    A, sahip olduğu dairesini 01.10.2019 tarihinde bir yıllığına üç öğrenciye kiraya verir. Aradan belirli bir süre geçtikten sonra apartman sakinlerinden, kiracıların, her gece geç saatlere kadar yüksek sesle müzik dinlendiğine ilişkin şikayetler gelir. Bu durum komşuların şikâyeti üzerine polis tutanağıyla kesinleşir. Bunun üzerine A, kiracılara komşuları rahatsız etmemelerini aksi halde kendilerini tahliye edeceğine ilişkin yazılı bir ihtar çeker. Kiracıların, komşuları rahatsız etmeye devam etmesi üzerine A, kiracılara karşı tahliye davası açar. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Kiracıların gürültü yapması kira sözleşmesine aykırılık teşkil etmeyip, kolluk kuvvetlerini ilgilendirmektedir.<br>
-                    II. Bu durumda A, ancak kira sözleşmesinin bitiminde kiracıları tahliye edebilir.<br>
-                    III. A, kiracıların yüksek sesle müzik dinleyip komşuları rahatsız etmesine dayanarak kiracıları tahliye edemez.<br>
-                    IV. A'nın, kira sözleşmesini feshedebilmesi için kira sözleşmesinin sona ermesinden en az üç ay önce bir ihtar daha çekmesi gerekir.<br>
-                    V. A, kiracılara ihtar çekmiştir. Buna rağmen apartman sakinlerini rahatsız eden kiracıları, kira sözleşmesinin sona ermesini beklemeden tahliye edebilir.
-                </div>
-                <ul class="options">
-                    <li>A) II, IV ve V</li>
-                    <li>B) Yalnız V</li>
-                    <li>C) II, III ve IV</li>
-                    <li>D) I ve III</li>
-                    <li>E) I, II, III ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) I, II, III ve IV</div>
-                    <div class="explanation">
-                        I, II, III ve IV yanlıştır. Gürültü yapma kira sözleşmesine aykırılık teşkil eder, A ihtar çektiği için sözleşmeyi feshedebilir ve tahliye edebilir. V doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 7 -->
-            <div class="question">
-                <div class="question-text">
-                    Birlikte kefaletle ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Birden çok kefil, bölünebilir bir borç için birlikte kefil olurlarsa birlikte kefalet söz konusu olur.<br>
-                    II. Birden çok kimsenin bölünebilir bir borca belirli bölümler için kefil olmaları halinde müteselsil birlikte kefalet söz konusu olur.<br>
-                    III. Adi birlikte kefillerden her biri, alacaklının takibi karşısında taksim defini ileri süremezler.<br>
-                    IV. Kefillerin kendi aralarında müteselsil kefil olmayı kabul etmeleri halinde, kefil en geç kendi kefalet anında kefil olmuş, ülkede takibi mümkün tüm kefillere karşı takibin yapılmasını aksi durumda kendi payından fazlasını ödemeyeceğini ileri sürebilir.<br>
-                    V. Müteselsil birlikte kefiller, taksim defini ileri sürebilirler.
-                </div>
-                <ul class="options">
-                    <li>A) IV ve V</li>
-                    <li>B) III, IV ve V</li>
-                    <li>C) Yalnız IV</li>
-                    <li>D) II, III, IV ve V</li>
-                    <li>E) II, III ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) II, III ve V</div>
-                    <div class="explanation">
-                        II yanlış: Belirli bölümler için kefil olma birlikte kefalet değil, bağımsız kefalettir. III yanlış: Adi birlikte kefiller taksim defini ileri sürebilir. V yanlış: Müteselsil kefiller taksim defini ileri süremez.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 8 -->
-            <div class="question">
-                <div class="question-text">
-                    Köyündeki evine bir çeşme ve havuz yaptırmak isteyen C, D ile anlaşır. C ile D arasında yapılan sözleşme çerçevesinde D, C ait bahçeye çeşme ve havuz inşa edecek, bunun karşılığında da 10.000 TL alacaktır. Bir süre sonra D, çeşme ve havuzun inşasını E isimli bir kişiye bırakır. Bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Kanun gereği E, D ile arasındaki sözleşmeden doğan borçlarını aynen C'ye de borçludur. C, D'nin, E'ye karşı sahip olduğu alacak haklarını E'ye karşı da ileri sürebilir.</li>
-                    <li>B) Taraflar arasında yapılan sözleşmede D'nin borcunu bizzat ifa edeceği kararlaştırılmış olmasa dahi işin niteliği gereği D'nin, şahsının ifa açısından önemi varsa C, E tarafından yapılan ifayı kabul etmeyebilir.</li>
-                    <li>C) D'nin şahsı, ifa bakımından önem arzetse dahi taraflar arasında yapılan sözleşmede D'nin ifayı başka bir kimseye bırakmasına izin verilmişse C, çeşme ve havuzu E'nin inşa etmesine engel olmaz. C, E'nin ifasını kabul etmek zorundadır.</li>
-                    <li>D) C ile D arasında yapılan sözleşme bir eser sözleşmesi olup, bu sözleşmede C, iş sahibi; D ise yüklenicidir.</li>
-                    <li>E) D'nin, işi E'ye bırakma yetkisinin bulunduğu durumlarda E'nin borca aykırı davranışta bulunması halinde D, C'ye karşı yardımcı kişinin fiillerinden sorumluluk çerçevesinde sorumludur.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A</div>
-                    <div class="explanation">
-                        A yanlıştır. Kanun gereği E, D ile arasındaki sözleşmeden doğan borçları C'ye karşı da yüklenmez. Alt yüklenici sadece asıl yükleniciye karşı sorumludur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 9 -->
-            <div class="question">
-                <div class="question-text">
-                    Türk Borçlar Kanunu'nun konut ve çatılı işyeri kiraları bakımından güvence verilmesi ile ilgili düzenlemeleri dikkate alındığında, aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. Güvence verme, yasal bir borç olmayıp, taraflar arasında anlaşmaya dayanan sözleşmesel bir borçtur.<br>
-                    II. Konut ve çatılı işyeri kiralarında güvence tutarı üç aylık kira bedelini aşamaz.<br>
-                    III. Güvence konusu para ve kıymetli evrak olabileceği gibi, rehin veya kefalet gibi ayni veya şahsi başka türlü teminat da olabilir.<br>
-                    IV. Güvence olarak kıymetli evrak kararlaştırılmışsa, bankaya depo edilmesi zorunludur.<br>
-                    V. Banka, güvenceleri ancak iki tarafın rızasıyla veya icra takibinin kesinleşmesiyle ya da kesinleşmiş mahkeme kararına dayanarak geri verebilir.
-                </div>
-                <ul class="options">
-                    <li>A) 3</li>
-                    <li>B) 2</li>
-                    <li>C) 4</li>
-                    <li>D) 5</li>
-                    <li>E) 1</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) 1</div>
-                    <div class="explanation">
-                        Yalnızca I. ifade yanlıştır. Güvence verme yasal bir borç değil, isteğe bağlı sözleşmesel bir borçtur. Diğer ifadeler doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 10 -->
-            <div class="question">
-                <div class="question-text">
-                    Kefalet sözleşmesinde kefil ile borçlu arasındaki ilişkiye ilişkin olarak aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. Asıl borçlu, kefile karşı üstlendiği yükümlülüklere, özellikle belli bir süre içinde kendisini borçtan kurtarma vaadine aykırı davranmışsa, kefil, asıl borçludan güvence verilmesini ve borç muaccel olmuşsa, borçtan kurtarılmasını isteyebilir.<br>
-                    II. Kefil, ancak borcun tamamını ödediği taktirde borçluya bildirimde bulunabilir.<br>
-                    III. Kefil, alacaklıya ifada bulunduğu ölçüde, onun haklarına halef olur.<br>
-                    IV. Asıl borçlu temerrüde düşmüşse, kefil, asıl borçludan güvence verilmesini ve borç muaccel olmuşsa, borçtan kurtarılmasını isteyemez.<br>
-                    V. Asıl borçlu, yerleşim yerini diğer bir ülkeye nakletmesi yüzünden takibat önemli ölçüde güçleşmişse kefil, asıl borçludan güvence verilmesini ve borç muaccel olmuşsa, borçtan kurtarılmasını isteyebilir.
-                </div>
-                <ul class="options">
-                    <li>A) 2</li>
-                    <li>B) 4</li>
-                    <li>C) 5</li>
-                    <li>D) 1</li>
-                    <li>E) 3</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 2</div>
-                    <div class="explanation">
-                        II ve IV yanlıştır. II: Kefil kısmi ödeme durumunda da bildirimde bulunabilir. IV: Asıl borçlu temerrüde düşerse kefil güvence isteyebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 11 -->
-            <div class="question">
-                <div class="question-text">
-                    Eser sözleşmesinde yükleniciye ödenecek ücretin yaklaşık bedel üzerinden kararlaştırılmış olması hali bakımından aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Eğer yüklenici, eseri tahmin edilenden daha düşük bir bedel ile tamamlayacak olursa ücret bu duruma göre belirlenir.<br>
-                    II. Yaklaşık bedelin, iş sahibi yüzünden aşırı derecede aşıldığı durumlarda iş sahibi, yüklenici tarafından istenilen bedeli ödemek zorundadır.<br>
-                    III. Eğer yüklenici, eseri tahmin edilenden bir miktar daha yüksek bedel ile tamamlayacak olursa aşırı olmamak koşuluyla yüklenici yaklaşık bedelinin artırılmasını isteyebilir.<br>
-                    IV. Yaklaşık bedel, iş sahibinin rolü olmaksızın aşırı derecede aşılmışsa, iş sahibi sözleşmeden dönebilir.<br>
-                    V. Yaklaşık bedelin aşılmasının iş sahibine veya yükleniciye yüklenemediği durumlarda iş sahibi yüklenici tarafından talep edilen ücreti ödemekle yükümlüdür.
-                </div>
-                <ul class="options">
-                    <li>A) Yalnız V</li>
-                    <li>B) II ve IV</li>
-                    <li>C) Hiçbiri</li>
-                    <li>D) II, IV ve V</li>
-                    <li>E) II, III ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) II, III ve IV</div>
-                    <div class="explanation">
-                        II yanlış: İş sahibi yüzünden aşılsa bile sözleşmede belirlenen sınırlar geçerlidir. III yanlış: Yaklaşık bedel sisteminde otomatik artış yoktur. IV yanlış: Dönme hakkı koşulları farklıdır.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 12 -->
-            <div class="question">
-                <div class="question-text">
-                    Yeni bir iş kurmak isteyen A, dayısı D'den 05.05.2020 tarihinde geri ödemek üzere 30.000 TL borç para ister. D, A'ya borç vermeyi kabul eder ancak belirlenen vadede kendisinin de ödemeleri olduğunu belirterek A'dan kefil göstermesini ister. A, bu teklifi kabul eder. Tarafların anlaşması üzerine A'nın arkadaşı C, usulüne uygun olarak yapılan kefalet sözleşmesiyle A'ya adi kefil olur. Belirlenen vade tarihi (05.05.2020) geldiğinde A, borcunu ödeyemez. Bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Kural olarak D, A'ya başvurmadan C'yi takip edemez</li>
-                    <li>B) A aleyhine Türkiye'de takibatın imkânsız hâle gelmesi durumunda, D, A'ya başvurmadan doğrudan C'ye başvurabilir.</li>
-                    <li>C) A aleyhine yapılan takip sonucunda kesin aciz belgesi alınmışsa, D, A'ya başvurmadan doğrudan C'ye başvurabilir.</li>
-                    <li>D) A'ya konkordato mehli verilmiş olması durumunda D, A'ya başvurmadan doğrudan C'ye başvurabilir.</li>
-                    <li>E) Alacak, kefalet sözleşmesinin kurulmasından sonra rehinle de güvence altına alınmışsa, adi kefalette C, alacağın öncelikle rehin konusundan alınmasını isteyebilir.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E</div>
-                    <div class="explanation">
-                        E yanlıştır. Adi kefalette kefil, alacağın öncelikle rehin konusundan alınmasını isteyemez. Bu hak sadece müteselsil kefalet dışındaki durumlarda söz konusudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 13 -->
-            <div class="question">
-                <div class="question-text">
-                    Eser sözleşmesinde yüklenicinin özen borcu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Eserin muntazam ve zamanında yerine getirilmesini geciktirecek veya tehlikeye sokacak, eserin maliyetini önemli ölçüde artıracak nitelikte olağanüstü bir durum ortaya çıkarsa yüklenici durumu iş sahibine derhal bildirmelidir.</li>
-                    <li>B) Yüklenicinin, işe zamanında başlamaması veya sözleşme hükümlerine aykırı olarak işi geciktirmesi ya da iş sahibine yüklenemeyecek bir sebeple ortaya çıkan gecikme yüzünden bütün tahminlere göre yüklenicinin işi kararlaştırılan zamanda bitiremeyeceği açıkça anlaşılırsa, iş sahibi ancak eser teslim edildikten sonra sözleşmeden dönebilir.</li>
-                    <li>C) Yüklenici, sözleşmeyle üstlendiği eseri yerine getirirken iş sahibinin hukukça korunan mutlak haklarını ihlâl edecek her türlü yapma ve yapmama fiillerinden kaçınmakla yükümlüdür.</li>
-                    <li>D) Yüklenici, üstlendiği edimleri iş sahibinin haklı menfaatlerini gözeterek sadakat ve özenle yerine getirmek zorundadır.</li>
-                    <li>E) Yüklenici, eseri meydana getirirken iş dünyasındaki anlayışa mesleki ve teknik kurallara göre benzer bir eserin ifasını üstlenen basiretli bir yükleniciden beklenilen tüm özeni göstermek zorundadır.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B</div>
-                    <div class="explanation">
-                        B yanlıştır. Yüklenicinin zamanında bitiremeyeceği açıkça anlaşılırsa, iş sahibi eser teslim edilmesini beklemeden sözleşmeden dönebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 14 -->
-            <div class="question">
-                <div class="question-text">
-                    C, Erzincan'da bulunan arsasına ev yapılması konusunda D ile 10.10.2019 tarihinde anlaşır. Yapılan anlaşma gereğince ev, 10.10.2020 tarihinde bitirilip teslim edilecektir. Evin kaba inşaatı bittikten sonra meydana gelen depremde yapılan kısım tamamen yıkılır. Bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Ev teslimden önce kaza ile telef olduğundan D, yaptığı kısmın ücretini isteyemez.</li>
-                    <li>B) Evin yıkılması D'nin, inşaatı usulüne uygun yapmamasından kaynaklanıyorsa D, C'nin uğramış olduğu zararları tazmin etmek zorundadır.</li>
-                    <li>C) Deprem D'nin kusurundan kaynaklanmadığından D, yapmış olduğu masrafları C'den talep edebilir.</li>
-                    <li>D) Eğer yapılan iş, C tarafından verilen malzemenin ya da gösterilen arsanın kusurundan dolayı telef olmuş ise; D, bu tehlikeleri zamanında bildirmiş bulunduğu taktirde yaptığı işin bedelini veya bu bedele dahil olmayan masraflarını talep edebilir.</li>
-                    <li>E) İnşatta kullanılan malzeme kime aitse hasar da ona aittir.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C</div>
-                    <div class="explanation">
-                        C yanlıştır. Deprem D'nin kusurundan kaynaklanmasa bile, eser teslim edilmeden telef olduğundan D masraflarını C'den talep edemez. Hasar yükleniciye aittir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 15 -->
-            <div class="question">
-                <div class="question-text">
-                    Kefalet sözleşmesinde, kefilin sorumluluğu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Kefil, para borçlarından temerrüt faizi ve munzam zarardan sorumlu olduğu gibi, beklenmedik halden de sorumludur.</li>
-                    <li>B) Açıkça kararlaştırılmamışsa kefil, borçlunun sadece kefalet sözleşmesinin kurulmasından sonraki borçlarından sorumludur.</li>
-                    <li>C) Kefil, belirtilen azami miktarla sınırlı olmak üzere sadece işlemiş bir yıllık akdi faizlerden sorumludur.</li>
-                    <li>D) Kefil, belirtilen azami miktarla sınırlı olmak üzere gerektiğinde rehinlerin kefile tesliminin ve rehin haklarının devrinin sebep olduğu masraflardan sorumludur.</li>
-                    <li>E) Kefil, belirtilen azami miktarla sınırlı olmak üzere alacaklının, kefile, onun borcu ödeyerek yapılmalarını önleyebileceği uygun bir zaman önce bildirmesi koşuluyla, borçluya karşı yönelttiği takip ve davaların masraflarından sorumludur.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C</div>
-                    <div class="explanation">
-                        C yanlıştır. Kefil sadece işlemiş bir yıllık faizden değil, aynı zamanda işlemekte olan yıla ait faizlerden de sorumludur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 16 -->
-            <div class="question">
-                <div class="question-text">
-                    Kefalet sözleşmesinin diğer sözleşmelerden farkı ile ilgili aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. Kefalet sözleşmesinde, kefil güvence verdiği borç ilişkisinde daima üçüncü kişi iken; rehin sözleşmesinde borçlu, borcuna karşılık olarak kendi malını teminat olarak gösterebilir.<br>
-                    II. Garanti sözleşmesinde borç asli nitelikte bir borç iken; kefalet sözleşmesinde kefilin borcu fer'i bir borçtur.<br>
-                    III. Hem garanti sözleşmesinde hem de kefalet sözleşmesinde asıl borçlunun borcunu ifa etmemesi halinde ifa edilmeyen bu borç, kefil veya garanti veren tarafından yerine getirilmektedir.<br>
-                    IV. Müteselsil borçlulukta alacaklı borcun ifasını borçluların tamamından veya bir kısmından talep edebilirken; adi kefalette kefilin, öncelikle borçluya başvurması gerekir.<br>
-                    V. Adi kefalet sözleşmesinde borç ikincil bir borç iken; borca katılmada borca katılanın borcu asli niteliktedir.
-                </div>
-                <ul class="options">
-                    <li>A) 5</li>
-                    <li>B) 4</li>
-                    <li>C) 1</li>
-                    <li>D) 3</li>
-                    <li>E) 2</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C) 1</div>
-                    <div class="explanation">
-                        Yalnızca III. ifade yanlıştır. Garanti sözleşmesinde garanti veren kendi performansından sorumludur, borçlunun borcunu değil. Diğer ifadeler doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 17 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan'da yaşayan ve oldukça zengin olan A, bahçesine havuz yaptırmak için 01.01.2020 tarihinde inşaat ustası M ile anlaşır. A ile M arasında yapılan sözleşmeye göre M, 01.05.2020 tarihinde havuzun yapımına başlayacak, 01.08.2020 tarihinde yapımını bitirecektir. 10.07.2020 tarihi gelmesine rağmen M, havuzun yapımına başlamaz. Bu olayla ilgili aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. Havuzun yapımına geç başlansa bile A, sözleşmede kararlaştırılan teslim tarihini beklemek zorundadır.<br>
-                    II. Sözleşmede kararlaştırılan tarihte havuzun yapımına başlanmaması halinde A, sözleşmede kararlaştırılan teslim zamanını beklemeksizin sözleşmeden dönerek menfi zararlarının tazmin edilmesini isteyebilir.<br>
-                    III. M'nin, havuzun yapımına sözleşmede kararlaştırılan tarihte başlamaması A'nın vermiş olduğu bir talimattan kaynaklanmışsa A, sözleşmeden dönemez.<br>
-                    IV. Havuz sözleşmeye uygun bir şekilde yapıldıktan sonra eserin yapımına geç başlanması veya eserin geç teslim edilecek olması A'ya sözleşmeden dönme hakkı vermez.<br>
-                    V. A, sözleşmeden dönebilir. Ancak menfi zararlarının tazminini isteyemez.
-                </div>
-                <ul class="options">
-                    <li>A) 2</li>
-                    <li>B) 1</li>
-                    <li>C) 3</li>
-                    <li>D) 5</li>
-                    <li>E) 4</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 2</div>
-                    <div class="explanation">
-                        I ve V yanlıştır. I: A teslim tarihini beklemek zorunda değil, zamanında başlanmadıysa dönebilir. V: A dönme hakkıyla birlikte tazminat da isteyebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 18 -->
-            <div class="question">
-                <div class="question-text">
-                    Kefaletin şekli ve kefilin sorumluluğu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Kefil, her durumda kefalet sözleşmesinde belirtilen azami miktara kadar sorumludur.</li>
-                    <li>B) Kefilin, sorumlu olduğu azami miktarı, kefalet tarihini ve müteselsil kefil olması durumunda, bu sıfatla veya bu anlama gelen herhangi bir ifadeyle yükümlülük altına girdiğini kefalet sözleşmesinde kendi el yazısıyla belirtmesi şarttır.</li>
-                    <li>C) Kefalet sözleşmesinde sonradan yapılan ve kefilin sorumluluğunu artıran değişiklikler, kefalet için öngörülen şekle uyulmadıkça hüküm doğurmaz.</li>
-                    <li>D) Kefalet sözleşmesi, yazılı şekilde yapılmadıkça ve kefilin sorumlu olacağı azami miktar ile kefalet tarihi belirtilmedikçe geçerli olmaz.</li>
-                    <li>E) Eşlerden biri, mahkemece verilmiş bir ayrılık kararı olmadıkça veya yasal olarak ayrı yaşama hakkı doğmadıkça, ancak diğerinin yazılı rızasıyla kefil olabilir.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E</div>
-                    <div class="explanation">
-                        E yanlıştır. Eşin rızası sözleşmenin kurulmasından önce, kurulması anında veya sonrasında verilebilir, ancak bu rıza zorunlu değildir. Sadece belirli durumlarda gereklidir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 19 -->
-            <div class="question">
-                <div class="question-text">
-                    M, 01.07.2019 tarihinde öğrenci K ile bir yıllık kira sözleşmesi yapar. Taraflar arasındaki sözleşmeye göre kira bedeli, her ayın yirmisinde ödenecektir. Evi tek başına kiralayan K'nın yanına bir süre sonra iki öğrenci daha taşınır. Okul döneminin başlamasıyla öğrenciler her akşam evde eğlenmeye başlar. Komşular, çok gürültü yaptıkları gerekçesiyle öğrencileri sürekli M'ye şikâyet eder. Bu arada banyoda su sızıntısı başlar. K, bunu önemsemez bir süre sonra sızıntı tüm banyoyu kaplar. Buna bağlı olarak duvardaki boyalar kabarır, kapı ve dolapların suyla temas eden yerleri şişer. Bundan sonra, K durumu M'ye bildirir. M, banyonun boyanması, dolap ve kapı tamirleri için 1000 TL masraf yapar. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri doğrudur?<br><br>
-                    I. M ile K arasında belirli süreli konut kirası sözleşmesi yapılmıştır.<br>
-                    II. Evi tek başına kiralayan K'nın yanına bir süre sonra iki öğrenci daha taşınması durumunda durumu öğrenen M, iki öğrencinin evden ayrılmasını isteyebilir.<br>
-                    III. Öğrencilerin evde çok gürültü yapması sebebiyle M, K'ya en az otuz gün süre vererek, aykırılığın giderilmesi, aksi takdirde sözleşmeyi feshedeceği konusunda yazılı bir ihtarda bulunabilir.<br>
-                    IV. Olayda, K sızıntıyı zamanında M'ye bildirmediği için M, yaptığı 1000 TL'lik masrafı K'dan talep edebilir.<br>
-                    V. K, evi ocak ve şubat aylarında hiç kullanmadığı için bu ayların kira bedelin ödemek zorunda değildir.
-                </div>
-                <ul class="options">
-                    <li>A) I, III ve V</li>
-                    <li>B) I ve II</li>
-                    <li>C) I, III, IV ve V</li>
-                    <li>D) I, II, III ve IV</li>
-                    <li>E) I, III ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) I, III ve IV</div>
-                    <div class="explanation">
-                        I, III ve IV doğrudur. II yanlış: M'nin ek kiracıları evden çıkarma yetkisi sınırlıdır. V yanlış: Kullanmasa bile kira ödemesi gerekir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 20 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan galeri sahibi olan G, 09.05.2020 tarihinde F motor şirketinden 500.000 TL karşılığında 5 adet araç satın alır. Araçların toplam fiyatını ödemeye gücü yetmeyen G, nakit ödeme yapamaz. O sırada galeride eşi için araç satın alan G'nin yakın arkadaşı M durumu fark eder ve toplam 500.000 TL olan borcun tamamına kefil olur. Bu kefaleti yeterli bulmayan şirket, G'den başka bir kefil ister. Bunun üzerine G, babası B'yi borcun tamamı için kefil yapar. B, borcun tamamı için tek kefilin kendisi olduğunu düşünmektedir. Borç muaccel olmasına rağmen G borcunu ödeyemez. Olaya göre aşağıdakilerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) B, borcun tamamını ödese dahi hiçbir şekilde M'ye rücu edemez.</li>
-                    <li>B) M, borcun tamamından F'ye karşı sorumludur.</li>
-                    <li>C) B, borcun tamamından F'ye karşı sorumludur.</li>
-                    <li>D) F'nin, B'ye başvurması durumunda B tartışma defini ileri süremez</li>
-                    <li>E) B ile M, borca bağımsız kefil olmuşlardır.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A</div>
-                    <div class="explanation">
-                        A yanlıştır. B ve M bağımsız kefil olsalar bile, aralarında hakkaniyete uygun bir paylaşım söz konusu olabilir. B tamamını öderse M'ye kısmi rücu edebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 21 -->
-            <div class="question">
-                <div class="question-text">
-                    İşleri kötü giden A, B'den 200.000 TL borç ister. B ise, kendisine güvenilir bir kefil getirmesi koşuluyla borç verebileceğini söyler. A ise, arkadaşı C'yi ekonomik durumunun çok iyi olduğunu ancak yeni bir yatırım yapmak amacıyla paraya ihtiyacı olduğunu ve B'nin kefil olmadan bu parayı kendisine vermeyeceğini söyleyerek ikna eder. B'nin yanında yapılan bu konuşma üzerine C, B ile kefalet sözleşmesi yapar. Sözleşmenin yapılmasından sonra C, kendisine söylenenin aksine A'nın ekonomik durumunun çok kötü olduğunu ve parayı ödeme imkânının olmadığını öğrenir. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Olayda yapılan kefalet sözleşmesi kesin hükümsüzdür.<br>
-                    II. Kefalet sözleşmesinin yapılmasında C'nin iradesi aldatma ile sakatlandığından aldatmanın öğrenilmesinde itibaren bir yıl içerisinde C, aldatmaya dayanarak kefalet sözleşmesini iptal ettirebilir.<br>
-                    III. C, A'ya başvurarak kefalet sözleşmesini ortadan kaldırabilir.<br>
-                    IV. A'nın, ekonomik durumu kötü olsa da, kefalet sözleşmesinin geçerliliğini etkileyecek bir durum söz konusu değildir.<br>
-                    V. Aldatmaya dayanarak kefalet sözleşmesinin iptal edilebilmesi için aldatmanın sözleşmenin karşı tarafınca yapılması gerekir. Olayda aldatma A tarafından yapılmıştır.
-                </div>
-                <ul class="options">
-                    <li>A) II, IV ve V</li>
-                    <li>B) I, IV ve V</li>
-                    <li>C) I, III, IV ve V</li>
-                    <li>D) IV ve V</li>
-                    <li>E) Yalnız II</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) II, IV ve V</div>
-                    <div class="explanation">
-                        II yanlış: Aldatma durumunda iptal süresi farklıdır. IV yanlış: Ekonomik durum aldatma konusu olmuştur. V yanlış: Aldatma üçüncü kişi tarafından da yapılabilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 22 -->
-            <div class="question">
-                <div class="question-text">
-                    İnşaat malzemesi alım satımıyla uğraşan B'nin işleri kötü gitmektedir. İşlerini düzeltmek isteyen B, 10.10.2019 tarihinde geri ödemek üzere amcası A'dan 100.000 TL borç ister. A ise, kendisine bir kefil göstermesi koşuluyla borç verebileceğini söyler. B, arkadaşı C'yi kendisine kefil olması için ikna eder. C, B'nin A'ya olan 100.000 TL'lik borcu için kefil olur. 10.10.2019 tarihi geldiğinde B, borcunun ancak 20.000 TL'sini öder. A, geri kalan borç için C'ye başvurur. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri doğrudur?<br><br>
-                    I. C, her durumda, kefalet sözleşmesinde belirtilen 100.000 TL'ye kadar sorumludur.<br>
-                    II. A ile B arasındaki tüketim ödüncü sözleşmesi herhangi bir şekilde sona ererse, C'nin kefalet borcu sona erer.<br>
-                    III. A, B'den alacağını almak amacıyla 10.000 TL dava masrafı yapmış olması durumunda, C'nin, kefil olarak 10.000 TL'yi ödeme gibi bir zorunluluğu yoktur.<br>
-                    IV. C, işlemiş bir yıllık ve işlemekte olan yıla ait akdî faizler ile gerektiğinde tahvil karşılığında ödünç verilen anaparanın işlemiş bir yıllık ve işlemekte olan yıla ait faizlerini 100.000 TL'yi aşmadığı sürece ödemek zorundadır.<br>
-                    V. Sözleşmede açıkça kararlaştırılmamışsa C, B'nin hem kefalet sözleşmesinin kurulmasından önceki hem de sonraki borçlarından sorumludur.
-                </div>
-                <ul class="options">
-                    <li>A) I, II ve IV</li>
-                    <li>B) I, II, III ve V</li>
-                    <li>C) I, III ve IV</li>
-                    <li>D) I ve II</li>
-                    <li>E) I, III, IV ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) I, II ve IV</div>
-                    <div class="explanation">
-                        I, II ve IV doğrudur. III yanlış: Kefil dava masraflarından da sorumludur. V yanlış: Kefil sadece sonraki borçlardan sorumludur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 23 -->
-            <div class="question">
-                <div class="question-text">
-                    Yeni bir ev alan B, mutfak dolaplarını yaptırmak için 10.10.2020 tarihinde marangoz M ile anlaşır. M ile B arasında yapılan sözleşmeye göre M, dolapları yaparak 11.11.2020 tarihinde teslim edecektir. M, kararlaştırılan tarihte mutfak dolaplarını teslim etmek için B'nin evine gider. Ancak B evde olmadığından M, mutfak dolaplarını teslim edemez. M, atölyesine geri dönerken trafik kazası geçirir ve kaza sonucunda mutfak dolapları kullanılamaz hale gelir. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Mutfak dolaplarının kullanılamaz hale gelmesi sebebiyle M'nin sorumlu olabilmesi için eseri teslim alması hususunda B'ye bir süre vermesi gerekirdi.<br>
-                    II. Mutfak dolapları kimsenin kusuru olmaksızın hasara uğradığından B ve M, kendi zararlarını karşılarlar.<br>
-                    III. B, kendisine gereği gibi yapılan ifa teklifini haklı bir neden olmaksızın kabul etmediğinden alacaklı temerrüdüne düşmüştür. Mutfak dolapları temerrüt sonrası hasara uğradığından B, sözleşmede kararlaştırılan bedeli ödemek zorundadır.<br>
-                    IV. Eser sözleşmesinde yarar ve hasar eserin teslimiyle alıcıya geçer. Olayda henüz mutfak dolabı teslim edilmediğinden B, bedeli ödemek zorunda değildir.<br>
-                    V. Mutfak dolabının, teslim edilmemesinde B'nin kusuru olmadığından bedeli ödemek zorunda değildir.
-                </div>
-                <ul class="options">
-                    <li>A) Yalnız III</li>
-                    <li>B) II, IV ve V</li>
-                    <li>C) IV ve V</li>
-                    <li>D) I, II, IV ve V</li>
-                    <li>E) I, III ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E) I, III ve IV</div>
-                    <div class="explanation">
-                        I, III ve IV yanlıştır. B evde olmadığı için alacaklı temerrüdüne düştü ve hasar riski ona geçti. Bu nedenle bedeli ödemek zorundadır.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 24 -->
-            <div class="question">
-                <div class="question-text">
-                    K, Erzincan'ın Refahiye ilçesindeki evinin eskiyen pencerelerinin yenilenmesi konusunda 01.07.2020 tarihinde 10.000 TL ücret karşılığında M ile anlaşır. M, kararlaştıran tarihte işe başlar ve bitirir. Sonbahar mevsiminde yağmurların yağmasıyla pencere altlarından evin içine su girer. Sorunu anlamak için usta çağıran K, pencerenin monte edilmesinde kullanılan malzemenin su yalıtım özelliğinin olmadığını ustadan öğrenir. Bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) K, eserin tesliminden sonra pencereleri gözden geçirmek ve ayıplar varsa, bunları M'ye bildirmek zorundadır. K, bu yükümlülüğü yerine getirmediğinden ayıptan doğan haklarını kaybetmiştir.</li>
-                    <li>B) K, ayıp neticesinde sözleşmeden dönme, bedelin ayıp oranında indirilmesini isteme, ayıplı eserin onarılmasını isteme ve ayıp sonucunda ortaya çıkan zararın tazminini isteme haklarına sahiptir.</li>
-                    <li>C) Olayda M'nin ayıba karşı tekeffül borcu söz konusudur.</li>
-                    <li>D) K, ortaya çıkar çıkmaz ayıbı M'ye bildirmelidir. Ayıbın bildirilmesi herhangi bir şekle tabi değildir.</li>
-                    <li>E) K'nın, ayıba karşı tekeffül hükümleri uyarınca M'ye başvurabilmesi için M'nin söz konusu eseri tamamlayarak teslim etmesi, teslim konusu eserin ayıplı olması ve ayıbın iş sahibine yüklenememesi gerekir.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A</div>
-                    <div class="explanation">
-                        A yanlıştır. Bu gizli bir ayıp olduğu için K'nın teslim sırasında fark etmesi beklenemez. Ayıbı öğrendiğinde bildirmesi yeterlidir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 25 -->
-            <div class="question">
-                <div class="question-text">
-                    M, Erzincan'da bulunan bir dairesini K'ya kiraya verir. K'nın eşi E'nin de aynı mahallede babasından miras kalan bir evi bulunmaktadır. E, bu evi beş yıllığına Ü'ye kiralar. K'nın eşinin aynı mahallede bir evi olduğunu öğrenen M, K'dan daireyi boşaltmasını ister. K ise, evin eşinin olduğunu evin kiraya verildiğini, kira sözleşmesinin beş yıllık olduğunu M'nin kira sözleşmesini feshetmek için haklı bir nedeni olmadığını ileri sürerek evi boşaltmaya yanaşmaz. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri doğrudur?<br><br>
-                    I. K'nın eşinin başka bir evi olması durumunda M ile K arasındaki kira sözleşmesi kendiliğinden sona erer.<br>
-                    II. E'nin aynı mahallede bir evinin olmasının tahliye sebebi olması için K'nın kira sözleşmesine aykırı davranması gerekir.<br>
-                    III. M, E'nin evinin olduğunu bilerek K ile kira sözleşmesi yapmış ise, kira sözleşmesini sona erdiremez.<br>
-                    IV. M'nin, E'nin evinin olması nedeniyle K ile olan kira sözleşmesini sona erdirebilmesi için bu konuda sözleşmede bir hüküm olması gerekir.<br>
-                    V. K'nın eşinin, aynı mahallede oturmaya elverişli bir evinin bulunması halinde M, K ile yaptığı kira sözleşmesinin bitiminden itibaren bir ay içerisinde tahliye davası açabilir.
-                </div>
-                <ul class="options">
-                    <li>A) II, III, IV ve V</li>
-                    <li>B) II, III ve V</li>
-                    <li>C) III ve V</li>
-                    <li>D) Yalnız III</li>
-                    <li>E) I ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C) III ve V</div>
-                    <div class="explanation">
-                        III ve V doğrudur. Eşin başka evinin olması tahliye sebebi olabilir ancak bunu bilerek sözleşme yapılmışsa ve sözleşme bitiminde dava açılabilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 26 -->
-            <div class="question">
-                <div class="question-text">
-                    D, iskele olarak kullanılmak üzere yüzer bir platform yapılması konusunda E ile 01.07.2020 tarihinde 50.000 TL'ye anlaşır. Taraflar arasındaki sözleşmeye göre malzeme D tarafından alınacaktır. Yüzer platform yapılıp teslime hazır bir şekilde beklediği sırada meydana gelen şiddetli bir fırtınada batar. Bunun üzerine E, platformun batmasından hiçbir kusurunun olmadığını söyleyerek ücretinin ödenmesini ister. D ise, platformun yapılması için aldığı malzemenin E'nin kusurundan dolayı zayi olduğunu ileri sürerek malzemenin parasının kendisine ödenmesini ister. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri doğrudur?<br><br>
-                    I. Teslimden önceki bütün hasarlara E katlanır.<br>
-                    II. Platform, henüz teslim edilmeden battığından E, D'ye malzeme parasını ödemelidir.<br>
-                    III. Platform kimsenin kusuru olmaksızın yok olduğundan E, yaptığı işin ücretini, D de malzeme bedelini isteyemez.<br>
-                    IV. Platform, E'nin kusuru olmaksızın yok olduğundan D, sözleşmede kararlaştırılan bedeli ödemelidir.<br>
-                    V. Eser sözleşmesinde hasar, eserin mülkiyetinin devriyle alıcıya geçtiğinden platformun yok olması sebebiyle meydana gelen hasara E katlanmalıdır.
-                </div>
-                <ul class="options">
-                    <li>A) Yalnız III</li>
-                    <li>B) II ve IV</li>
-                    <li>C) I, III ve IV</li>
-                    <li>D) II, IV ve V</li>
-                    <li>E) Hiçbiri</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) Yalnız III</div>
-                    <div class="explanation">
-                        Yalnızca III doğrudur. Eser teslim edilmeden force majeure ile yok olduğundan, kimse birbirinden bir şey isteyemez. Herkes kendi zararına katlanır.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 27 -->
-            <div class="question">
-                <div class="question-text">
-                    Yeni bir ev alan A, evinin iç dekorasyonun yapılması konusunda alanında iyi olarak bilinen Y ile 15.06.2020 tarihinde anlaşır. Anlaşmanın üzerinden 10 gün geçtikten sonra Y geçirdiği trafik kazasında hayatını kaybeder. Babasının yarım bıraktığı işi Y'nin mimar oğlu O tamamlamak istemektedir. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Y'nin mimar olan oğlu O'nun işe devam etmesi mümkün olup, A'nın buna karşı çıkması sözleşmeye aykırılık anlamına gelir.<br>
-                    II. Y'nin, ölmesi durumunda eser sözleşmesi A'nın tek taraflı bir beyanı ile sona erer.<br>
-                    III. Bu sözleşme Y'nin kişiliği dikkate alınarak yapıldığından, Y'nin ölümüyle eser sözleşmesi kendiliğinden sona erer.<br>
-                    IV. Y, hayatını kaybetse bile külli halefiyet ilkesi gereğince mirasçıları sözleşmenin tarafı haline gelir ve borçtan sorumlu olur.<br>
-                    V. Y, hayatını kaybetmeyip eseri tamamlama yeteneğini kaybetseydi bu durumda O'nun, eseri tamamlaması mümkün olurdu.
-                </div>
-                <ul class="options">
-                    <li>A) III ve IV</li>
-                    <li>B) I, II, IV ve V</li>
-                    <li>C) I ve II</li>
-                    <li>D) Yalnız III</li>
-                    <li>E) Hiçbiri</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) I, II, IV ve V</div>
-                    <div class="explanation">
-                        I, II, IV ve V yanlıştır. Kişisel beceri gerektiren eser sözleşmelerinde yüklenicinin ölümü sözleşmeyi kendiliğinden sona erdirir. Mirasçılar devam edebilir ancak A kabul etmek zorunda değildir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 28 -->
-            <div class="question">
-                <div class="question-text">
-                    Kira bedelinin belirlenmesi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) Tarafların yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranını geçmemek koşuluyla geçerlidir.</li>
-                    <li>B) Beş yıldan uzun süreli veya beş yıldan sonra yenilenen kira sözleşmelerinde ve bundan sonraki her beş yılın sonunda, yeni kira yılında uygulanacak kira bedeli, sadece taraflar bu konuda bir anlaşma yapılmamış ise, hâkim tarafından tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir.</li>
-                    <li>C) Sözleşmede kira bedeli yabancı para olarak kararlaştırılmışsa kural olarak beş yıl geçmedikçe kira bedelinde değişiklik yapılamaz.</li>
-                    <li>D) Taraflar kira sözleşmesinde bir artış oranı belirlememişlerse kira bedeli, bir önceki kira yılının tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranını geçmemek koşuluyla hâkim tarafından, kiralananın durumu göz önüne alınarak hakkaniyete göre belirlenir.</li>
-                    <li>E) Taraflar, ilk kira bedelini, irade sakatlığı, aşırı yararlanma ile ahlaka ve hukuka aykırı olmamak üzere serbestçe kararlaştırabilirler.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B</div>
-                    <div class="explanation">
-                        B yanlıştır. "Sadece taraflar bu konuda anlaşma yapılmamış ise" ifadesi yanlıştır. Doğrusu "taraflar bu konuda anlaşma yapmış olsa bile" olmalıdır.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 29 -->
-            <div class="question">
-                <div class="question-text">
-                    Sivas organize sanayi bölgesinde yeni bir fabrika kurmak isteyen P, bu konuda R ile anlaşır. P ile R arasında yapılan sözleşmeye göre fabrika iki yıl içerisinde bitirilecektir. Aradan iki ay geçtikten sonra P, hiçbir gerekçe göstermeden R'nin bütün zararlarını tazmin edeceğini söyleyerek sözleşmeyi feshettiğini söyler. Bu olayla ilgili aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. P, hiçbir gerekçe göstermeden R ile yapılan sözleşmeyi feshedemez.<br>
-                    II. P'nin, sözleşmeyi feshedebilmesi için haklı bir sebebin olması gerekir. Olayda haklı bir sebep söz konusu olmadığından fesih beyanı hüküm ve sonuç doğurmaz.<br>
-                    III. P'nin, yapılan kısmın bedelini peşin ödemesi sözleşmeyi feshetmesi için yeterlidir. Bunun dışında P'nin, R'nin herhangi bir zararını tazmin etmesi gerekmez.<br>
-                    IV. P'nin fabrika bitmeden sözleşmeyi feshedebilmesi, haklı bir sebebin bulunmasına ve TBK m. 123 uyarınca R'ye uygun bir süre tanıyarak bu süre içerisinde R'nin hukuka aykırılığı gidermemesine bağlıdır.<br>
-                    V. P, işin yapılması esnasında her zaman yapılan kısmın bedelini ve R'nin zararlarını ödeyerek sözleşmeyi feshedebilir.
-                </div>
-                <ul class="options">
-                    <li>A) 4</li>
-                    <li>B) 1</li>
-                    <li>C) 2</li>
-                    <li>D) 3</li>
-                    <li>E) 5</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 4</div>
-                    <div class="explanation">
-                        I, II, III ve IV yanlıştır. Eser sözleşmesinde iş sahibi istediği zaman sözleşmeyi feshedebilir, yeter ki yüklenicinin zararlarını tazmin etsin. V doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 30 -->
-            <div class="question">
-                <div class="question-text">
-                    Memleketi Erzincan'a bir ev yaptırmak isteyen A, B ile anlaşır. A ile B arasında yapılan eser sözleşmesi uyarınca B, A'ya ait arsa üzerinde bir ev inşa edecek, A'da bunun karşılığında 500.000 TL ödeyecektir. Taraflar arasındaki sözleşme uyarınca binada çelik malzeme kullanılacak ve bu malzeme de A tarafından getirilecektir. A'nın getirdiği malzeme oldukça çürük ve kalitesizdir. B, bu malzemeyi kullandığı takdirde binanın çökmesinin kuvvetle muhtemel olduğunu A'ya söyler. Ancak A, yine de bu malzemelerle inşaata devam etmesini B'ye söyler. Bunun üzerine B, inşaata devam eder. İnşaat, tamamlanmış teslime hazır durumdayken çöker. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Sözleşmede kararlaştırılmadıkça B, A'dan tazminat talep edemez.<br>
-                    II. Bu durumda B, A'dan sadece yaptığı masrafları talep edebilir.<br>
-                    III. Bu durumda A, eserin yeniden yapılmasını isteyebilir.<br>
-                    IV. Bu durumda taraflardan hiçbiri diğerinden herhangi bir talepte bulunamaz. Hasara uğrayan malzemenin hasarına, A katlanır.<br>
-                    V. B, A'dan yaptığı işin ücretini, bu ücrete dâhil olmayan masrafları ve varsa zararının tazminini isteyebilir.
-                </div>
-                <ul class="options">
-                    <li>A) I ve II</li>
-                    <li>B) I, II, III ve IV</li>
-                    <li>C) Yalnız V</li>
-                    <li>D) I, II, III ve V</li>
-                    <li>E) III ve IV</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) I, II, III ve IV</div>
-                    <div class="explanation">
-                        I, II, III ve IV yanlıştır. B, A'yı uyarmış ve A ısrar etmiştir. Bu durumda B tam ücretini ve zararını isteyebilir. V doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 31 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan'da öğretmen olarak görev yapan K, tayininin İzmir'e çıkması üzerine internette ilanını gördüğü M'ye ait bir evi kiralayarak üç aylık kira bedelini peşin öder. K, eşyalarını alıp kiraladığı eve gittiğinde evin 30.10.2020 tarihinde meydana gelen depremde orta derecede hasar gördüğünü, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olduğunu öğrenir. Hemen M'yi arayan K, evde oturmasının mümkün olmadığını derhal ödemiş olduğu parayı geri vermesini M'ye söyler. M ise, kira sözleşmesinin yapıldığını ve artık bundan tek taraflı olarak dönmesinin mümkün olmadığını söyler. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Evin depremde orta derecede hasar görmesi, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olması nedeniyle K, kira sözleşmesini ancak Türk Borçlar Kanunu'nda öngörülen fesih bildirim sürelerine uyarak feshedebilir.<br>
-                    II. Olayda K'nın, iradesini sakatlayan bir durum söz konusu olmadığından K, kira sözleşmesi ile bağlıdır.<br>
-                    III. K, öncelikle kiralanan evi sözleşmeye uygun bir halde bulundurması için M'ye uygun bir süre vermelidir.<br>
-                    IV. Kiralanan ev, sözleşmeden beklenen kullanım amacına uygun değildir. Evin depremde orta derecede hasar görmesi, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olması evi yaşanılmaz hale getirmekte olup, bu sebeple K, kira sözleşmesini derhal feshedebilir.<br>
-                    V. Kira sözleşmesi yapılmış olup, kiracı K, taşınmazın ne durumda olduğunu görme imkanına sahiptir.
-                </div>
-                <ul class="options">
-                    <li>A) I, II, III ve V</li>
-                    <li>B) Yalnız IV</li>
-                    <li>C) III, IV ve V</li>
-                    <li>D) IV ve V</li>
-                    <li>E) I, III ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) I, II, III ve V</div>
-                    <div class="explanation">
-                        I, II, III ve V yanlıştır. Ev kullanım amacına uygun olmadığından K derhal feshedebilir. IV doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 32 -->
-            <div class="question">
-                <div class="question-text">
-                    M, Erzincan'da bulunan evini 07.07.2019 tarihinde bir yıllığına arkadaşı A'ya kiraya vermiştir. Kira sözleşmesinde kararlaştırılan süre sona ermesine rağmen taraflar hiçbir beyanda bulunmamış ve kiracı A, evde oturmaya devam etmiştir. Bu olayla ilgili aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. M ile A arasındaki kira sözleşmesi kararlaştırılan sürenin dolmasıyla sona ermeyip aynı şartlar altında beş yıl daha uzamış sayılır.<br>
-                    II. Sözleşmede kararlaştırılan sürenin dolmasıyla A veya M'den herhangi biri kira sözleşmesini sona erdirme beyanında bulunmazsa kira sözleşmesi aynı şartlarda bir yıl daha uzamış sayılır.<br>
-                    III. Sözleşmede kararlaştırılan sürenin dolmasıyla kira sözleşmesi sona ermeyip, tarafların zımni irade beyanıyla süresiz hale gelmiştir.<br>
-                    IV. Kira sözleşmesi sözleşmede belirtilen sürenin dolmasıyla sona ererek kullanım ödüncü sözleşmesine dönüşür.<br>
-                    V. M ile A arasındaki kira sözleşmesi kararlaştırılan sürenin dolmasıyla sona ermeyip aynı şartlar altında iki yıl daha uzamış sayılır.
-                </div>
-                <ul class="options">
-                    <li>A) 4</li>
-                    <li>B) 3</li>
-                    <li>C) 2</li>
-                    <li>D) 1</li>
-                    <li>E) 5</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 4</div>
-                    <div class="explanation">
-                        I, III, IV ve V yanlıştır. Belirli süreli kira sözleşmesi süre bitiminde taraflar sessiz kalırsa bir yıl daha uzar. II doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 33 -->
-            <div class="question">
-                <div class="question-text">
-                    T, yeni aldığı arsaya otel yaptırmak için Y ile 04.04.2018 tarihinde 2.000.000 TL'ye anlaşır. Sözleşmeye göre bedelin yarısı peşin olarak, kalan yarısı da iş sonunda teslim edilecektir. Ancak sözleşmenin kurulmasından sonra meydana gelen global kriz sonucu inşaat malzemelerinin fiyatı iki katına çıkar. Y, T'ye eserin yapımına bu şartlar altında devam edemeyeceğini ya sözleşmede kararlaştırılan bedeli artırmalarını ya da sözleşmeyi ortadan kaldırmayı teklif eder. T ise, buna yanaşmaz. Bu olayla ilgili aşağıdaki ifadelerden kaç tanesi doğrudur?<br><br>
-                    I. T ile Y arasında eser sözleşmesi söz konusu olup, bedel taraflar götürü olarak belirlenmiştir.<br>
-                    II. Y ile T arasındaki sözleşmede bedelin maliyet hesaplarına göre artırılıp azaltılacağına ilişkin bir hüküm olsa bile sözleşmede belirlenen bedel esas olup, bunun yükseltilmesinin istenmesi mümkün değildir.<br>
-                    III. Bedel yaklaşık olarak belirlendiğinden Y, bedelin yükseltilmesini isteyebilir.<br>
-                    IV. Olayda taraflar öngörülmeyen bir durum söz konusu olup, bu durum işin yapılmasını Y açısından çok güçleştirmektedir. Bu durumda Y, bedelin yeni duruma göre uyarlanması için mahkemeye başvurabilir, bunun mümkün olmaması halinde ise sözleşmeyi ortadan kaldırabilir.<br>
-                    V. Y, hiçbir zaman sözleşmede kararlaştırılan bedeli artırmayı veya sözleşmeyi ortadan kaldırmayı teklif edemez.
-                </div>
-                <ul class="options">
-                    <li>A) 2</li>
-                    <li>B) 5</li>
-                    <li>C) 4</li>
-                    <li>D) 3</li>
-                    <li>E) 1</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 2</div>
-                    <div class="explanation">
-                        I ve IV doğrudur. Götürü bedel belirlenmiş ancak aşırı ifa güçlüğü nedeniyle sözleşme uyarlanabilir veya feshedilebilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 34 -->
-            <div class="question">
-                <div class="question-text">
-                    Maddi açıdan sıkıntılı günler geçiren A, işlerini yoluna koymak için kuzeni K'dan üç ay sonra geri ödemek üzere 50.000 TL borç para ister. K, A'ya borç vermeyi kabul eder, ancak belirlenen vadede kendisinin de ödemeleri olduğunu belirterek A'dan iki tane kefil göstermesini ister. A, bu teklifi kabul eder. Tarafların anlaşması üzerine B ve C, usulüne uygun olarak yapılan kefalet sözleşmesiyle A'nın, K'ya olan borcu için A ile birlikte yükümlülük altına girerler. Belirlenen vade tarihi geldiğinde A'nın, borcunu ödeyememesi üzerine K, kefillerden C'ye müracaat ederek borcun tamamının ödenmesini talep eder. Bu olayla ilgili aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. B ve C birlikte adi kefillerdir.<br>
-                    II. Tüm borcun kendisinden talep edilmesi karşısında C, kendisiyle birlikte daha önce veya aynı zamanda müteselsilen yükümlü bulunan ve Türkiye'de takip edilebilen bütün kefillere karşı takibe girişilmiş olmadıkça, kendi payından fazlasını ödemekten kaçınabilir.<br>
-                    III. Aksine anlaşmalar saklı kalmak kaydıyla, C, A'nın borcunu ödemişse, kendi payını daha önce ödememiş olması ölçüsünde, B'ye karşı rücu hakkına sahiptir.<br>
-                    IV. B ve C, birbirlerinden bağımsız olarak aynı borç için kefil olsalardı, herbiri kendi payları oranında kefalet borcundan sorumlu olurdu.<br>
-                    V. K, kefilin aynı alacak için başka kişilerin de kefil olduğunu veya olacağını varsayarak kefalet ettiğini biliyor veya bilmesi gerekiyorsa, bu varsayımın sonradan gerçekleşmemesi veya kefillerden birinin alacaklı tarafından kefalet borcundan kurtarılması ya da kefaletin hükümsüz olduğuna karar verilmesi durumunda kefil, kefalet borcundan kurtulur.
-                </div>
-                <ul class="options">
-                    <li>A) 2</li>
-                    <li>B) 4</li>
-                    <li>C) 5</li>
-                    <li>D) 1</li>
-                    <li>E) 3</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 2</div>
-                    <div class="explanation">
-                        II ve IV yanlıştır. Birlikte kefalette kefiller taksim defini ileri sürebilir ve bağımsız kefalet durumunda her biri tam sorumlu olur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 35 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan'ın Üzümlü ilçesinde yaşayan Y, eskiyen evinin dış cephe sıva ve boyasının yenilenmesi konusunda Z ile 04.04.2020 tarihinde 10.000 TL'ye anlaşır. Y ile Z arasında yapılan sözleşmeye göre Z, işi 10.05.2020 tarihinde bitirecektir. Z, sözleşmede kararlaştırılan sürede işi bitirir. Aradan üç ay geçtikten sonra evin sıvaları çatlayarak dökülmeye başlar. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Olayda sonradan ortaya çıkan bir ayıp söz konusu olduğundan Z'nin sorumluluğu söz konusu olmaz.<br>
-                    II. Yapılan iş bitirildiğinden, Z'nin sorumluluğu söz konusu olmaz.<br>
-                    III. Y'nin, Z'nin işini bitirmesinden sonra işi gözden geçirerek, bir ayıp olması durumunda bunu Z'ye bildirmesi gerekirdi. Y, gözden geçirme borcunu yerine getirmediğinden ayıptan doğan haklarını kullanamaz.<br>
-                    IV. Olayda kullanılmakla sonradan ortaya çıkan gizli ayıp söz konusudur. Bu durumda Y, ayıbı öğrenir öğrenmez durumu Z'ye bildirerek ayıptan dolayı uğradığı zararları Z'den isteyebilir.<br>
-                    V. Z'nin, evin sıvalarının dökülebileceğini söylemesine rağmen Y, evi teslim almışsa bu durum eseri kabul sayılacağından Y, ayıptan doğan haklarını kaybeder.
-                </div>
-                <ul class="options">
-                    <li>A) I, II, III ve V</li>
-                    <li>B) I, II ve III</li>
-                    <li>C) Yalnız IV</li>
-                    <li>D) IV ve V</li>
-                    <li>E) II, III ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) I, II ve III</div>
-                    <div class="explanation">
-                        I, II ve III yanlıştır. Gizli ayıp olduğu için Z sorumludur ve iş bitmiş olsa da sorumluluk devam eder. IV doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 36 -->
-            <div class="question">
-                <div class="question-text">
-                    Uzun süre İstanbul'da çalıştıktan sonra emekli olan K, köyüne yerleşmeye karar verir. K, köydeki arazisine iki katlı bir ev yapılması konusunda L ile anlaşır. Taraflar arasındaki anlaşma uyarınca L, 07.07.2019 tarihinde işe başlayacak, bir yıl sonra da evi teslim edecek, K'da bunun karşılığında 200.000 TL ödeyecektir. Sözleşmede kararlaştırılan sürede işe başlayan L, evin inşa edileceği arsanın zeminin çok gevşek olduğunu görür. Buna rağmen L, K'ya bir şey söylemez. İnşaata başladıktan iki ay sonra yağmurların da artmasıyla temelde çökme meydana gelir ve inşa edilen kısım yıkılır. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri doğrudur?<br><br>
-                    I. L, inşa edilen kısmın yıkılmasından sonra sözleşmeden dönerek yapmış olduğu masrafları K'dan isteyebilir.<br>
-                    II. K, L ile sözleşme yapmadan önce arsanın zemin durumunu incelemesi gerekirdi. K, bunu yapmadığından meydana gelen zarara katlanır.<br>
-                    III. K'nın, sık sık inşaata gelip işin yapılmasını denetleme yükümlülüğü bulunmaktadır.<br>
-                    IV. Evin hasara uğramasına her ne kadar K'nın arsasının zemin durumunun gevşek olması sebep olsa da L'nin işin görülmesi esnasında ortaya çıkan önemli hususları gecikmeksizin K'ya bildirmesi gerekirdi. L, bildirim yükümlülüğüne aykırı davrandığından K'nın uğramış olduğu zararları gidermekle yükümlüdür.<br>
-                    V. Evin, inşa edileceği arsanın zeminin gevşek olması yüzünden hasar görmesi tamamen K'nın hakimiyet sahasından kaynaklanmış olup, evi projeye uygun yaptığı sürece L'nin sorumluluğu söz konusu değildir.
-                </div>
-                <ul class="options">
-                    <li>A) I, III ve IV</li>
-                    <li>B) Yalnız IV</li>
-                    <li>C) IV ve V</li>
-                    <li>D) II, III, IV ve V</li>
-                    <li>E) III, IV ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) Yalnız IV</div>
-                    <div class="explanation">
-                        Yalnızca IV doğrudur. L, zemin durumunu gördüğünde K'yı bilgilendirme yükümlülüğü vardı. Bilgilendirmediği için sorumludur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 37 -->
-            <div class="question">
-                <div class="question-text">
-                    İşadamı İ, Marmaris'teki arazisine bir yazlık yaptırmaya karar verir. Bu konuda M ile 500.000 TL bedel karşılığında anlaşır. Yapılan sözleşme gereğince yazlık inşaatına 09.09.2018 tarihinde başlanacak, 09.09.2020 tarihinde bitirilecektir. M, işi zamanında bitirir. Ancak iş sonunda yazlığın yapımı 520.000 TL'ye mal olur ve M, aradaki 20.000 TL'yi İ'den ister. İ ise, bedelin sözleşmede kesin olarak tespit edildiğini ve sözleşmede kararlaştırılan bedelin üzerinde bir ödeme yapmasının mümkün olmadığını söyler. Bu olayla ilgili aşağıdaki ifadelerden hangileri yanlıştır?<br><br>
-                    I. Tarafların, sözleşmede kararlaştırdıkları bedel bağlayıcı değildir. İşin sonunda yapılacak maliyet hesaplarına göre kesin bedel belirlenerek İ'nin borcunun miktarı tam olarak ortaya çıkacaktır.<br>
-                    II. Bedel, sözleşmede taraflar kesin olarak belirlenmiştir. İşin sonunda yapım maliyetinin sözleşmede belirlenen bedeli aşması M'ye bu aşan kısmı isteme hakkı vermez.<br>
-                    III. Tarafların sözleşmenin kuruluşundan kararlaştırdıkları bedel yaklaşık bedel olduğundan M, 20.000 TL'yi İ'den isteyebilir.<br>
-                    IV. Eserin bedeli, yapılan işin bedeline ve yüklenicin masrafına göre işin sonunda belirlenir.<br>
-                    V. Yazlığın 750.000 TL bedel ile bitirileceğinin iş başladıktan bir ay sonra anlaşılması halinde M, tek taraflı irade beyanıyla eser sözleşmesinden dönebilir.
-                </div>
-                <ul class="options">
-                    <li>A) I, III ve IV</li>
-                    <li>B) I, III ve V</li>
-                    <li>C) I, III, IV ve V</li>
-                    <li>D) I, II, III ve V</li>
-                    <li>E) I ve II</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: C) I, III, IV ve V</div>
-                    <div class="explanation">
-                        I, III, IV ve V yanlıştır. Bedel götürü olarak belirlenmiştir, yaklaşık bedel değildir. II doğrudur, götürü bedelde aşan kısım istenemez.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 38 -->
-            <div class="question">
-                <div class="question-text">
-                    Ayıptan doğan sorumlulukta, iş sahibinin haklarına ilişkin olarak aşağıdaki ifadelerden kaç tanesi yanlıştır?<br><br>
-                    I. Eserin ayıplı olması, yüklenicinin açıkça yaptığı ihtara karşın, iş sahibinin verdiği talimattan doğmuş bulunur veya herhangi bir sebeple iş sahibine yüklenebilecek olursa iş sahibi, eserin ayıplı olmasından doğan haklarını kullanamaz.<br>
-                    II. Eser iş sahibinin arazisi üzerinde yapılıyor olsun veya olmasın önemli ayıplarda iş sahibi sözleşmeden dönebilir.<br>
-                    III. İş sahibi aşırı bir masrafı gerektirmediği takdirde, bütün masrafları yükleniciye ait olmak üzere, eserin ücretsiz onarılmasını isteyebilir.<br>
-                    IV. Eserin ayıplı olarak teslim edildiği bütün durumlar bakımından iş sahibi, eseri alıkoyup ayıp oranında bedelden indirim isteyebilir.<br>
-                    V. İş sahibi genel hükümlere göre yükleniciden tazminat isteyebilir.
-                </div>
-                <ul class="options">
-                    <li>A) 1</li>
-                    <li>B) 2</li>
-                    <li>C) 3</li>
-                    <li>D) 4</li>
-                    <li>E) 5</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: A) 1</div>
-                    <div class="explanation">
-                        Yalnızca I yanlıştır. İş sahibinin verdiği talimat nedeniyle ayıp oluşmuşsa ayıptan doğan haklar kullanılamaz. Diğerleri doğrudur.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 39 -->
-            <div class="question">
-                <div class="question-text">
-                    Eserin ayıplı şekilde yapılacağının önceden kesin olarak bilinebildiği durumlara ilişkin olarak aşağıdaki ifadelerden hangisi/hangileri yanlıştır?<br><br>
-                    I. Bu durumda iş sahibi Türk Borçlar Kanunu'nun açık ifadesi gereğince sözleşmeden dönebilir.<br>
-                    II. Bu durumda iş sahibi, derhal onarım hakkını kullanabilir veya işi hasar ve masraflar yükleniciye ait olacak şekilde üçüncü kişiye yaptırabilir.<br>
-                    III. Bu durumda iş sahibi sadece yapılan kısma ilişkin uygun bir tazminat vermek suretiyle sözleşmeyi ileriye etkili olarak sona erdirebilir.<br>
-                    IV. Bu durumda iş sahibi, sonuçlarını önceden ihtar edip, borca aykırılığın giderilmesi için süre vermek suretiyle sürenin sonunda onarımı veya işe devamı, hasar ve masraflar yükleniciye ait olacak şekilde üçüncü kişiye bırakabilir.<br>
-                    V. Bu durumda iş sahibi, ancak hâkime başvurarak borca aykırılığın giderilmesini isteyebilir.
-                </div>
-                <ul class="options">
-                    <li>A) I, III ve IV</li>
-                    <li>B) III, IV ve V</li>
-                    <li>C) Yalnız IV</li>
-                    <li>D) I, II, III ve V</li>
-                    <li>E) IV ve V</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: B) III, IV ve V</div>
-                    <div class="explanation">
-                        III, IV ve V yanlıştır. Eserin ayıplı yapılacağı önceden biliniyorsa iş sahibi sözleşmeden dönebilir ve derhal önlem alabilir.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 40 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan'da öğretmen olarak görev yapan K, tayininin İzmir'e çıkması üzerine internette ilanını gördüğü M'ye ait bir evi kiralayarak üç aylık kira bedelini peşin öder. K, eşyalarını alıp kiraladığı eve gittiğinde evin 30.10.2020 tarihinde meydana gelen depremde orta derecede hasar gördüğünü, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olduğunu öğrenir. Hemen M'yi arayan K, evde oturmasının mümkün olmadığını derhal ödemiş olduğu parayı geri vermesini M'ye söyler. M ise, kira sözleşmesinin yapıldığını ve artık bundan tek taraflı olarak dönmesinin mümkün olmadığını söyler. Bu olayla ilgili aşağıdaki ifadelerden hangisi/hangileri yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>I. Evin depremde orta derecede hasar görmesi, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olması nedeniyle K, kira sözleşmesini ancak Türk Borçlar Kanunu'nda öngörülen fesih bildirim sürelerine uyarak feshedebilir.</li>
-                    <li>II. Olayda K'nın, iradesini sakatlayan bir durum söz konusu olmadığından K, kira sözleşmesi ile bağlıdır. K, kira sözleşmesini feshederse bundan dolayı M'nin uğramış olduğu zararı tazmin etmek zorundadır.</li>
-                    <li>III. K, öncelikle kiralanan evi sözleşmeye uygun bir halde bulundurması için M'ye uygun bir süre vermelidir. Bu süre içerisinde M, kiralanandaki aykırılıkları gidermezse K, sözleşmeyi feshedebilir.</li>
-                    <li>IV. Kiralanan ev, sözleşmeden beklenen kullanım amacına uygun değildir. Evin depremde orta derecede hasar görmesi, elektrik ve su tesisatının kullanılamaz ve pencerelerinin kırık olması evi yaşanılmaz hale getirmekte olup, bu sebeple K, kira sözleşmesini derhal feshedebilir.</li>
-                    <li>V. Kira sözleşmesi yapılmış olup, kiracı K, taşınmazın ne durumda olduğunu görme imkanına sahiptir. K, bu yükümlülüğü önceden yerine getirmediğinden kira sözleşmesi ile bağlıdır.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: I, II, III, V</div>
-                    <div class="explanation">
-                        <strong>Açıklama:</strong> Yanlış ifadeler I, II, III ve V'tir. IV numaralı ifade doğrudur çünkü kiralanan ev sözleşmeden beklenen kullanım amacına uygun değildir ve K derhal fesih hakkını kullanabilir.
-                    </div>
-                    <div class="legal-provisions">
-                        <h4>İlgili TBK Maddeleri:</h4>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 320 - Kiralayanın Sözleşmeye Uygun Durumda Bulundurması</div>
-                            <div>Kiraya veren, kiralayanı sözleşmeye uygun durumda kiracıya teslim etmek ve sözleşme süresince bu durumda bulundurmakla yükümlüdür.</div>
-                        </div>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 325 - Kiralayanın Ayıplı Olması</div>
-                            <div>Kiralayan ayıplı ise kiracı, kiraya verenden ayıbın giderilmesini isteyebilir. Ayıp kiralayanın sözleşmeye uygun kullanımını engelliyor veya önemli ölçüde güçleştiriyorsa, kiracı kira bedelinde indirim yapılmasını da isteyebilir. Ayıp nedeniyle sözleşmeden beklenen yarar sağlanamıyorsa, kiracı sözleşmeyi feshedebilir.</div>
-                        </div>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 344 - Kiracının Derhal Fesih Hakkı</div>
-                            <div>Kiralayan, kiracının sağlığı için zararlı hale gelir veya sözleşmede öngörülen kullanım amacına uygun olmaktan çıkarsa, kiracı süresiz fesih hakkına sahiptir.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soru 41 -->
-            <div class="question">
-                <div class="question-text">
-                    Erzincan'da galeri sahibi olan G, 09.05.2020 tarihinde F motor şirketinden 500.000 TL karşılığında 5 adet araç satın alır. Araçların toplam fiyatını ödemeye gücü yetmeyen G, nakit ödeme yapamaz. O sırada galeride eşi için araç satın alan G'nin yakın arkadaşı M durumu fark eder ve toplam 500.000 TL olan borcun tamamına kefil olur. Bu kefaleti yeterli bulmayan şirket, G'den başka bir kefil ister. Bunun üzerine G, babası B'yi borcun tamamı için kefil yapar. B, borcun tamamı için tek kefilin kendisi olduğunu düşünmektedir. Borç muaccel olmasına rağmen G borcunu ödeyemez. Olaya göre aşağıdakilerden hangisi yanlıştır?
-                </div>
-                <ul class="options">
-                    <li>A) M, borcun tamamından F'ye karşı sorumludur.</li>
-                    <li>B) F'nin, B'ye başvurması durumunda B tartışma defini ileri süremez</li>
-                    <li>C) B ile M, borca bağımsız kefil olmuşlardır.</li>
-                    <li>D) B, borcun tamamından F'ye karşı sorumludur.</li>
-                    <li>E) B, borcun tamamını ödese dahi hiçbir şekilde M'ye rücu edemez.</li>
-                </ul>
-                <div class="answer-section">
-                    <div class="correct-answer">Doğru Cevap: E</div>
-                    <div class="explanation">
-                        <strong>Açıklama:</strong> E seçeneği yanlıştır çünkü birden fazla kefil bulunduğunda, bunlar bağımsız kefil olmalarına rağmen, birbirlerine karşı rücu hakları vardır. B borcun tamamını öderse M'ye rücu edebilir.
-                    </div>
-                    <div class="legal-provisions">
-                        <h4>İlgili TBK Maddeleri:</h4>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 581 - Kefilin Sorumluluğu</div>
-                            <div>Kefil, asıl borçlunun borcunu ifa etmemesi halinde, bu borcun ifasından alacaklıya karşı şahsen sorumludur.</div>
-                        </div>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 583 - Tartışma Defini</div>
-                            <div>Asıl borçlu aleyhine icra takibi yapılmadıkça veya asıl borçlunun aciz hali mahkemece tespit edilmedikçe, kefilin sorumluluğu doğmaz. Ancak, asıl borçlunun bulunamaması veya yabancı ülkede bulunması halinde kefile başvurulabilir.</div>
-                        </div>
-                        <div class="article">
-                            <div class="article-number">TBK Madde 595 - Kefiller Arasında Rücu</div>
-                            <div>Aynı borç için birden fazla kefil bulunması halinde, bunlardan biri borcun tamamını öderse, diğer kefillere kendi paylarını aşan kısım için rücu edebilir.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="navigation">
-            <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>← Önceki</button>
-            <div class="question-counter">
-                <span id="current-question">1</span> / <span id="total-questions">41</span>
-            </div>
-            <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Sonraki →</button>
-        </div>
-    </div>
-
-    <script>
-        let currentQuestionIndex = 0;
-        const questions = document.querySelectorAll('.question');
-        const totalQuestions = questions.length;
+        <h1>EBYÜ Borçlar Özel</h1>
         
-        document.getElementById('total-questions').textContent = totalQuestions;
+        <div class="info-section">
+            <h3>Tarık İsmet ALKAN 2025</h3>
+            <p>Yanıtlar yapay zeka ile hazırlanmıştır. Doğruluğunu kendiniz teyit ediniz.</p>
+        </div>
 
-        function showQuestion(index) {
-            questions.forEach((question, i) => {
-                question.classList.toggle('active', i === index);
-            });
-            
-            document.getElementById('current-question').textContent = index + 1;
-            document.getElementById('prev-btn').disabled = index === 0;
-            document.getElementById('next-btn').disabled = index === totalQuestions - 1;
-        }
+        <div class="question-grid">
+            <a href="question-1.html" class="question-card">Soru 1</a>
+            <a href="question-2.html" class="question-card">Soru 2</a>
+            <a href="question-3.html" class="question-card">Soru 3</a>
+            <a href="question-4.html" class="question-card">Soru 4</a>
+            <a href="question-5.html" class="question-card">Soru 5</a>
+            <a href="question-6.html" class="question-card">Soru 6</a>
+            <a href="question-7.html" class="question-card">Soru 7</a>
+            <a href="question-8.html" class="question-card">Soru 8</a>
+            <a href="question-9.html" class="question-card">Soru 9</a>
+            <a href="question-10.html" class="question-card">Soru 10</a>
+            <a href="question-11.html" class="question-card">Soru 11</a>
+            <a href="question-12.html" class="question-card">Soru 12</a>
+            <a href="question-13.html" class="question-card">Soru 13</a>
+            <a href="question-14.html" class="question-card">Soru 14</a>
+            <a href="question-15.html" class="question-card">Soru 15</a>
+            <a href="question-16.html" class="question-card">Soru 16</a>
+            <a href="question-17.html" class="question-card">Soru 17</a>
+            <a href="question-18.html" class="question-card">Soru 18</a>
+            <a href="question-19.html" class="question-card">Soru 19</a>
+            <a href="question-20.html" class="question-card">Soru 20</a>
+            <a href="question-21.html" class="question-card">Soru 21</a>
+            <a href="question-22.html" class="question-card">Soru 22</a>
+            <a href="question-23.html" class="question-card">Soru 23</a>
+            <a href="question-24.html" class="question-card">Soru 24</a>
+            <a href="question-25.html" class="question-card">Soru 25</a>
+            <a href="question-26.html" class="question-card">Soru 26</a>
+            <a href="question-27.html" class="question-card">Soru 27</a>
+            <a href="question-28.html" class="question-card">Soru 28</a>
+            <a href="question-29.html" class="question-card">Soru 29</a>
+            <a href="question-30.html" class="question-card">Soru 30</a>
+            <a href="question-31.html" class="question-card">Soru 31</a>
+            <a href="question-32.html" class="question-card">Soru 32</a>
+            <a href="question-33.html" class="question-card">Soru 33</a>
+            <a href="question-34.html" class="question-card">Soru 34</a>
+            <a href="question-35.html" class="question-card">Soru 35</a>
+            <a href="question-36.html" class="question-card">Soru 36</a>
+            <a href="question-37.html" class="question-card">Soru 37</a>
+            <a href="question-38.html" class="question-card" style="background: linear-gradient(45deg, #28a745, #20c997); font-size: 14px;">📖 Tüm Çözümler</a>
+        </div>
 
-        function previousQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                showQuestion(currentQuestionIndex);
-            }
-        }
-
-        function nextQuestion() {
-            if (currentQuestionIndex < totalQuestions - 1) {
-                currentQuestionIndex++;
-                showQuestion(currentQuestionIndex);
-            }
-        }
-
-        showQuestion(0);
-    </script>
-
+    </div>
 </body>
 </html>

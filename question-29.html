@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 29 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 29 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-28.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-30.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">29</div>
+            <div class="question-text">
+                Kira bedelinin belirlenmesi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+            </div>
+            
+            <div class="options-container">
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">Tarafların yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranını geçmemek koşuluyla geçerlidir.</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="true">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">Beş yıldan uzun süreli veya beş yıldan sonra yenilenen kira sözleşmelerinde ve bundan sonraki her beş yılın sonunda, yeni kira yılında uygulanacak kira bedeli, sadace taraflarca bu konuda bir anlaşma yapılmamış ise, hâkim tarafından tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir.</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">Sözleşmede kira bedeli yabancı para olarak kararlaştırılmışsa kural olarak beş yıl geçmedikçe kira bedelinde değişiklik yapılamaz.</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">Taraflar kira sözleşmesinde bir artış oranı belirlememişlerse kira bedeli, bir önceki kira yılının tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranını geçmemek koşuluyla hâkim tarafından, kiralananın durumu göz önüne alınarak hakkaniyete göre belirlenir.</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">Taraflar, ilk kira bedelini, irade sakatlığı, aşırı yararlanma ile ahlaka ve hukuka aykırı olmamak üzere serbestçe kararlaştırabilirler.</div>
+                </button>
+            </div>
+            
+            <div class="feedback" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+
+             <div class="solution-toggle">
+                <button id="solutionBtn" class="btn btn-nav">Çözümü Gör</button>
+            </div>
+
+            <div id="solutionContainer" class="solution-container" style="display: none;">
+                <h2>Detaylı Çözüm</h2>
+                <p><strong>Doğru Cevap: B) ...sadace taraflarca bu konuda bir anlaşma yapılmamış ise...</strong></p>
+                <p>Bu ifade, Türk Borçlar Kanunu'nun (TBK) 344. maddesinin 3. fıkrasını hatalı bir şekilde yorumladığı için yanlıştır.</p>
+                <p><strong>TBK Madde 344/3:</strong> <em>"Taraflarca bu konuda bir anlaşma yapılıp yapılmadığına bakılmaksızın, beş yıldan uzun süreli veya beş yıldan sonra yenilenen kira sözleşmelerinde ve bundan sonraki her beş yılın sonunda, yeni kira yılında uygulanacak kira bedeli, hâkim tarafından tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir..."</em></p>
+                <p>İfadelerin analizi:</p>
+                <ul>
+                    <li>
+                        <strong>İfade A (Doğru):</strong> TBK m. 344/1'in doğru bir açıklamasıdır. Yıllık artış oranı, 12 aylık TÜFE ortalamasını geçemez.
+                    </li>
+                    <li>
+                        <strong>İfade B (Yanlış):</strong> Kanun metni "taraflarca bu konuda bir anlaşma yapılıp yapılmadığına bakılmaksızın" demektedir. Yani, taraflar bir artış oranı üzerinde anlaşmış olsalar bile, beş yılın sonunda hakimden kira bedelinin yeniden tespitini isteyebilirler. İfadede geçen "sadece taraflarca bu konuda bir anlaşma yapılmamış ise" kısmı, bu hakkı yanlış bir şekilde koşula bağlamaktadır. Bu nedenle ifade yanlıştır.
+                    </li>
+                    <li>
+                        <strong>İfade C (Doğru):</strong> TBK m. 344/4'e göre, yabancı para ile belirlenen kira bedellerinde beş yıl boyunca artış yapılamayacağı kuralı doğrudur (istisnalar hariç).
+                    </li>
+                    <li>
+                        <strong>İfade D (Doğru):</strong> Taraflar artış oranı belirlememişse, hakimin TÜFE tavanını geçmeyecek şekilde hakkaniyete göre bir bedel belirleyeceğini ifade eden TBK m. 344/2'yi doğru bir şekilde özetler.
+                    </li>
+                     <li>
+                        <strong>İfade E (Doğru):</strong> Sözleşme özgürlüğü ilkesi gereği, ilk kira bedeli (ahlaka, hukuka aykırılık ve irade sakatlığı halleri dışında) serbestçe belirlenebilir.
+                    </li>
+                </ul>
+                <p>Sonuç olarak, B seçeneğindeki ifade, kanun metninin açık hükmüne aykırı bir koşul (sadece anlaşma yoksa) ekleyerek temel bir hata yapmaktadır.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answerSelected = false;
+
+        function selectAnswer(button) {
+            if (answerSelected) return;
+            answerSelected = true;
+
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.querySelector('.feedback');
+            
+            document.querySelectorAll('.option').forEach(btn => {
+                btn.style.cursor = 'default';
+                if (btn.getAttribute('data-correct') === 'true') {
+                    btn.style.backgroundColor = '#2ecc71';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#27ae60';
+                } else {
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#c0392b';
+                }
+            });
+
+            if (isCorrect) {
+                feedbackEl.textContent = 'Doğru!';
+                feedbackEl.style.color = '#27ae60';
+            } else {
+                feedbackEl.textContent = 'Yanlış. Doğru cevap yeşil ile işaretlenmiştir.';
+                feedbackEl.style.color = '#c0392b';
+            }
+        }
+
+        function goToQuestion(direction) {
+            const currentQuestion = 29;
+            let targetQuestion;
+            if (direction === 'prev') {
+                targetQuestion = currentQuestion - 1;
+            } else {
+                targetQuestion = currentQuestion + 1;
+            }
+            if (targetQuestion > 0 && targetQuestion <= 37) {
+                window.location.href = `question-${targetQuestion}.html`;
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                goToQuestion('prev');
+            } else if (event.key === 'ArrowRight') {
+                goToQuestion('next');
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            const solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

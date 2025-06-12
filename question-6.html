@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 6 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 6 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-5.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-7.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">6</div>
+            <div class="question-text">
+                I. Gelecekte doğacak veya koşula bağlı bir borç için, bu borç doğduğunda veya koşul gerçekleştiğinde hüküm ifade etmek üzere kefalet sözleşmesi kurulabilir. <br>II. Tam ehliyetsizlerin ne kendileri ne de yasal temsilcileri kefalet sözleşmesi yapabilirler. <br>III. Sınırlı ehliyetliler yasal danışmanın iznine bağlı olmaksızın kefalet sözleşmesi yapabilirler. <br>IV. Sınırlı ehliyetsizlerin kendi başlarına veya yasal temsilcileri aracılığıyla kefalet sözleşmesi yapmaları mümkün değildir. <br>V. Kefalet sözleşmesinde kefilin adı, sorumlu olduğu azamî miktar, kefalet tarihi ve müteselsil kefil kavramı mutlaka kefilin kendi el yazısıyla yer alması gereken unsurlardır. <br>VI. Kefalet sözleşmesinde kefilin ve alacaklının imzasının bulunması sözleşmenin geçerliliği için zorunlu unsurlardandır. <br><br>Kefalet sözleşmesinin şartlarına ilişkin aşağıda verilen bilgilerden hangisi/hangileri <strong>yanlıştır</strong>?
+            </div>
+            
+            <div class="options-container">
+                <div class="option" onclick="selectAnswer(this, 'A')">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">Yalnız III</div>
+                </div>
+
+                <div class="option" onclick="selectAnswer(this, 'B')">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">Yalnız I</div>
+                </div>
+
+                <div class="option" onclick="selectAnswer(this, 'C')">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">IV-V-VI</div>
+                </div>
+
+                <div class="option" onclick="selectAnswer(this, 'D')" data-correct="true">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">III-V-VI</div>
+                </div>
+
+                <div class="option" onclick="selectAnswer(this, 'E')">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">III-IV</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="feedback" class="feedback" style="display: none;"></div>
+
+        <div class="solution-toggle">
+            <button id="solutionBtn" class="button">Çözümü Gör</button>
+        </div>
+
+        <div id="solutionContainer" class="solution-container" style="display: none;">
+            <h2>Detaylı Çözüm</h2>
+            <p>
+                <strong>Doğru Cevap: D) III-V-VI</strong>
+                <br><br>
+                Bu soruda kefalet sözleşmesinin ehliyet ve şekil şartlarına ilişkin bilgilerin doğruluğu sorgulanmaktadır. Maddeleri tek tek inceleyelim:
+            </p>
+            <ul>
+                <li>
+                    <strong>I. İfade (Doğru):</strong> Türk Borçlar Kanunu (TBK) m. 582/2, gelecekte doğacak veya şarta bağlı bir borç için kefaletin geçerli olacağını açıkça düzenler. Bu nedenle bu ifade doğrudur.
+                </li>
+                <li>
+                    <strong>II. İfade (Doğru):</strong> Tam ehliyetsizler (ayırt etme gücü olmayanlar) kendileri adına hukuki işlem yapamazlar. Kefalet gibi kişiye sıkı sıkıya bağlı ve riskli bir işlemi yasal temsilcileri de onlar adına yapamaz. Bu, Türk Medeni Kanunu (TMK) m. 449'da vesayet altındakiler için açıkça yasaklanmıştır. Bu kural velayet için de geçerlidir. Dolayısıyla bu ifade doğrudur.
+                </li>
+                <li>
+                    <strong>III. İfade (Yanlış):</strong> "Sınırlı ehliyetliler" ifadesi, kendisine yasal danışman atanmış ergin kişileri ifade eder. Kefalet gibi önemli bir mali taahhüt, yasal danışmanın iznini gerektiren işlemlerden biridir. Bu nedenle izne bağlı olmaksızın yapabilecekleri ifadesi yanlıştır.
+                </li>
+                <li>
+                    <strong>IV. İfade (Doğru):</strong> "Sınırlı ehliyetsizler" (ayırt etme gücüne sahip küçükler ve kısıtlılar), yasal temsilcilerinin rızasıyla dahi kefalet sözleşmesi yapamazlar. Kefalet, TMK uyarınca onlar için "yasak işlemler" kategorisindedir. Bu nedenle ifade doğrudur.
+                </li>
+                <li>
+                    <strong>V. İfade (Yanlış):</strong> TBK m. 583, kefalet sözleşmesinin geçerliliği için kefilin kendi el yazısıyla yazması gereken unsurları sınırlı sayıda belirtmiştir: 1) Sorumlu olunan azami miktar, 2) Kefalet tarihi, 3) Müteselsil kefalet varsa bu sıfatla sorumlu olduğu. Kefilin adının el yazısıyla yazılması zorunlu değildir. Bu nedenle bu ifade yanlıştır.
+                </li>
+                <li>
+                    <strong>VI. İfade (Yanlış):</strong> Kefalet sözleşmesi, tek tarafa borç yükleyen bir sözleşmedir. Geçerliliği için sadece borç altına giren kefilin imzasının bulunması yeterlidir. Alacaklının imzasının bulunması bir geçerlilik şartı değildir. Bu nedenle bu ifade de yanlıştır.
+                </li>
+            </ul>
+            <p>
+                Sonuç olarak, III, V ve VI numaralı ifadeler hukuken yanlış bilgi içermektedir. Bu nedenle doğru cevap D seçeneğidir.
+            </p>
+        </div>
+
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    window.location.href = 'question-5.html';
+                    break;
+                case 'ArrowRight':
+                    window.location.href = 'question-7.html';
+                    break;
+                case 'Escape':
+                    window.location.href = 'index.html';
+                    break;
+                case 'Home':
+                    window.location.href = 'index.html';
+                    break;
+            }
+        });
+
+        // Option click effects
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove any previous selection
+                document.querySelectorAll('.option').forEach(opt => {
+                    opt.style.background = '#f8f9fa';
+                    opt.style.borderLeftColor = '#3498db';
+                });
+                
+                // Highlight selected option
+                this.style.background = '#e8f5e8';
+                this.style.borderLeftColor = '#27ae60';
+            });
+        });
+
+        function selectAnswer(element, option) {
+            const allOptions = document.querySelectorAll('.option');
+            allOptions.forEach(opt => {
+                opt.style.borderLeft = '4px solid #3498db';
+                opt.style.background = '#f8f9fa';
+            });
+
+            const isCorrect = element.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.getElementById('feedback');
+            
+            if (isCorrect) {
+                element.style.borderLeft = '4px solid #2ecc71';
+                element.style.background = '#e8f8f5';
+                feedbackEl.textContent = 'Doğru cevap!';
+                feedbackEl.style.color = '#2ecc71';
+            } else {
+                element.style.borderLeft = '4px solid #e74c3c';
+                element.style.background = '#fdedec';
+                feedbackEl.textContent = 'Yanlış cevap. Lütfen tekrar deneyin.';
+                feedbackEl.style.color = '#e74c3c';
+            }
+            feedbackEl.style.display = 'block';
+        }
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            var solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

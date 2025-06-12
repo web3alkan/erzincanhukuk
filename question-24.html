@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 24 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 24 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-23.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-25.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">24</div>
+            <div class="question-text">
+                M, 01.07.2019 tarihinde öğrenci K ile bir yıllık kira sözleşmesi yapar. Taraflar arasındaki sözleşmeye göre kira bedeli, her ayın yirmisinde ödenecektir. Evi tek başına kiralayan K'nın yanına bir süre sonra iki öğrenci daha taşınır. Okul döneminin başlamasıyla öğrenciler her akşam evde eğlenmeye başlar. Komşular, çok gürültü yaptıkları gerekçesiyle öğrencileri sürekli M'ye şikâyet eder. Bu arada banyoda su sızıntısı başlar. K, bunu önemsemez bir süre sonra sızıntı tüm banyoyu kaplar. Buna bağlı olarak duvardaki boyalar kabarır, kapı ve dolapların suyla temas eden yerleri şişer. Bundan sonra, K durumu M'ye bildirir. M, banyonun boyanması, dolap ve kapı tamirleri için 1000 TL masraf yapar.
+                <br><br>Bu olayla ilgili olarak;
+                <br>I. K, su sızıntısını zamanında bildirmediği için M'nin yaptığı 1000 TL masrafı tazmin etmekle yükümlüdür.
+                <br>II. M, komşulara rahatsızlık verdiği için K'ya yazılı bildirimde bulunarak en az otuz gün süre verip, aykırılığın devamı halinde sözleşmeyi feshedebileceğini ihtar edebilir.
+                <br>III. K'nın eve başka arkadaşlarını alması, alt kira yasağına aykırılık teşkil etmez.
+                <br>IV. M, gürültü nedeniyle herhangi bir ihtar ve süre vermeden sözleşmeyi derhal feshedebilir.
+                <br>V. K, banyodaki sızıntıdan kaynaklanan zarardan sorumlu değildir, çünkü bu kiralananın ayıbıdır.
+                <br><br>ifadelerinden hangisi/hangileri <strong>doğrudur?</strong>
+            </div>
+            
+             <div class="options-container">
+                <button class="option" onclick="selectAnswer(this)" data-correct="true">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">I ve II</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">I, II, III ve IV</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">I, III ve IV</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">I, III, IV ve V</div>
+                </button>
+                <button class="option" onclick="selectAnswer(this)" data-correct="false">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">I, III ve V</div>
+                </button>
+            </div>
+            
+            <div class="feedback" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+
+             <div class="solution-toggle">
+                <button id="solutionBtn" class="btn btn-nav">Çözümü Gör</button>
+            </div>
+
+            <div id="solutionContainer" class="solution-container" style="display: none;">
+                <h2>Detaylı Çözüm</h2>
+                <p><strong>Doğru Cevap: A) I ve II</strong></p>
+                <p>Bu olayda kiracı (K) ve kiraya veren (M) arasındaki ilişkide birden fazla hukuki sorun bulunmaktadır. İfadeleri tek tek inceleyelim:</p>
+                <ul>
+                    <li>
+                        <strong>İfade I (Doğru):</strong> Kiracı, kiralananı özenle kullanmakla yükümlüdür. Bu özen borcu kapsamında, giderilmesi kiraya verene ait olan ayıpları (su sızıntısı gibi) derhal bildirme yükümlülüğü de vardır (TBK m. 318). K, sızıntıyı zamanında bildirmeyerek zararın artmasına neden olmuştur. Bu nedenle, bildirimin zamanında yapılması halinde önlenebilecek olan zararı (1000 TL) karşılamakla yükümlüdür (TBK m. 318). Bu ifade doğrudur.
+                    </li>
+                    <li>
+                        <strong>İfade II (Doğru):</strong> Kiracı, kiralananı kullanırken komşulara saygı göstermekle yükümlüdür (TBK m. 316). Sürekli gürültü yaparak komşuları rahatsız etmek bu yükümlülüğün ihlalidir. Konut ve çatılı işyeri kiralarında kiraya veren, bu tür bir ihlal durumunda kiracıya yazılı olarak en az otuz gün süre vererek aykırılığın giderilmesini, aksi halde sözleşmeyi feshedeceğini ihtar edebilir (TBK m. 316/3). Bu ifade, kanunda belirtilen prosedürü doğru bir şekilde açıklamaktadır.
+                    </li>
+                    <li>
+                        <strong>İfade III (Yanlış):</strong> Kiracı, kiraya verenin yazılı rızası olmadıkça kiralananı başkasına kiralayamayacağı gibi, kullanım hakkını da devredemez (TBK m. 322). K'nın eve iki arkadaşını daha alması, kullanım hakkının zımni devri veya alt kira olarak değerlendirilebilir ve M'nin rızası olmadan yapıldığı için sözleşmeye aykırılık teşkil eder.
+                    </li>
+                    <li>
+                        <strong>İfade IV (Yanlış):</strong> Gürültü nedeniyle fesih, TBK m. 316/3'e göre "en az otuz günlük süre" verilerek yapılan yazılı ihtara bağlıdır. Kiracıya çekilmez derecede zarar verme gibi olağanüstü durumlar dışında, derhal fesih hakkı tanımaz. İfade bu nedenle yanlıştır.
+                    </li>
+                     <li>
+                        <strong>İfade V (Yanlış):</strong> Sızıntının kendisi bir ayıp olsa da, K'nın sorumluluğu bu ayıptan değil, bu ayıbı zamanında bildirmeyerek özen yükümlülüğünü ihlal etmekten ve zararın büyümesine neden olmaktan kaynaklanmaktadır. Bu nedenle K, artan zarardan sorumludur.
+                    </li>
+                </ul>
+                <p>Sonuç olarak, I ve II numaralı ifadeler doğru; III, IV ve V numaralı ifadeler ise yanlıştır. Soru, doğru olan ifadeleri sorduğu için doğru cevap "I ve II" seçeneğidir.</p>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answerSelected = false;
+
+        function selectAnswer(button) {
+            if (answerSelected) return;
+            answerSelected = true;
+
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+            const feedbackEl = document.querySelector('.feedback');
+            
+            document.querySelectorAll('.option').forEach(btn => {
+                btn.style.cursor = 'default';
+                if (btn.getAttribute('data-correct') === 'true') {
+                    btn.style.backgroundColor = '#2ecc71';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#27ae60';
+                } else {
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = '#c0392b';
+                }
+            });
+
+            if (isCorrect) {
+                feedbackEl.textContent = 'Doğru!';
+                feedbackEl.style.color = '#27ae60';
+            } else {
+                feedbackEl.textContent = 'Yanlış. Doğru cevap yeşil ile işaretlenmiştir.';
+                feedbackEl.style.color = '#c0392b';
+            }
+        }
+
+        function goToQuestion(direction) {
+            const currentQuestion = 24;
+            let targetQuestion;
+            if (direction === 'prev') {
+                targetQuestion = currentQuestion - 1;
+            } else {
+                targetQuestion = currentQuestion + 1;
+            }
+            if (targetQuestion > 0 && targetQuestion <= 37) {
+                window.location.href = `question-${targetQuestion}.html`;
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                goToQuestion('prev');
+            } else if (event.key === 'ArrowRight') {
+                goToQuestion('next');
+            }
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            const solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>

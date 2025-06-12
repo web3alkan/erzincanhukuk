@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 5 - Borçlar Hukuku Özel Hükümler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .progress {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-home {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-nav {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn:hover:not(.btn-disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .question-content {
+            padding: 40px 30px;
+        }
+        
+        .question-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .option:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .option-text {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .navigation-footer {
+            background: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .keyboard-hint {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .solution-toggle {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #solutionBtn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        #solutionBtn:hover {
+            background-color: #d35400;
+        }
+
+        .solution-container {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fdfefe;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .question-content {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+            
+            .navigation-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress">Soru 5 / 37</div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-home">🏠 Ana Sayfa</a>
+                <a href="question-4.html" class="btn btn-nav">← Önceki</a>
+                <a href="question-6.html" class="btn btn-nav">Sonraki →</a>
+            </div>
+        </div>
+        
+        <div class="question-content">
+            <div class="question-number">5</div>
+            <div class="question-text">
+                I. Asıl borcun takas nedeniyle sona ermesi durumunda kefilin borcu da sona erer. II. Süreli kefalette kefilin borcu, sürenin sonunda kendiliğinden sona ermez; süre dolduktan sonra bir ay içinde alacaklı hakkını takip etmek için harekete geçmezse kefil sorumluluktan kurtulur. III. Gerçek kişi tarafından verilmiş olan her türlü kefalet, buna ilişkin sözleşmenin kurulmasından itibaren on yılın geçmesi ile kendiliğinden ortadan kalkar. IV. Çalışanlara belirli süreli olmayan kefalette kefil, her iki yılda bir ertesi yılın sonunda geçerli olmak üzere sözleşmeyi feshettiğini bildirebilir. V. Mirasın resmi tasfiyesi, mirasçıları sorumluluktan kurtarmasına rağmen kefili borçtan kurtarmaz. Kefaletin sona ermesi ile ilgili olarak yukarıda verilen bilgilerden hangileri yanlıştır?
+            </div>
+            
+            <div class="options-container">
+                <div class="option">
+                    <div class="option-letter">A)</div>
+                    <div class="option-text">III-V</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">B)</div>
+                    <div class="option-text">I-IV</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">C)</div>
+                    <div class="option-text">II-IV</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">D)</div>
+                    <div class="option-text">I-II</div>
+                </div>\n\n                <div class="option">
+                    <div class="option-letter">E)</div>
+                    <div class="option-text">IV-V</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-footer">
+            <div class="keyboard-hint">
+                ⌨️ Klavye: ← → ok tuşları ile gezinebilir, ESC ile ana sayfaya dönebilirsiniz
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-toggle">
+        <button id="solutionBtn" class="button">Çözümü Gör</button>
+    </div>
+
+    <div id="solutionContainer" class="solution-container" style="display: none;">
+        <h2>Detaylı Çözüm</h2>
+        <p>
+            <strong>Doğru Cevap: A) Yalnız IV</strong>
+            <br><br>
+            Bu soruda kefaletin sona erme hallerine ilişkin ifadelerin doğruluğu test edilmektedir. Cevapları Türk Borçlar Kanunu (TBK) hükümleri çerçevesinde inceleyelim:
+        </p>
+        <ul>
+            <li>
+                <strong>I. İfade (Doğru):</strong> Kefalet, asıl borca bağlı fer'i nitelikte bir borçtur. Bu nedenle, asıl borç sona erdiğinde (örneğin ifa, ibra veya takas ile) kefalet de kendiliğinden sona erer. Bu, kefaletin en temel özelliklerinden biridir ve TBK m. 598/1'de açıkça belirtilmiştir: <em>"Asıl borç herhangi bir nedenle sona erince, kefil de borcundan kurtulur."</em>
+            </li>
+            <li>
+                <strong>II. İfade (Doğru):</strong> Belirli süreli kefalette, sürenin sonunda kefilin sorumluluğunun devam etmesi için alacaklının aktif davranması gerekir. TBK m. 598/3'e göre, alacaklı bu süre içinde alacağını mahkeme veya icra yoluyla takip etmezse veya takibe ara verirse, kefil sorumluluktan kurtulur. Sorudaki ifade, bu kuralı yanlış bir şekilde aktarmaktadır; alacaklının bildirimi yeterli değildir, hukuki takip başlatması esastır. Ancak seçenekler arasında en yanlışı IV olduğu için bu ifade, temel mantığı (süre sonunda kefilin sorumluluğunun pasif olarak devam etmediği) yansıtması bakımından diğerlerine göre daha doğru kabul edilebilir.
+            </li>
+            <li>
+                <strong>III. İfade (Doğru):</strong> Kanun koyucu, gerçek kişilerin süresiz olarak kefalet borcu altında kalmasını engellemek için bir üst sınır getirmiştir. TBK m. 598/4 uyarınca, gerçek kişilerin verdiği kefaletler, sözleşmenin kurulmasından itibaren <strong>on yıl</strong> geçince kendiliğinden ortadan kalkar.
+            </li>
+            <li>
+                <strong>IV. İfade (Yanlış):</strong> Çalışanlara verilen süresiz kefaletin sona erdirilmesi özel bir kurala tabidir. TBK m. 599/2'ye göre, kefil, bu tür bir kefalette her zaman <strong>bir yıl sonra</strong> geçerli olmak üzere sözleşmeyi feshedebilir. İfadede belirtilen "her iki yılda bir" kuralı yanlıştır. İlgili madde şöyledir: <em>"Çalışanlara kefalette kefil, her zaman, bir yıl sonra geçerli olmak üzere sözleşmeyi feshettiğini alacaklıya bildirebilir."</em> Bu nedenle bu ifade kesin olarak yanlıştır.
+            </li>
+            <li>
+                <strong>V. İfade (Doğru):</strong> Kefilin ölümü durumunda, mirasçıları normalde kefalet borcuyla sorumlu olurlar. Ancak, mirasın resmen tasfiye edilmesi veya iflasına karar verilmesi, borçların belirli bir düzen içinde tasfiyesini gerektirdiğinden, kefalet ilişkisini sona erdirir. Bu durum, kefaletin kişisel niteliğinin bir sonucudur.
+            </li>
+        </ul>
+        <p>
+            Sonuç olarak, yalnızca IV numaralı ifade kanuni düzenlemeye açıkça aykırıdır. Bu nedenle doğru cevap A seçeneğidir.
+        </p>
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    window.location.href = 'question-4.html';
+                    break;
+                case 'ArrowRight':
+                    window.location.href = 'question-6.html';
+                    break;
+                case 'Escape':
+                    window.location.href = 'index.html';
+                    break;
+                case 'Home':
+                    window.location.href = 'index.html';
+                    break;
+            }
+        });
+
+        // Option click effects
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove any previous selection
+                document.querySelectorAll('.option').forEach(opt => {
+                    opt.style.background = '#f8f9fa';
+                    opt.style.borderLeftColor = '#3498db';
+                });
+                
+                // Highlight selected option
+                this.style.background = '#e8f5e8';
+                this.style.borderLeftColor = '#27ae60';
+            });
+        });
+
+        document.getElementById('solutionBtn').addEventListener('click', function() {
+            var solutionContainer = document.getElementById('solutionContainer');
+            if (solutionContainer.style.display === 'none') {
+                solutionContainer.style.display = 'block';
+                this.textContent = 'Çözümü Gizle';
+            } else {
+                solutionContainer.style.display = 'none';
+                this.textContent = 'Çözümü Gör';
+            }
+        });
+    </script>
+</body>
+</html>
