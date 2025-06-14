@@ -3,49 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soru 14: Cebir - Ceza Hukuku Soru Bankası</title>
+    <title>Soru 14: Cebir</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1>Ceza Hukuku Özel Hükümler Soru Bankası</h1>
-    </header>
-
-    <main class="container">
-        <div class="question-container">
-            <div class="question-header">
-                <div class="topic-title">Konu: Hürriyete Karşı Suçlar</div>
-                <h1>Soru 14: Cebir</h1>
-            </div>
-            <p class="question-body">
-                Mağaza sahibi M, hırsızlık yaptığından şüphelendiği H'yi, polis gelene kadar beklemesi için zorla kolundan tutarak hareket etmesini engellemiştir. H bu sırada hafifçe yaralanmıştır. M'nin eylemi başka bir suçu (örn: kasten yaralama) oluşturmuyorsa, H'ye karşı zor kullanması hangi suçu oluşturur?
-            </p>
-            <div class="options">
-                <ul>
-                    <li>A) Kişiyi hürriyetinden yoksun kılma</li>
-                    <li>B) Kasten yaralama</li>
-                    <li>C) Cebir</li>
-                    <li>D) İşkence</li>
-                    <li>E) Meşru müdafaa olduğu için suç oluşmaz</li>
-                </ul>
-            </div>
-            <div class="button-container">
-                <button id="show-answer-btn" class="btn">Cevabı Göster</button>
-            </div>
-            <div id="answer-section" class="answer-section">
-                <h3>Doğru Cevap: C) Cebir</h3>
-                <p>
-                    <strong>Hukuki Açıklama:</strong> Cebir suçu, bir şeyi yapması veya yapmaması ya da kendisinin yapmasına müsaade etmesi için bir kişiye karşı zor kullanılmasıdır. M'nin, H'nin hareket etmesini zorla engellemesi, kasten yaralama suçunun unsurlarını aşmayan bir zor kullanma olduğu için TCK m. 108'deki cebir suçunu oluşturur.
-                </p>
-                <div class="law-text">
-                    <strong>TCK m. 108 - Cebir (Tam Metin):</strong><br>
-                    (1) Bir şeyi yapması veya yapmaması ya da kendisinin yapmasına müsaade etmesi için bir kişiye karşı cebir kullanılması halinde, kasten yaralama suçundan verilecek ceza üçte birinden yarısına kadar artırılarak hükmolunur.
-                </div>
-                
-                <div class="law-text">
-                    <strong>Şıklardaki Diğer Suçlara İlişkin Kanun Maddeleri:</strong><br><br>
-                    
-                    <strong>A) Kişiyi Hürriyetinden Yoksun Kılma - TCK m. 109:</strong><br>
+    <div class="container">
+        <div class="question-title">Soru 14: Cebir</div>
+        <div class="question-content">
+            <p>Mağaza sahibi M, hırsızlık yaptığından şüphelendiği H'yi, polis gelene kadar beklemesi için zorla kolundan tutarak hareket etmesini engellemiştir. H bu sırada hafifçe yaralanmıştır. M'nin eylemi başka bir suçu (örn: kasten yaralama) oluşturmuyorsa, H'ye karşı zor kullanması hangi suçu oluşturur?</p>
+            <ul>
+                <li>A) Kişiyi hürriyetinden yoksun kılma</li>
+                <li>B) Kasten yaralama</li>
+                <li>C) Cebir</li>
+                <li>D) İşkence</li>
+                <li>E) Meşru müdafaa olduğu için suç oluşmaz</li>
+            </ul>
+            <button onclick="showAnswer()">Cevabı Göster</button>
+            <div id="answer" class="answer" style="display: none;">
+                <p><strong>Doğru Cevap: C) Cebir</strong></p>
+                <p><strong>Hukuki Değerlendirme:</strong></p>
+                <p>Cebir suçu, bir şeyi yapması veya yapmaması ya da kendisinin yapmasına müsaade etmesi için bir kişiye karşı zor kullanılmasıdır. M'nin, H'nin hareket etmesini zorla engellemesi, kasten yaralama suçunun unsurlarını aşmayan bir zor kullanma olduğu için TCK m. 108'deki cebir suçunu oluşturur.</p>
+                <p><strong>İlgili Kanun Maddesi:</strong></p>
+                <p><strong>TCK m. 108 - Cebir:</strong><br>
+                    (1) Bir şeyi yapması veya yapmaması ya da kendisinin yapmasına müsaade etmesi için bir kişiye karşı cebir kullanılması halinde, kasten yaralama suçundan verilecek ceza üçte birinden yarısına kadar artırılarak hükmolunur.</p>
+                <p><strong>Şıklardaki Diğer Suçlara İlişkin Kanun Maddeleri:</strong></p>
+                <p><strong>A) Kişiyi Hürriyetinden Yoksun Kılma - TCK m. 109:</strong><br>
                     (1) Bir kimseyi hukuka aykırı olarak bir yere gitmek veya bir yerde kalmak hürriyetinden yoksun bırakan kişiye, bir yıldan beş yıla kadar hapis cezası verilir.<br>
                     (2) Suçun; özel hayatın gizliliğini ihlal edecek şekilde ses veya görüntü kaydedilmesi suretiyle işlenmesi halinde, üç yıldan yedi yıla kadar hapis cezası verilir.<br>
                     (3) Yukarıdaki fıkralarda tanımlanan suçların; örgütlü olarak işlenmesi halinde, verilecek ceza yarı oranında artırılır.<br><br>
@@ -57,21 +39,15 @@
                     
                     <strong>D) İşkence - TCK m. 94:</strong><br>
                     (1) Bir insana karşı insan onuruyla bağdaşmayan ve bedensel veya ruhsal yönden acı çekmesine yol açan davranışlarda bulunan kişi, üç yıldan on iki yıla kadar hapis cezası ile cezalandırılır.<br>
-                    (2) Suçun; kamu görevlisi tarafından, kişiyi suç işlemeye zorlamak, suç işlediğine dair beyanda bulunmaya zorlama, üçüncü kişiyi korkutma ve sindirme, işlediği suça karşılık cezalandırma amaçlarından biriyle işlenmesi halinde, sekiz yıldan on beş yıla kadar hapis cezası verilir.
-                </div>
+                    (2) Suçun; kamu görevlisi tarafından, kişiyi suç işlemeye zorlamak, suç işlediğine dair beyanda bulunmaya zorlama, üçüncü kişiyi korkutma ve sindirme, işlediği suça karşılık cezalandırma amaçlarından biriyle işlenmesi halinde, sekiz yıldan on beş yıla kadar hapis cezası verilir.</p>
             </div>
         </div>
-
-        <nav class="navigation">
-            <a href="soru_13.html" class="nav-link">&larr; Önceki Soru</a>
-            <a href="soru_15.html" class="nav-link">Sonraki Soru &rarr;</a>
-        </nav>
-    </main>
-
-    <footer>
-        <p>Yapay Zeka Destekli Asistan tarafından oluşturulmuştur.</p>
-    </footer>
-
+        <div class="navigation">
+            <a href="soru_13.html" class="nav-button">Önceki Soru</a>
+            <a href="../index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru_15.html" class="nav-button">Sonraki Soru</a>
+        </div>
+    </div>
     <script src="../script.js"></script>
 </body>
 </html> 

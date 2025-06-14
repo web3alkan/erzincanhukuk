@@ -3,81 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soru 24: Uyuşturucu Madde Ticareti - Ceza Hukuku Soru Bankası</title>
+    <title>Soru 24: Uyuşturucu veya Uyarıcı Madde İmal ve Ticareti</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1>Ceza Hukuku Özel Hükümler Soru Bankası</h1>
-    </header>
-
-    <main class="container">
-        <div class="question-container">
-            <div class="question-header">
-                <div class="topic-title">Konu: Kamunun Sağlığına Karşı Suçlar</div>
-                <h1>Soru 24: Uyuşturucu veya Uyarıcı Madde İmal ve Ticareti</h1>
-            </div>
-            <p class="question-body">
-                U, yurt dışından getirdiği bir miktar eroini, satmak amacıyla evinde depolamaktadır. Polis yaptığı baskında bu maddeleri ele geçirmiştir. U henüz satış yapamamıştır. U'nun eylemi hangi suçu oluşturur?
-            </p>
-            <div class="options">
-                <ul>
-                    <li>A) Kullanmak için uyuşturucu madde bulundurma</li>
-                    <li>B) Uyuşturucu madde ticaretine teşebbüs</li>
-                    <li>C) Tamamlanmış uyuşturucu madde ticareti</li>
-                    <li>D) Uyuşturucu kullanımını kolaylaştırma</li>
-                    <li>E) Fiil suç oluşturmaz</li>
-                </ul>
-            </div>
-            <div class="button-container">
-                <button id="show-answer-btn" class="btn">Cevabı Göster</button>
-            </div>
-            <div id="answer-section" class="answer-section">
-                <h3>Doğru Cevap: C) Tamamlanmış uyuşturucu madde ticareti</h3>
-                <p>
-                    <strong>Hukuki Açıklama:</strong> Uyuşturucu veya uyarıcı madde ticareti suçu, sadece satma eylemiyle değil, aynı zamanda satmak amacıyla ülkeye sokmak, depolamak, sevk etmek gibi seçimlik hareketlerle de tamamlanır. U'nun satmak amacıyla uyuşturucu maddeyi evinde bulundurması, suçun tamamlanması için yeterlidir.
-                </p>
-                <div class="law-text">
-                    <strong>TCK m. 188 - Uyuşturucu veya Uyarıcı Madde İmal ve Ticareti (Tam Metin):</strong><br>
-                    (1) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak imal veya ithal eden kişi, yirmi yıldan yirmipbeş yıla kadar hapis ve yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
-                    
-                    (2) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak ülke dışından getirip ülke içinde sevk ve nakli ile transit geçişini sağlayan kişi, onyıldan az olmamak üzere hapis ve bin günden yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
-                    
-                    (3) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak ülke içinde satan, satışa arz eden, başkalarına veren, sevk eden, nakleden, depolayan, satın alan, kabul eden, bulunduran kişi, on yıldan az olmamak üzere hapis ve bin günden yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
-                    
-                    (4) Bu maddenin birinci, ikinci ve üçüncü fıkralarında tanımlanan suçların birden fazla kişi tarafından birlikte işlenmesi halinde, verilecek hapis cezası on beş yıldan az olamaz.<br><br>
-                    
-                    (5) Bu maddenin birinci, ikinci ve üçüncü fıkralarında tanımlanan suçların bir suç örgütü faaliyeti çerçevesinde işlenmesi halinde, suç örgütünün yöneticisi konumundaki kişilere verilecek hapis cezası yirmi yıldan az olamaz.
-                </div>
+    <div class="container">
+        <div class="question-title">Soru 24: Uyuşturucu veya Uyarıcı Madde İmal ve Ticareti</div>
+        <div class="question-content">
+            <p>U, yurt dışından getirdiği bir miktar eroini, satmak amacıyla evinde depolamaktadır. Polis yaptığı baskında bu maddeleri ele geçirmiştir. U henüz satış yapamamıştır. U'nun eylemi hangi suçu oluşturur?</p>
+            <ul>
+                <li>A) Kullanmak için uyuşturucu madde bulundurma</li>
+                <li>B) Uyuşturucu madde ticaretine teşebbüs</li>
+                <li>C) Tamamlanmış uyuşturucu madde ticareti</li>
+                <li>D) Uyuşturucu kullanımını kolaylaştırma</li>
+                <li>E) Fiil suç oluşturmaz</li>
+            </ul>
+            <button onclick="showAnswer()">Cevabı Göster</button>
+            <div id="answer" class="answer" style="display: none;">
+                <p><strong>Doğru Cevap: C) Tamamlanmış uyuşturucu madde ticareti</strong></p>
+                <p><strong>Hukuki Açıklama:</strong> Uyuşturucu veya uyarıcı madde ticareti suçu, sadece satma eylemiyle değil, aynı zamanda satmak amacıyla ülkeye sokmak, depolamak, sevk etmek gibi seçimlik hareketlerle de tamamlanır. U'nun satmak amacıyla uyuşturucu maddeyi evinde bulundurması, suçun tamamlanması için yeterlidir.</p>
+                <p><strong>TCK m. 188 - Uyuşturucu veya Uyarıcı Madde İmal ve Ticareti (Tam Metin):</strong><br>
+                (1) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak imal veya ithal eden kişi, yirmi yıldan yirmibeş yıla kadar hapis ve yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
                 
-                <div class="law-text">
-                    <strong>Şıklardaki Diğer Suçlara İlişkin Kanun Maddeleri:</strong><br><br>
-                    
-                    <strong>A) Kullanmak için uyuşturucu madde bulundurma - TCK m. 191:</strong><br>
-                    (1) Kullanmak için uyuşturucu veya uyarıcı madde satın alan, kabul eden veya bulunduran ya da uyuşturucu veya uyarıcı madde kullanan kişi, iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.<br><br>
-                    
-                    <strong>B) Uyuşturucu madde ticaretine teşebbüs:</strong><br>
-                    Teşebbüs durumunda TCK m. 35 uyarınca ceza belirlenecektir. Ancak bu olayda fiil tamamlanmış suç niteliğindedir.<br><br>
-                    
-                    <strong>D) Uyuşturucu kullanımını kolaylaştırma - TCK m. 190:</strong><br>
-                    (1) Uyuşturucu veya uyarıcı madde kullanılması için yer, araç gereç sağlayan veya başka şekilde kolaylık gösteren kişi, iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.<br><br>
-                    
-                    <strong>E) Fiil suç oluşturmaz:</strong><br>
-                    Bu seçenek yanlıştır. Satma amacıyla uyuşturucu madde bulundurmak TCK m. 188/3 uyarınca suçtur ve tamamlanmış suç olarak değerlendirilir.
-                </div>
+                (2) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak ülke dışından getirip ülke içinde sevk ve nakli ile transit geçişini sağlayan kişi, onyıldan az olmamak üzere hapis ve bin günden yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
+                
+                (3) Uyuşturucu veya uyarıcı maddeleri ruhsatsız veya ruhsata aykırı olarak ülke içinde satan, satışa arz eden, başkalarına veren, sevk eden, nakleden, depolayan, satın alan, kabul eden, bulunduran kişi, on yıldan az olmamak üzere hapis ve bin günden yirmibin güne kadar adlî para cezası ile cezalandırılır.<br><br>
+                
+                (4) Bu maddenin birinci, ikinci ve üçüncü fıkralarında tanımlanan suçların birden fazla kişi tarafından birlikte işlenmesi halinde, verilecek hapis cezası on beş yıldan az olamaz.<br><br>
+                
+                (5) Bu maddenin birinci, ikinci ve üçüncü fıkralarında tanımlanan suçların bir suç örgütü faaliyeti çerçevesinde işlenmesi halinde, suç örgütünün yöneticisi konumundaki kişilere verilecek hapis cezası yirmi yıldan az olamaz.</p>
+                
+                <p><strong>Şıklardaki Diğer Suçlara İlişkin Kanun Maddeleri:</strong><br><br>
+                
+                <strong>A) Kullanmak için uyuşturucu madde bulundurma - TCK m. 191:</strong><br>
+                (1) Kullanmak için uyuşturucu veya uyarıcı madde satın alan, kabul eden veya bulunduran ya da uyuşturucu veya uyarıcı madde kullanan kişi, iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.<br><br>
+                
+                <strong>B) Uyuşturucu madde ticaretine teşebbüs:</strong><br>
+                Teşebbüs durumunda TCK m. 35 uyarınca ceza belirlenecektir. Ancak bu olayda fiil tamamlanmış suç niteliğindedir.<br><br>
+                
+                <strong>D) Uyuşturucu kullanımını kolaylaştırma - TCK m. 190:</strong><br>
+                (1) Uyuşturucu veya uyarıcı madde kullanılması için yer, araç gereç sağlayan veya başka şekilde kolaylık gösteren kişi, iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.<br><br>
+                
+                <strong>E) Fiil suç oluşturmaz:</strong><br>
+                Bu seçenek yanlıştır. Satma amacıyla uyuşturucu madde bulundurmak TCK m. 188/3 uyarınca suçtur ve tamamlanmış suç olarak değerlendirilir.</p>
             </div>
         </div>
-
-        <nav class="navigation">
-            <a href="soru_23.html" class="nav-link">&larr; Önceki Soru</a>
-            <a href="soru_25.html" class="nav-link">Sonraki Soru &rarr;</a>
-        </nav>
-    </main>
-
-    <footer>
-        <p>Yapay Zeka Destekli Asistan tarafından oluşturulmuştur.</p>
-    </footer>
-
+        <div class="navigation">
+            <a href="soru_23.html" class="nav-button">Önceki Soru</a>
+            <a href="../index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru_25.html" class="nav-button">Sonraki Soru</a>
+        </div>
+    </div>
     <script src="../script.js"></script>
 </body>
-</html> 
+</html>
