@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 86 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 86</h1>
+        
+        <div class="question">
+            TTK Madde 342'ye göre ayni sermayeye getirilemeyecek unsurlar hangileridir?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Sadece hizmet ve emek</div>
+            <div class="option">B) Hizmet, emek, itibar ve vadesi gelmemiş alacaklar</div>
+            <div class="option">C) Sadece itibar ve vadesi gelmemiş alacaklar</div>
+            <div class="option">D) Sadece taşınmaz mallar</div>
+            <div class="option">E) Sadece fikri mülkiyet hakları</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Hizmet, emek, itibar ve vadesi gelmemiş alacaklar</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK Madde 342, ayni sermayeye getirilemeyecek unsurları açık şekilde belirtmektedir. Bu kısıtlamalar, sermayenin objektif değerinin belirlenmesi ve korunması amacıyla konulmuştur.</p>
+            
+            <h5>Ayni Sermayeye Getirilemeyecek Unsurlar:</h5>
+            <ul>
+                <li><strong>Hizmet:</strong> Kişinin gelecekte yapacağı iş ve hizmetler</li>
+                <li><strong>Emek:</strong> Fiziksel veya zihinsel çalışma gücü</li>
+                <li><strong>İtibar:</strong> Kişisel veya ticari itibaret, şöhret</li>
+                <li><strong>Vadesi Gelmemiş Alacaklar:</strong> Henüz tahsil edilebilir olmayan alacaklar</li>
+            </ul>
+            
+            <h5>Bu Kısıtlamanın Gerekçeleri:</h5>
+            <ul>
+                <li><strong>Değerleme Zorluğu:</strong> Bu unsurların objektif değerinin belirlenmesi güç</li>
+                <li><strong>Belirsizlik:</strong> Gelecekteki performans garantisi verilemez</li>
+                <li><strong>Alacaklı Koruması:</strong> Sermayenin gerçek değerinin korunması</li>
+                <li><strong>Hukuki Güvenlik:</strong> Hak sahipliğinin netliği</li>
+            </ul>
+            
+            <h5>Ayni Sermayeye Getirilebilecek Unsurlar:</h5>
+            <ul>
+                <li><strong>Taşınmaz Mallar:</strong> Arsa, bina, tarla vb.</li>
+                <li><strong>Taşınır Mallar:</strong> Makine, teçhizat, araç vb.</li>
+                <li><strong>Fikri Mülkiyet Hakları:</strong> Patent, marka, telif hakkı</li>
+                <li><strong>Vadesi Gelmiş Alacaklar:</strong> Tahsil edilebilir alacaklar</li>
+                <li><strong>Menkul Kıymetler:</strong> Hisse senedi, tahvil vb.</li>
+                <li><strong>İş İlişkileri:</strong> Müşteri portföyü, sözleşmeler</li>
+            </ul>
+            
+            <h5>Değerleme ve Kontrol:</h5>
+            <ul>
+                <li>Ayni sermaye eksper raporu ile değerlendirilmelidir</li>
+                <li>Bağımsız uzman tarafından inceleme yapılır</li>
+                <li>Gerçek değerin tespit edilmesi gerekir</li>
+                <li>Abartılı değerlemeye karşı koruma sağlanır</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 342 - Ayni Sermayeye Getirilemeyecek Unsurlar:</strong></p>
+                <p>"Hizmet, emek, itibar ve vadesi gelmemiş alacaklar ayni sermaye olarak getirilemez."</p>
+                
+                <p><strong>TTK Madde 341 - Ayni Sermaye:</strong></p>
+                <p>"Anonim şirkete ayni sermaye olarak para dışındaki her türlü ekonomik değerler getirilebilir."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>Ayni sermaye kısıtlamaları, şirket hukukunun temel ilkelerinden biri olan "sermayenin korunması" ilkesinin bir yansımasıdır. Hizmet, emek, itibar ve vadesi gelmemiş alacakların ayni sermaye olarak kabul edilmemesi, sermayenin objektif ve belirlenebilir değerinin korunmasını amaçlar.</p>
+                
+                <p><strong>Hizmet ve Emek Yasağının Gerekçeleri:</strong></p>
+                <ul>
+                    <li>Gelecekteki performansın belirsizliği</li>
+                    <li>Objektif değerleme güçlüğü</li>
+                    <li>Kişiye bağlılık sorunu</li>
+                    <li>Transfer edilebilirlik problemi</li>
+                </ul>
+                
+                <p><strong>İtibar Yasağının Gerekçeleri:</strong></p>
+                <ul>
+                    <li>Sübjektif değerleme sorunu</li>
+                    <li>Zamanla değişkenlik</li>
+                    <li>Ölçülebilirlik zorluğu</li>
+                    <li>Hukuki belirsizlik</li>
+                </ul>
+                
+                <p><strong>Vadesi Gelmemiş Alacak Yasağının Gerekçeleri:</strong></p>
+                <ul>
+                    <li>Tahsil edilebilirlik garantisinin bulunmaması</li>
+                    <li>Borçlunun ödeme gücü belirsizliği</li>
+                    <li>Gelecekteki değer dalgalanmaları</li>
+                    <li>Likidite sorunu</li>
+                </ul>
+                
+                <p><strong>Ayni Sermaye Değerleme Süreci:</strong></p>
+                <ul>
+                    <li>Bağımsız eksper raporu hazırlanması</li>
+                    <li>Objektif değerleme yöntemlerinin kullanılması</li>
+                    <li>Piyasa değerinin tespit edilmesi</li>
+                    <li>Abartılı değerlemeye karşı koruma</li>
+                </ul>
+                
+                <p><strong>Yasaklı Unsurlar İçin Alternatifler:</strong></p>
+                <ul>
+                    <li><strong>Hizmet/Emek:</strong> Çalışma sözleşmesi ile istihdam</li>
+                    <li><strong>İtibar:</strong> Danışmanlık sözleşmesi</li>
+                    <li><strong>Vadesi Gelmemiş Alacak:</strong> Vade sonrası devir</li>
+                    <li><strong>Gelecekteki Getiriler:</strong> Başarı primi sistemi</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 341: Ayni sermaye tanımı</li>
+                    <li>TTK Madde 342: Getirilemeyecek unsurlar</li>
+                    <li>TTK Madde 343: Değerleme kuralları</li>
+                    <li>TTK Madde 344: Eksper raporu</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru85.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru87.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 41 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 41</h1>
+        
+        <div class="question">
+            Adi şirketin sona ermesinde "infisah" ve "fesih" arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) İnfisah ortakların iradesi ile, fesih kanun gereği gerçekleşir</div>
+            <div class="option">B) Fesih ortakların iradesi ile, infisah kanun gereği gerçekleşir</div>
+            <div class="option">C) Her ikisi de ortakların iradesi ile gerçekleşir</div>
+            <div class="option">D) Her ikisi de kanun gereği gerçekleşir</div>
+            <div class="option">E) Aralarında hiçbir fark yoktur</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Fesih ortakların iradesi ile, infisah kanun gereği gerçekleşir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TBK madde 656-657'ye göre adi şirketin sona ermesi iki şekilde gerçekleşir: İnfisah kanun gereği kendiliğinden gerçekleşen sona erme halleridir (süre sonu, amacın elde edilmesi gibi). Fesih ise ortakların iradesi ile şirketi sona erdirmeleridir. Bu ayrım hukuki sonuçları açısından önemlidir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>İnfisah ve Fesih Ayrımı:</strong></p>
+                
+                <p><strong>TBK Madde 656 - Şirketin Sona Ermesi:</strong></p>
+                <p>Şirket aşağıdaki sebeplerle sona erer:</p>
+                
+                <p><strong>İNFISAH SEBEPLERLEDİ (Kanun Gereği):</strong></p>
+                <ul>
+                    <li>Sürenin dolması</li>
+                    <li>Amacın elde edilmesi</li>
+                    <li>Amacın imkansızlaşması</li>
+                    <li>Ortakların ölümü (sözleşmede hakü külüm ile devam hükmü yoksa)</li>
+                    <li>Tek ortakta toplanma</li>
+                </ul>
+                
+                <p><strong>FESİH SEBEPLERLEDİ (Ortakların İradesi):</strong></p>
+                <ul>
+                    <li>Ortakların oybirliği ile fesih</li>
+                    <li>Haklı sebeplerle fesih</li>
+                    <li>Fesih ihbarı (belirsiz süreli şirketlerde)</li>
+                    <li>Mahkeme kararı ile fesih</li>
+                </ul>
+                
+                <p><strong>Hukuki Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>İnfisah:</strong> Otomatik sona erme, beyan gerekmez</li>
+                    <li><strong>Fesih:</strong> İrade beyanı gerekir</li>
+                    <li><strong>Tescil:</strong> Her ikisinde de gerekir</li>
+                    <li><strong>Tasfiye:</strong> Her ikisinde de başlar</li>
+                </ul>
+                
+                <p><strong>TBK Madde 657 - Haklı Sebeplerle Fesih:</strong></p>
+                <p>Her ortak haklı sebeplerle şirketin feshini mahkemeden isteyebilir.</p>
+                
+                <p><strong>Haklı Sebepler:</strong></p>
+                <ul>
+                    <li>Diğer ortakların ağır kusurlu davranışı</li>
+                    <li>Rekabet yasağının ihlali</li>
+                    <li>Güveni sarsıcı fiiller</li>
+                    <li>Şirket amacına aykırı davranışlar</li>
+                    <li>Ortaklık ilişkisini sürdürmede çekilmez hal</li>
+                </ul>
+                
+                <p><strong>Belirsiz Süreli Şirketlerde Fesih:</strong></p>
+                <ul>
+                    <li>6 ay önceden ihbar</li>
+                    <li>Hesap döneminin sonu</li>
+                    <li>Haklı sebep varsa derhal fesih</li>
+                    <li>Fesih hakkı sınırlanamaz</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TBK Madde 658-673: Tasfiye hükümleri</li>
+                    <li>TTK Madde 252-256: Tescil işlemleri</li>
+                    <li>HMK: Fesih davaları</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru40.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru42.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

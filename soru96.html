@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 96 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 96</h1>
+        
+        <div class="question">
+            Genel kurul toplantısında vekalet ile temsil konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Vekalet, yazılı şekilde verilmelidir</div>
+            <div class="option">B) Vekalet, belirli bir genel kurul toplantısı için geçerlidir</div>
+            <div class="option">C) Vekalet, pay sahibi olmayan kişiler tarafından da kullanılabilir</div>
+            <div class="option">D) Vekalet, her zaman geri alınabilir</div>
+            <div class="option">E) Vekalet belgesi şirkete ibraz edilmelidir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) Vekalet, pay sahibi olmayan kişiler tarafından da kullanılabilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre vekalet yoluyla temsilde vekil, kural olarak pay sahibi olmalıdır. Vekalet, pay sahibi olmayan kişiler tarafından kullanılamaz. Bu, şirket yönetiminin pay sahipleri tarafından gerçekleştirilmesi ilkesinin bir gereğidir.</p>
+            
+            <h5>Vekaletin Şartları:</h5>
+            <ul>
+                <li><strong>Yazılı Şekil:</strong> Vekalet yazılı olarak verilmelidir</li>
+                <li><strong>Belirli Toplantı:</strong> Belirli bir genel kurul toplantısı için geçerli</li>
+                <li><strong>Pay Sahibi Vekillik:</strong> Vekil, kural olarak pay sahibi olmalı</li>
+                <li><strong>İbraz Zorunluluğu:</strong> Vekalet belgesi şirkete ibraz edilmeli</li>
+                <li><strong>Geri Alınabilirlik:</strong> Vekalet her zaman geri alınabilir</li>
+            </ul>
+            
+            <h5>Vekalet Belgesi İçeriği:</h5>
+            <ul>
+                <li><strong>Kimlik Bilgileri:</strong> Vekil veren ve vekilin kimlik bilgisi</li>
+                <li><strong>Toplantı Tarihi:</strong> Hangi genel kurul toplantısı için</li>
+                <li><strong>Yetki Kapsamı:</strong> Hangi konularda oy kullanabileceği</li>
+                <li><strong>İmza:</strong> Vekil verenin imzası</li>
+                <li><strong>Tarih:</strong> Vekalet belgesinin düzenlenme tarihi</li>
+            </ul>
+            
+            <h5>Vekaletin Sınırları:</h5>
+            <ul>
+                <li><strong>Tek Toplantı:</strong> Sadece belirtilen toplantı için geçerli</li>
+                <li><strong>Devir Yasağı:</strong> Vekil, yetkisini başkasına devredemez</li>
+                <li><strong>Şahsi Kullanım:</strong> Vekil şahsen kullanmalıdır</li>
+                <li><strong>Çıkar Çatışması:</strong> Çıkar çatışması halinde kullanalamaz</li>
+            </ul>
+            
+            <h5>İstisna Durumlar:</h5>
+            <ul>
+                <li><strong>Yönetim Kurulu Üyeleri:</strong> Pay sahibi olmasa da vekil olabilir</li>
+                <li><strong>Avukatlar:</strong> Mesleki temsil kapsamında</li>
+                <li><strong>Eş ve Çocuklar:</strong> Aile üyeleri için istisna</li>
+                <li><strong>Esas Sözleşme:</strong> Özel düzenlemeler olabilir</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 428 - Temsil:</strong></p>
+                <p>"Pay sahibi, genel kurulda kendisini bir vekil ile temsil ettirebilir. Vekil, kural olarak pay sahibi olmalıdır."</p>
+                
+                <p><strong>TTK Madde 429 - Vekalet Belgesi:</strong></p>
+                <p>"Vekaletname yazılı olmalı ve şirkete ibraz edilmelidir. Vekalet belirli bir genel kurul toplantısı için geçerlidir."</p>
+                
+                <p><strong>Vekalet Sisteminin Amacı:</strong></p>
+                <ul>
+                    <li><strong>Katılım Kolaylığı:</strong> Uzakta olan pay sahiplerinin katılımı</li>
+                    <li><strong>Yönetim Hakkı:</strong> Pay sahipliği haklarının kullanımı</li>
+                    <li><strong>Demokratik Süreç:</strong> Karar alma sürecine katılım</li>
+                    <li><strong>Kontrol Mekanizması:</strong> Şirket yönetiminin denetimi</li>
+                </ul>
+                
+                <p><strong>Vekaletin Hukuki Niteliği:</strong></p>
+                <ul>
+                    <li><strong>İrade Beyanı:</strong> Tek taraflı hukuki işlem</li>
+                    <li><strong>Şekil Bağlı:</strong> Yazılı şekil şartı</li>
+                    <li><strong>Geri Alınabilir:</strong> İstediği zaman iptal edilebilir</li>
+                    <li><strong>Şahsi Hak:</strong> Devredilemez nitelikte</li>
+                </ul>
+                
+                <p><strong>Vekalet Vermenin Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Oy Hakkı Devri:</strong> Oy kullanma yetkisi vekile geçer</li>
+                    <li><strong>Bilgi Alma:</strong> Vekil, pay sahibi adına bilgi alabilir</li>
+                    <li><strong>Sorumluluk:</strong> Vekil, talimatları yerine getirmekle yükümlü</li>
+                    <li><strong>Hesap Verme:</strong> Vekil, yaptıklarından hesap verir</li>
+                </ul>
+                
+                <p><strong>Vekaletin Sona Ermesi:</strong></p>
+                <ul>
+                    <li><strong>Toplantı Sonu:</strong> Genel kurul toplantısı bitiminde</li>
+                    <li><strong>Geri Alma:</strong> Pay sahibinin geri alması</li>
+                    <li><strong>Vekil Reddi:</strong> Vekilin görevi reddetmesi</li>
+                    <li><strong>Ölüm-Gaiplik:</strong> Tarafların ölümü veya gaipliği</li>
+                </ul>
+                
+                <p><strong>Çıkar Çatışması Durumları:</strong></p>
+                <ul>
+                    <li>Vekil kendi adına pay sahibi ise dikkatli olmalı</li>
+                    <li>Vekalet verenle çıkar çatışması varsa kullanamaz</li>
+                    <li>Şirketle iş ilişkisi olan vekilin durumu</li>
+                    <li>Aile üyeleri arasındaki vekalet ilişkisi</li>
+                </ul>
+                
+                <p><strong>Vekalet Belgesi Denetimi:</strong></p>
+                <ul>
+                    <li><strong>Şekil Kontrolü:</strong> Yazılı şekil şartının kontrolü</li>
+                    <li><strong>İmza Kontrolü:</strong> İmza doğrulaması</li>
+                    <li><strong>Yetki Kontrolü:</strong> Vekil olma yeterliliği</li>
+                    <li><strong>Süre Kontrolü:</strong> Vekaletin geçerlilik süresi</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 428: Temsil</li>
+                    <li>TTK Madde 429: Vekalet belgesi</li>
+                    <li>TTK Madde 430: Vekaletin kapsamı</li>
+                    <li>TBK Madde 502 vd.: Vekalet sözleşmesi</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru95.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru97.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

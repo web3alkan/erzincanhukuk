@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 16 - Temsil ve Yönetim Yetkileri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 16</div>
+        
+        <div class="question-text">
+            Anonim şirketlerde temsil yetkisi ile ilgili aşağıdakilerden hangisi yanlıştır?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Temsil yetkisi esas sözleşmede düzenlenir</li>
+            <li onclick="checkAnswer(this, false)">B) Yönetim kurulu üyelerinin en az biri temsil yetkisine sahip olmalıdır</li>
+            <li onclick="checkAnswer(this, true)">C) Temsil yetkisi sadece yönetim kurulu üyelerine verilebilir</li>
+            <li onclick="checkAnswer(this, false)">D) Temsil yetkisi münferiden veya müştereken kullanılabilir</li>
+            <li onclick="checkAnswer(this, false)">E) Temsil yetkisi ticaret siciline tescil edilir</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: C</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>TTK madde 367'ye göre, temsil yetkisi sadece yönetim kurulu üyelerine değil, müdürler ve diğer kişilere de verilebilir. Bu nedenle C seçeneği yanlıştır.</p>
+                
+                <p><strong>Temsil yetkisi ile ilgili önemli noktalar:</strong></p>
+                <ul>
+                    <li><strong>Yetki sahipleri:</strong> Yönetim kurulu üyeleri, müdürler veya üçüncü kişiler</li>
+                    <li><strong>Düzenleme:</strong> Esas sözleşmede belirtilir</li>
+                    <li><strong>Zorunluluk:</strong> En az bir yönetim kurulu üyesinin temsil yetkisi olmalı</li>
+                    <li><strong>Kullanım şekli:</strong> Münferiden (tek başına) veya müştereken (birlikte) kullanılabilir</li>
+                    <li><strong>Tescil:</strong> Ticaret siciline tescil edilir ve ilan olunur</li>
+                </ul>
+                
+                <p><strong>Temsil yetkisinin türleri:</strong></p>
+                <ul>
+                    <li><strong>Münferit temsil:</strong> Tek başına imza yetkisi</li>
+                    <li><strong>Müşterek temsil:</strong> İki veya daha fazla kişinin birlikte imza yetkisi</li>
+                    <li><strong>Grup temsil:</strong> Belirli gruplardan kişilerin birlikte temsil yetkisi</li>
+                </ul>
+                
+                <p>Temsil yetkisi, şirketin üçüncü kişilerle olan ilişkilerinde kimlerin şirket adına hukuki işlem yapabileceğini belirleyen önemli bir konudur.</p>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 367 - Temsil</strong>
+
+(1) Şirketin temsil edilme biçimi esas sözleşmede gösterilir.
+(2) Yönetim kurulu üyelerinden en az biri temsil yetkisine sahip olmalıdır.
+(3) Esas sözleşmede aksine hüküm bulunmadıkça, temsil yetkisi bulunan her yönetim kurulu üyesi şirketi münferiden temsil eder.
+(4) Temsil yetkisi müdürlere ve diğer kişilere de verilebilir.
+
+<strong>TTK Madde 368 - Temsil yetkisinin tescili</strong>
+
+(1) Temsil yetkisinin verilebileceği kişiler ile bu yetkinin kullanılma biçimi esas sözleşmede belirtilir ve ticaret siciline tescil edilir.
+(2) Temsil yetkisinin kime verildiği de ticaret siciline tescil edilir ve ticaret sicili gazetesinde ilan olunur.
+
+<strong>TTK Madde 371 - Temsil yetkisinin kısıtlanması</strong>
+
+(1) Temsil yetkisinin kısıtlanması iyiniyetli üçüncü kişilere karşı ileri sürülemez.
+(2) Temsil yetkisinin devri caiz değildir.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru15.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru17.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[2].classList.add('correct'); // C şıkkı (index 2)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

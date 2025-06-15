@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 100 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 100</h1>
+        
+        <div class="question">
+            Sermaye artırımı konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Genel kurul kararı ile yapılır</div>
+            <div class="option">B) Rüçhan hakkı pay sahiplerine tanınır</div>
+            <div class="option">C) Sermaye artırımı esas sözleşme değişikliği gerektirir</div>
+            <div class="option">D) Sadece nakit ile yapılabilir</div>
+            <div class="option">E) Tescil ve ilan edilmelidir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Sadece nakit ile yapılabilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre sermaye artırımı sadece nakit ile değil, çeşitli şekillerde yapılabilir. Ayni sermaye, alacakların sermayeye dönüştürülmesi, iç kaynaklardan artırım gibi farklı yöntemler kullanılabilir.</p>
+            
+            <h5>Sermaye Artırım Yöntemleri:</h5>
+            <ul>
+                <li><strong>Nakit Sermaye:</strong> Para ile sermaye artırımı</li>
+                <li><strong>Ayni Sermaye:</strong> Mal varlığı ile sermaye artırımı</li>
+                <li><strong>Alacak Mahsubu:</strong> Alacakların sermayeye dönüştürülmesi</li>
+                <li><strong>İç Kaynaklardan:</strong> Yedek akçelerden artırım</li>
+                <li><strong>Karşılıksız:</strong> Bedelsiz sermaye artırımı</li>
+            </ul>
+            
+            <h5>Sermaye Artırımı Şartları:</h5>
+            <ul>
+                <li><strong>Genel Kurul Kararı:</strong> Ağırlaştırılmış çoğunlukla karar</li>
+                <li><strong>Esas Sözleşme Değişikliği:</strong> Tüzük değişikliği gerekir</li>
+                <li><strong>Rüçhan Hakkı:</strong> Mevcut pay sahiplerine öncelik</li>
+                <li><strong>Tescil ve İlan:</strong> Resmi işlemler</li>
+                <li><strong>Tam Ödeme:</strong> Eski sermayenin tam ödenmesi</li>
+            </ul>
+            
+            <h5>Rüçhan Hakkı:</h5>
+            <ul>
+                <li><strong>Tanım:</strong> Yeni çıkarılan paylara öncelikli alma hakkı</li>
+                <li><strong>Amaç:</strong> Mevcut pay sahiplerinin oranını koruma</li>
+                <li><strong>Kapsam:</strong> Sermaye oranında rüçhan hakkı</li>
+                <li><strong>Süreli Hak:</strong> Belirli süre içinde kullanılmalı</li>
+                <li><strong>Devir:</strong> Rüçhan hakkı devir edilebilir</li>
+            </ul>
+            
+            <h5>Ayni Sermaye Artırımı:</h5>
+            <ul>
+                <li><strong>Değer Biçimi:</strong> Ayni sermayenin değerlendirilmesi</li>
+                <li><strong>Uzman Raporu:</strong> Bağımsız uzman değerlendirmesi</li>
+                <li><strong>Devir:</strong> Mal varlığının şirkete devri</li>
+                <li><strong>Sorumluluk:</strong> Değer biçimi sorumluluğu</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 456 - Sermaye Artırımı:</strong></p>
+                <p>"Sermaye artırımı genel kurulun kararı ile yapılır. Artırım nakit, ayni sermaye veya iç kaynaklardan yapılabilir."</p>
+                
+                <p><strong>TTK Madde 461 - Rüçhan Hakkı:</strong></p>
+                <p>"Sermaye artırımında yeni çıkarılan payları alma hakkı, pay sahiplerine sermaye payları oranında rüçhan hakkı olarak tanınır."</p>
+                
+                <p><strong>Sermaye Artırımının Amaçları:</strong></p>
+                <ul>
+                    <li><strong>Finansman:</strong> Şirketin finansman ihtiyacını karşılama</li>
+                    <li><strong>Büyüme:</strong> İş hacmini genişletme</li>
+                    <li><strong>Yatırım:</strong> Yeni yatırımlar için kaynak</li>
+                    <li><strong>Borç Azaltma:</strong> Borç-özkaynak oranını iyileştirme</li>
+                </ul>
+                
+                <p><strong>Nakit Sermaye Artırımı:</strong></p>
+                <ul>
+                    <li><strong>Ödeme Yöntemi:</strong> Para ile ödeme</li>
+                    <li><strong>Taahhüt:</strong> Pay sahiplerinin taahhüdü</li>
+                    <li><strong>Ödeme Süresi:</strong> Belirli süre içinde ödeme</li>
+                    <li><strong>İhraç Primi:</strong> Nominal değer üzerinde ihraç</li>
+                </ul>
+                
+                <p><strong>Ayni Sermaye Artırımı Süreci:</strong></p>
+                <ul>
+                    <li><strong>Mal Varlığı Tespiti:</strong> Hangi varlıklar sermaye olacak</li>
+                    <li><strong>Değer Biçimi:</strong> Uzman tarafından değerlendirme</li>
+                    <li><strong>Rapor Hazırlama:</strong> Değer biçimi raporu</li>
+                    <li><strong>Genel Kurul Kararı:</strong> Ayni sermaye kabulü</li>
+                    <li><strong>Devir İşlemi:</strong> Hukuki devir işlemleri</li>
+                </ul>
+                
+                <p><strong>İç Kaynaklardan Artırım:</strong></p>
+                <ul>
+                    <li><strong>Yedek Akçe:</strong> Birikmiş yedek akçelerden</li>
+                    <li><strong>Emisyon Primi:</strong> İhraç primlerinden</li>
+                    <li><strong>Yeniden Değerleme:</strong> Varlık yeniden değerleme farkı</li>
+                    <li><strong>Bedelsiz Pay:</strong> Mevcut pay sahiplerine bedelsiz</li>
+                </ul>
+                
+                <p><strong>Rüçhan Hakkının Kullanımı:</strong></p>
+                <ul>
+                    <li><strong>Kullanım Süresi:</strong> Belirli süre içinde kullanım</li>
+                    <li><strong>Orantılı Hak:</strong> Sermaye payı oranında</li>
+                    <li><strong>Kısmi Kullanım:</strong> Kısmen de kullanılabilir</li>
+                    <li><strong>Devir:</strong> Başkasına devir edilebilir</li>
+                </ul>
+                
+                <p><strong>Rüçhan Hakkının Sınırlandırılması:</strong></p>
+                <ul>
+                    <li><strong>Şirket Yararı:</strong> Şirket yararı gerektirirse</li>
+                    <li><strong>Özel Nedenler:</strong> Objektif gerekçeler</li>
+                    <li><strong>Genel Kurul Kararı:</strong> Özel çoğunlukla karar</li>
+                    <li><strong>Tazminat:</strong> Uygun tazminat ödenmeli</li>
+                </ul>
+                
+                <p><strong>Sermaye Artırımı Süreci:</strong></p>
+                <ul>
+                    <li><strong>Yönetim Kurulu Teklifi:</strong> Artırım teklifinin hazırlanması</li>
+                    <li><strong>Genel Kurul Daveti:</strong> Artırım için genel kurul</li>
+                    <li><strong>Genel Kurul Kararı:</strong> Artırım kararının alınması</li>
+                    <li><strong>Rüçhan Hakkı Süreci:</strong> Pay sahiplerine rüçhan hakkı</li>
+                    <li><strong>Ödeme:</strong> Sermaye bedelinin ödenmesi</li>
+                    <li><strong>Tescil:</strong> Ticaret sicilinde tescil</li>
+                </ul>
+                
+                <p><strong>Sermaye Artırımının Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Artışı:</strong> Şirket sermayesinin artması</li>
+                    <li><strong>Pay Sayısı:</strong> Dolaşımdaki pay sayısının artması</li>
+                    <li><strong>Oy Gücü:</strong> Oy dağılımının değişmesi</li>
+                    <li><strong>Kar Payı:</strong> Kar payı haklarının yeniden dağılımı</li>
+                </ul>
+                
+                <p><strong>Sermaye Artırımı Türleri:</strong></p>
+                <ul>
+                    <li><strong>Adi Sermaye Artırımı:</strong> Normal prosedürle yapılan</li>
+                    <li><strong>Şartlı Sermaye Artırımı:</strong> Belirli şartların gerçekleşmesi</li>
+                    <li><strong>Yetkili Sermaye:</strong> Yönetim kuruluna yetki verilmesi</li>
+                    <li><strong>Çalışan Payları:</strong> Çalışanlar için özel paylar</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 456-466: Sermaye artırımı</li>
+                    <li>TTK Madde 461: Rüçhan hakkı</li>
+                    <li>TTK Madde 457: Ayni sermaye artırımı</li>
+                    <li>TTK Madde 463: İç kaynaklardan artırım</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru99.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru101.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

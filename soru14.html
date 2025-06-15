@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 14 - Tacir Tanımı ve Şartları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 14</div>
+        
+        <div class="question-text">
+            Aşağıdakilerden hangisi TTK'ya göre tacir sıfatını kazanmak için gerekli şartlardan biri değildir?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Ticari işletme sahibi olmak</li>
+            <li onclick="checkAnswer(this, false)">B) İşletmeyi kendi adına işletmek</li>
+            <li onclick="checkAnswer(this, true)">C) Ticaret sicilinde tescilli olmak</li>
+            <li onclick="checkAnswer(this, false)">D) Ticari faaliyet yürütmek</li>
+            <li onclick="checkAnswer(this, false)">E) Fiil ehliyetine sahip olmak</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: C</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>TTK madde 12'ye göre tacir, "bir ticari işletmeyi kendi adına işleten kişi"dir. Ticaret sicilinde tescil tacir sıfatını kazanmak için zorunlu bir şart değildir. Tescil, tacirin hak ve yükümlülüklerini etkiler ancak tacir sıfatı için şart değildir.</p>
+                
+                <p><strong>Tacir olmanın şartları:</strong></p>
+                <ul>
+                    <li><strong>Ticari işletme sahibi olmak:</strong> Kişi bir ticari işletmenin sahibi olmalıdır</li>
+                    <li><strong>Kendi adına işletmek:</strong> Başkası adına değil, kendi adına faaliyet göstermeli</li>
+                    <li><strong>Süreklilik:</strong> Ticari faaliyeti sürekli olarak yürütmeli</li>
+                    <li><strong>Fiil ehliyeti:</strong> Hukuki işlem yapabilme kabiliyetine sahip olmalı</li>
+                    <li><strong>Bağımsızlık:</strong> Ekonomik olarak bağımsız faaliyet göstermeli</li>
+                </ul>
+                
+                <p><strong>Ticaret sicili tescilinin önemi:</strong></p>
+                <ul>
+                    <li>Tacir sıfatı için zorunlu değildir</li>
+                    <li>Ancak çeşitli avantajlar sağlar</li>
+                    <li>İyiniyetli üçüncü kişilere karşı koruma</li>
+                    <li>Ticari defterlerle ispat hakkı</li>
+                    <li>İflas hukuku hükümlerinden yararlanma</li>
+                </ul>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 12 - Tacirin tanımı</strong>
+
+Bir ticari işletmeyi kendi adına işleten kişiye tacir denir.
+
+<strong>TTK Madde 13 - Gerçek kişi tacir</strong>
+
+Bir ticari işletmeyi kendi adına işleten gerçek kişi tacirdir. Esnaf ve zanaatkârlar bu Kanuna tabi değildir.
+
+<strong>TTK Madde 16 - Tescil yükümlülüğü</strong>
+
+(1) Tacir, ticari işletmesini ticaret siciline tescil ettirmek zorundadır.
+(2) Tescili gereken hususları süresi içinde tescil ettirmeyen tacir, bunları iyiniyetli üçüncü kişilere karşı ileri süremez.
+
+<strong>TTK Madde 18 - Tescilde gecikmenin sonuçları</strong>
+
+Tescil edilmeyen hususlar iyiniyetli üçüncü kişilere karşı ileri sürülemez. Ancak bu husus tacir sıfatını etkilemez.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru13.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru15.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[2].classList.add('correct'); // C şıkkı (index 2)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

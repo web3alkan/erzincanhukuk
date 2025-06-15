@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 19 - Ticari Defterler ve Muhasebe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 19</div>
+        
+        <div class="question-text">
+            TTK'ya göre ticari defterlerin tutulması ile ilgili aşağıdakilerden hangisi yanlıştır?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Tacirler ticari defterlerini tutmak zorundadır</li>
+            <li onclick="checkAnswer(this, false)">B) Ticari defterler Türkçe tutulmalıdır</li>
+            <li onclick="checkAnswer(this, true)">C) Ticari defterler sadece elle yazılabilir</li>
+            <li onclick="checkAnswer(this, false)">D) Ticari defterler 10 yıl saklanmalıdır</li>
+            <li onclick="checkAnswer(this, false)">E) Yevmiye defteri ve defteri kebir tutulması zorunludur</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: C</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>TTK madde 66'ya göre, ticari defterler elektronik ortamda da tutulabilir. Sadece elle yazılması zorunlu değildir. Günümüzde ticari defterler genellikle bilgisayar ortamında elektronik olarak tutulmaktadır.</p>
+                
+                <p><strong>Ticari defterlerin tutulması ile ilgili kurallar:</strong></p>
+                <ul>
+                    <li><strong>Zorunluluk:</strong> Tacirler ticari defterlerini tutmak zorundadır</li>
+                    <li><strong>Dil:</strong> Türkçe tutulmalıdır (TTK m. 64)</li>
+                    <li><strong>Tutum şekli:</strong> Elle, makine ile veya elektronik ortamda tutulabilir</li>
+                    <li><strong>Saklama süresi:</strong> 10 yıl süreyle saklanmalıdır (TTK m. 82)</li>
+                    <li><strong>Düzen:</strong> Tarih sırasına göre, açık ve düzenli tutulmalıdır</li>
+                </ul>
+                
+                <p><strong>Zorunlu ticari defterler:</strong></p>
+                <ul>
+                    <li><strong>Yevmiye defteri:</strong> Günlük işlemlerin kaydedildiği defter</li>
+                    <li><strong>Defteri kebir:</strong> Hesapların detaylı tutulduğu defter</li>
+                    <li><strong>Envanter defteri:</strong> Mal varlığının kaydedildiği defter</li>
+                </ul>
+                
+                <p><strong>Elektronik ortamda tutulma şartları:</strong></p>
+                <ul>
+                    <li>Güvenli elektronik imza ile korunmalı</li>
+                    <li>Yetkili makamlar tarafından incelenebilir olmalı</li>
+                    <li>Değiştirilemeyen şekilde saklanmalı</li>
+                </ul>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 64 - Ticari defterlerin tutulma şekli</strong>
+
+(1) Ticari defterler Türkçe tutulur.
+(2) Kayıtlar tarih sırasına göre yapılır, boşluk bırakılmaz, satır atlanmaz ve sayfa boş bırakılmaz.
+(3) Kayıtlarda silinti, kazıntı, üstü kapatma gibi değişiklik izlerini gizleyici işlemler yapılamaz.
+
+<strong>TTK Madde 66 - Elektronik ortamda tutulan ticari defterler</strong>
+
+(1) Ticari defterler elektronik ortamda da tutulabilir.
+(2) Elektronik ortamda tutulan ticari defterler, güvenli elektronik imza ile korunmalı ve yetkili merciler tarafından incelenebilir durumda tutulmalıdır.
+
+<strong>TTK Madde 82 - Ticari defterlerin saklanması</strong>
+
+(1) Tacir, ticari defterlerini, bunlara ait belgeleri ve yazışmalarını düzenli bir şekilde on yıl süreyle saklamak zorundadır.
+(2) Bu süre, son kaydın yapıldığı tarihi takip eden takvim yılının başından itibaren başlar.
+
+<strong>TTK Madde 63 - Zorunlu ticari defterler</strong>
+
+Her tacir şu defterleri tutmak zorundadır:
+a) Yevmiye defteri.
+b) Defteri kebir.
+c) Envanter defteri.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru18.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru20.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[2].classList.add('correct'); // C şıkkı (index 2)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

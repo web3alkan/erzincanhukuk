@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 103 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 103</h1>
+        
+        <div class="question">
+            Anonim şirketin feshi ve tasfiyesi konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şirket sadece esas sözleşmede öngörülen sürenin dolması ile feshedilir</div>
+            <div class="option">B) Tasfiye süreci yönetim kurulu tarafından yürütülür</div>
+            <div class="option">C) Tasfiye memurları özel atanan tasfiye organıdır</div>
+            <div class="option">D) Alacaklılar tasfiye sürecinde korunmaz</div>
+            <div class="option">E) Tasfiye sonucunda kalan mal varlığı pay sahiplerine dağıtılır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: E) Tasfiye sonucunda kalan mal varlığı pay sahiplerine dağıtılır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre şirketin tasfiyesi sonucunda borçlar ödendikten sonra kalan mal varlığı, pay sahiplerine payları oranında dağıtılır. Bu, tasfiye işlemlerinin son aşamasıdır ve pay sahiplerinin tasfiye payı alma haklarının gereğidir.</p>
+            
+            <h5>Şirketin Feshi Sebepleri:</h5>
+            <ul>
+                <li><strong>Süre Dolması:</strong> Esas sözleşmede belirlenen sürenin sona ermesi</li>
+                <li><strong>Amaç Gerçekleşmesi:</strong> Şirket amacının tamamen gerçekleşmesi</li>
+                <li><strong>Genel Kurul Kararı:</strong> Pay sahiplerinin fesih kararı</li>
+                <li><strong>Mahkeme Kararı:</strong> Haklı sebeplerle mahkeme feshi</li>
+                <li><strong>İflas:</strong> Şirketin iflası</li>
+                <li><strong>Birleşme/Bölünme:</strong> Şirket birleşmesi veya bölünmesi</li>
+            </ul>
+            
+            <h5>Tasfiye Süreci:</h5>
+            <ul>
+                <li><strong>Tasfiye Memuru Atama:</strong> Tasfiye işlemlerini yürütecek kişi</li>
+                <li><strong>Tescil ve İlan:</strong> Fesih ve tasfiyenin tescil-ilanı</li>
+                <li><strong>Alacaklı İlanı:</strong> Alacaklıları çağırma ilanı</li>
+                <li><strong>Mal Varlığı Tespiti:</strong> Aktif ve pasiflerin belirlenmesi</li>
+                <li><strong>Borç Ödeme:</strong> Şirket borçlarının ödenmesi</li>
+                <li><strong>Artık Dağıtım:</strong> Kalan varlığın pay sahiplerine dağıtımı</li>
+            </ul>
+            
+            <h5>Tasfiye Memurları:</h5>
+            <ul>
+                <li><strong>Atama:</strong> Esas sözleşme, genel kurul veya mahkeme</li>
+                <li><strong>Yetkileri:</strong> Şirket malvarlığını tasfiye yetkisi</li>
+                <li><strong>Sorumlulukları:</strong> Özenli tasfiye yükümlülüğü</li>
+                <li><strong>Hesap Verme:</strong> Pay sahipleri ve alacaklılara karşı</li>
+            </ul>
+            
+            <h5>Alacaklıların Korunması:</h5>
+            <ul>
+                <li><strong>İlan Usulü:</strong> Alacaklıları çağırma ilanı</li>
+                <li><strong>İtiraz Hakkı:</strong> Tasfiye işlemlerine itiraz</li>
+                <li><strong>Öncelik Hakkı:</strong> Borçların öncelikle ödenmesi</li>
+                <li><strong>Güvence:</strong> Alacaklı haklarının korunması</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 529 - Şirketin Feshi:</strong></p>
+                <p>"Anonim şirket, kanunda öngörülen hallerle ve esas sözleşmede belirlenen sebeplerle feshedilir."</p>
+                
+                <p><strong>TTK Madde 534 - Tasfiye:</strong></p>
+                <p>"Feshedilen şirket tasfiye edilir. Tasfiye memurları şirketin malvarlığını paraya çevirir, borçlarını öder ve kalan varlığı pay sahiplerine dağıtır."</p>
+                
+                <p><strong>Fesih Sebepleri Detayı:</strong></p>
+                <ul>
+                    <li><strong>Kendiliğinden Fesih:</strong>
+                        <ul>
+                            <li>Esas sözleşmede belirlenen sürenin dolması</li>
+                            <li>Şirket amacının tamamen gerçekleşmesi</li>
+                            <li>Şirket amacının gerçekleşmesinin imkansızlaşması</li>
+                        </ul>
+                    </li>
+                    <li><strong>İrade ile Fesih:</strong>
+                        <ul>
+                            <li>Genel kurul kararı ile fesih</li>
+                            <li>Ağırlaştırılmış çoğunluk gerekli</li>
+                            <li>Azınlık hakları korunmalı</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mahkeme Kararı ile Fesih:</strong>
+                        <ul>
+                            <li>Haklı sebeplerin varlığı</li>
+                            <li>Pay sahiplerinin başvurusu</li>
+                            <li>Kamu yararının gerekliliği</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>Tasfiye Memurlarının Görevleri:</strong></p>
+                <ul>
+                    <li><strong>Mal Varlığını Tespit:</strong> Aktif ve pasif kalemler</li>
+                    <li><strong>Alacakları Tahsil:</strong> Şirket alacaklarını toplama</li>
+                    <li><strong>Borçları Ödeme:</strong> Şirket borçlarını karşılama</li>
+                    <li><strong>Mal Varlığını Paraya Çevirme:</strong> Satış işlemleri</li>
+                    <li><strong>Dağıtım:</strong> Kalan varlığın pay sahiplerine dağıtımı</li>
+                </ul>
+                
+                <p><strong>Tasfiye Bilançosu:</strong></p>
+                <ul>
+                    <li><strong>Başlangıç Bilançosu:</strong> Tasfiye başındaki durum</li>
+                    <li><strong>Ara Bilançolar:</strong> Süreç boyunca durumlar</li>
+                    <li><strong>Son Bilanço:</strong> Tasfiye sonundaki durum</li>
+                    <li><strong>Onay Süreci:</strong> Pay sahiplerince onaylanma</li>
+                </ul>
+                
+                <p><strong>Alacak-Borç İlişkisi:</strong></p>
+                <ul>
+                    <li><strong>Alacaklı İlanı:</strong> 6 ay süreyle ilan</li>
+                    <li><strong>Bilinen Alacaklılar:</strong> Doğrudan bildirim</li>
+                    <li><strong>İhtiyatlı Yaklaşım:</strong> Şüpheli alacaklar için ayırım</li>
+                    <li><strong>Öncelik Sırası:</strong> Alacak türlerine göre öncelik</li>
+                </ul>
+                
+                <p><strong>Tasfiye Payı Dağıtımı:</strong></p>
+                <ul>
+                    <li><strong>Orantılı Dağıtım:</strong> Pay oranında dağıtım</li>
+                    <li><strong>İmtiyazlı Paylar:</strong> Tasfiye imtiyazı varsa öncelik</li>
+                    <li><strong>Ödeme Şekli:</strong> Nakit veya ayni mal</li>
+                    <li><strong>Kayıt Altına Alma:</strong> Dağıtım kayıtları</li>
+                </ul>
+                
+                <p><strong>Tasfiye Sürecinde Sorumluluklar:</strong></p>
+                <ul>
+                    <li><strong>Tasfiye Memuru Sorumluluğu:</strong> Özenli davranma</li>
+                    <li><strong>Eski Yöneticiler:</strong> Geçmiş dönem sorumluluğu</li>
+                    <li><strong>Pay Sahipleri:</strong> Sınırlı sorumluluk devam eder</li>
+                    <li><strong>Alacaklı İlişkileri:</strong> Alacaklıların korunması</li>
+                </ul>
+                
+                <p><strong>Tasfiyenin Sona Ermesi:</strong></p>
+                <ul>
+                    <li><strong>Son Hesap:</strong> Tasfiye hesaplarının onayı</li>
+                    <li><strong>Tescil Silinmesi:</strong> Ticaret sicilinden silinme</li>
+                    <li><strong>Hukuki Sonlanma:</strong> Tüzel kişiliğin sona ermesi</li>
+                    <li><strong>Belge Saklama:</strong> Tasfiye belgelerinin muhafazası</li>
+                </ul>
+                
+                <p><strong>Özel Tasfiye Türleri:</strong></p>
+                <ul>
+                    <li><strong>İflas Tasfiyesi:</strong> İflas hukuku çerçevesinde</li>
+                    <li><strong>Birleşme Tasfiyesi:</strong> Birleşme nedeniyle fesih</li>
+                    <li><strong>Bölünme Tasfiyesi:</strong> Bölünme işlemi</li>
+                    <li><strong>Mahkeme Tasfiyesi:</strong> Mahkeme denetiminde</li>
+                </ul>
+                
+                <p><strong>Tasfiye Sürecinde Haklar:</strong></p>
+                <ul>
+                    <li><strong>Bilgi Alma:</strong> Tasfiye sürecinden haberdar olma</li>
+                    <li><strong>İtiraz Hakkı:</strong> Hukuka aykırı işlemlere itiraz</li>
+                    <li><strong>Denetim:</strong> Tasfiye işlemlerini denetleme</li>
+                    <li><strong>Hukuki Başvuru:</strong> Mahkemeye başvuru hakkı</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 529-537: Fesih ve tasfiye</li>
+                    <li>TTK Madde 534: Tasfiye memurları</li>
+                    <li>TTK Madde 540: Tasfiye payı</li>
+                    <li>İİK: İflas hukuku hükümleri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru102.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru104.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

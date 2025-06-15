@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 101 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 101</h1>
+        
+        <div class="question">
+            Pay türleri konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Tüm paylar eşit haklara sahiptir</div>
+            <div class="option">B) İmtiyazlı paylar sadece kar payı imtiyazı verebilir</div>
+            <div class="option">C) Nama yazılı paylar devredilemez</div>
+            <div class="option">D) Hamiline yazılı paylar serbest devir edilebilir</div>
+            <div class="option">E) Rehin paylar oy hakkı vermez</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Hamiline yazılı paylar serbest devir edilebilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre hamiline yazılı paylar, nama yazılı paylardan farklı olarak serbest devir edilebilir. Bu payların devri için pay senedinin teslimi yeterlidir ve şirketin onayına ihtiyaç yoktur.</p>
+            
+            <h5>Pay Türleri:</h5>
+            <ul>
+                <li><strong>Nama Yazılı Paylar:</strong> Sahibinin adı yazılı, devri kısıtlı</li>
+                <li><strong>Hamiline Yazılı Paylar:</strong> Hamil kim ise sahibi o, serbest devir</li>
+                <li><strong>Adi Paylar:</strong> Eşit hak ve yükümlülükler</li>
+                <li><strong>İmtiyazlı Paylar:</strong> Özel haklar veren paylar</li>
+                <li><strong>Rehin Paylar:</strong> Rehin konusu olan paylar</li>
+            </ul>
+            
+            <h5>Nama Yazılı Payların Özellikleri:</h5>
+            <ul>
+                <li><strong>Kimlik Tespiti:</strong> Sahibinin kimliği bellidir</li>
+                <li><strong>Pay Defteri:</strong> Şirket pay defterinde kayıtlıdır</li>
+                <li><strong>Devir Kısıtı:</strong> Esas sözleşmeyle devir kısıtlanabilir</li>
+                <li><strong>Onay Şartı:</strong> Devir için şirket onayı gerekebilir</li>
+                <li><strong>Güvenlik:</strong> Daha güvenli pay türü</li>
+            </ul>
+            
+            <h5>Hamiline Yazılı Payların Özellikleri:</h5>
+            <ul>
+                <li><strong>Serbest Devir:</strong> Herhangi bir kısıt olmaksızın devir</li>
+                <li><strong>Teslim Yeterli:</strong> Pay senedinin teslimi ile devir</li>
+                <li><strong>Kimlik Gizli:</strong> Sahibinin kimliği bilinmez</li>
+                <li><strong>Hızlı İşlem:</strong> Devir işlemleri hızlı</li>
+                <li><strong>Likidite:</strong> Yüksek likidite sağlar</li>
+            </ul>
+            
+            <h5>İmtiyazlı Payların Türleri:</h5>
+            <ul>
+                <li><strong>Kar Payı İmtiyazı:</strong> Daha fazla kar payı alma</li>
+                <li><strong>Oy İmtiyazı:</strong> Daha fazla oy hakkı</li>
+                <li><strong>Tasfiye İmtiyazı:</strong> Tasfiyede öncelik</li>
+                <li><strong>Rüçhan İmtiyazı:</strong> Sermaye artırımında öncelik</li>
+                <li><strong>Yönetim İmtiyazı:</strong> Yönetim kurulunda temsil</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 486 - Nama Yazılı Paylar:</strong></p>
+                <p>"Nama yazılı paylar, pay defterinde kayıtlı sahibi tarafından kullanılır ve esas sözleşmede öngörülen şartlarla devir edilebilir."</p>
+                
+                <p><strong>TTK Madde 487 - Hamiline Yazılı Paylar:</strong></p>
+                <p>"Hamiline yazılı paylar serbestçe devir edilebilir. Devir için pay senedinin teslimi yeterlidir."</p>
+                
+                <p><strong>Pay Sisteminin Amacı:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Mobilizasyonu:</strong> Sermayenin etkin kullanımı</li>
+                    <li><strong>Yatırım Kolaylığı:</strong> Yatırımcılar için çeşitlilik</li>
+                    <li><strong>Risk Dağılımı:</strong> Farklı risk tercihleri</li>
+                    <li><strong>Likidite:</strong> Paylarda likidite sağlama</li>
+                </ul>
+                
+                <p><strong>Nama Yazılı Pay Devri:</strong></p>
+                <ul>
+                    <li><strong>Yazılı Şekil:</strong> Devir sözleşmesi yazılı olmalı</li>
+                    <li><strong>Ciro:</strong> Pay senedinin cirosu gerekli</li>
+                    <li><strong>Bildirim:</strong> Şirkete bildirim zorunluluğu</li>
+                    <li><strong>Tescil:</strong> Pay defterine tescil</li>
+                </ul>
+                
+                <p><strong>Devir Kısıtlamaları:</strong></p>
+                <ul>
+                    <li><strong>Esas Sözleşme:</strong> Esas sözleşmeyle kısıtlama</li>
+                    <li><strong>Onay Şartı:</strong> Yönetim kurulu onayı</li>
+                    <li><strong>Reddedilme:</strong> Devirin reddedilmesi</li>
+                    <li><strong>Haklı Sebepler:</strong> Reddin geçerli sebepleri</li>
+                </ul>
+                
+                <p><strong>İmtiyazlı Payların Korunması:</strong></p>
+                <ul>
+                    <li><strong>Esas Sözleşme:</strong> İmtiyazın esas sözleşmede düzenlenmesi</li>
+                    <li><strong>Değişiklik Yasağı:</strong> İmtiyazın tek taraflı kaldırılamaması</li>
+                    <li><strong>Onay Şartı:</strong> İmtiyaz sahibinin onayı</li>
+                    <li><strong>Tazminat:</strong> İmtiyazın kaldırılmasında tazminat</li>
+                </ul>
+                
+                <p><strong>Pay Defteri:</strong></p>
+                <ul>
+                    <li><strong>Kayıt Zorunluluğu:</strong> Nama yazılı payların kaydı</li>
+                    <li><strong>Kimlik Bilgileri:</strong> Pay sahibinin kimlik bilgileri</li>
+                    <li><strong>Pay Sayısı:</strong> Sahip olunan pay miktarı</li>
+                    <li><strong>Devir Kayıtları:</strong> Devir işlemlerinin kaydı</li>
+                </ul>
+                
+                <p><strong>Rehin Payların Durumu:</strong></p>
+                <ul>
+                    <li><strong>Oy Hakkı:</strong> Kural olarak rehin veren kullanır</li>
+                    <li><strong>Kar Payı:</strong> Rehin verenin hakkıdır</li>
+                    <li><strong>Tasfiye Payı:</strong> Rehin verene aittir</li>
+                    <li><strong>Rehin Alacaklısı:</strong> Sadece rehin hakkına sahip</li>
+                </ul>
+                
+                <p><strong>Pay Senedi:</strong></p>
+                <ul>
+                    <li><strong>Kıymetli Evrak:</strong> Kıymetli evrak niteliğinde</li>
+                    <li><strong>Zorunlu Unsurlar:</strong> Kanunî unsurları içermeli</li>
+                    <li><strong>İhtiyarî Unsurlar:</strong> Ek bilgiler içerebilir</li>
+                    <li><strong>Güvenlik:</strong> Sahtecilik önlemleri</li>
+                </ul>
+                
+                <p><strong>Elektronik Ortamda Paylar:</strong></p>
+                <ul>
+                    <li><strong>Kaydi Paylar:</strong> Elektronik ortamda tutulan</li>
+                    <li><strong>MKK Sistemi:</strong> Merkezi Kayıt Kuruluşu</li>
+                    <li><strong>Güvenlik:</strong> Elektronik güvenlik önlemleri</li>
+                    <li><strong>Devir:</strong> Elektronik devir sistemi</li>
+                </ul>
+                
+                <p><strong>Pay Sahipliği Haklarının Kullanımı:</strong></p>
+                <ul>
+                    <li><strong>Oy Hakkı:</strong> Genel kurulda oy kullanma</li>
+                    <li><strong>Kar Payı:</strong> Dağıtılan kardan pay alma</li>
+                    <li><strong>Bilgi Alma:</strong> Şirket hakkında bilgi edinme</li>
+                    <li><strong>Tasfiye Payı:</strong> Tasfiyede mal varlığından pay</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 486: Nama yazılı paylar</li>
+                    <li>TTK Madde 487: Hamiline yazılı paylar</li>
+                    <li>TTK Madde 478-485: Pay senedi</li>
+                    <li>TTK Madde 507: İmtiyazlı paylar</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru100.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru102.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

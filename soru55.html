@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 55 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 55</h1>
+        
+        <div class="question">
+            Ortakların şirketten olan kişisel alacaklarına ilişkin aşağıdaki ifadelerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şahıs şirketlerinde ve sermaye şirketlerinde ortakların hakları aynıdır</div>
+            <div class="option">B) Şahıs şirketlerinde ortaklar şirketten alacaklı olamazlar</div>
+            <div class="option">C) Sermaye şirketlerinde ortakların şirketten alacakları yoktur</div>
+            <div class="option">D) Şahıs şirketlerinde ortakların kişisel alacakları şirket malvarlığından önce gelir</div>
+            <div class="option">E) Sermaye şirketlerinde ortakların kişisel alacakları şirket alacaklıları ile eşit durumda değerlendirilir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: E) Sermaye şirketlerinde ortakların kişisel alacakları şirket alacaklıları ile eşit durumda değerlendirilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Ortakların şirketten olan kişisel alacaklarının durumu, şirket türüne göre farklılık gösterir:</p>
+            
+            <h5>Şahıs Şirketlerinde (Kolektif ve Komandit):</h5>
+            <ul>
+                <li>Ortakların şirketten olan kişisel alacakları <strong>şirket alacaklılarından sonra gelir</strong></li>
+                <li>Önce şirket alacaklıları tatmin edilir, artakalan varsa ortakların alacakları ödenir</li>
+                <li>Bu durum şirket alacaklılarını korur</li>
+            </ul>
+            
+            <h5>Sermaye Şirketlerinde (Anonim, Limited):</h5>
+            <ul>
+                <li>Ortakların şirketten olan kişisel alacakları <strong>diğer şirket alacaklıları ile eşit durumda</strong>dır</li>
+                <li>Alacaklılar arasında sıra farkı yoktur</li>
+                <li>Tüm alacaklılar eşit şartlarda tatmin edilir</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 132 - Ortakların Kişisel Alacakları:</strong></p>
+                <p>Şahıs şirketlerinde ortakların şirketten olan kişisel alacakları, şirket alacaklılarından sonra gelir.</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>"Ortakların şirketten olan alacaklarının durumu:</p>
+                <ul>
+                    <li><strong>Şahıs Şirketlerinde:</strong> Ortak alacaklıları şirket alacaklılarından sonra gelir (subordinasyon)</li>
+                    <li><strong>Sermaye Şirketlerinde:</strong> Ortak alacaklıları diğer alacaklılarla eşit durumda (pari passu)</li>
+                </ul>
+                
+                <p><strong>Bunun Gerekçeleri:</strong></p>
+                <ul>
+                    <li><strong>Şahıs şirketlerinde:</strong> Ortaklar şirket borçlarından kişisel olarak sorumlu oldukları için</li>
+                    <li><strong>Sermaye şirketlerinde:</strong> Ortaklar sınırlı sorumlu oldukları için eşit muamele görür</li>
+                </ul>
+                
+                <p><strong>Uygulama Örnekleri:</strong></p>
+                <ul>
+                    <li>Kolektif şirkette ortak şirkete 100.000 TL kredi vermiş → Şirket alacaklıları önce tatmin edilir</li>
+                    <li>Anonim şirkette ortak şirkete 100.000 TL kredi vermiş → Diğer alacaklılarla eşit sırada</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru54.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru56.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

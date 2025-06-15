@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 108 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 108</h1>
+        
+        <div class="question">
+            Genel kurul kararlarının iptal davası konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Dava süresi 3 aydır</div>
+            <div class="option">B) Pay sahipleri ve yönetim kurulu üyeleri dava açabilir</div>
+            <div class="option">C) Kanuna, esas sözleşmeye veya iyiniyet kurallarına aykırılık halinde açılır</div>
+            <div class="option">D) İptal kararı geçmişe etkilidir</div>
+            <div class="option">E) Mahkeme kararı kesinleşinceye kadar karar geçerlidir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) İptal kararı geçmişe etkilidir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre genel kurul kararlarının iptali, kural olarak geleceğe etkilidir (ex nunc), geçmişe etkili (ex tunc) değildir. İptal kararı kesinleştikten sonra hüküm doğurur ve o tarihten itibaren karar hükümsüz hale gelir.</p>
+            
+            <h5>İptal Davasının Şartları:</h5>
+            <ul>
+                <li><strong>Kanuna Aykırılık:</strong> TTK hükümlerine aykırılık</li>
+                <li><strong>Esas Sözleşmeye Aykırılık:</strong> Şirket tüzüğüne aykırılık</li>
+                <li><strong>İyiniyet Kurallarına Aykırılık:</strong> Dürüstlük ilkesine aykırılık</li>
+                <li><strong>Eşit Muamele İlkesine Aykırılık:</strong> Pay sahipleri arasında adaletsizlik</li>
+            </ul>
+            
+            <h5>Dava Açma Yetkisi:</h5>
+            <ul>
+                <li><strong>Pay Sahipleri:</strong> Tüm pay sahipleri dava açabilir</li>
+                <li><strong>Yönetim Kurulu Üyeleri:</strong> Bireysel olarak dava açabilir</li>
+                <li><strong>Denetim Kurulu:</strong> Denetim kurulu üyeleri</li>
+                <li><strong>Miras Sahipleri:</strong> Pay sahibinin mirasçıları</li>
+            </ul>
+            
+            <h5>Dava Süresi:</h5>
+            <ul>
+                <li><strong>3 Aylık Süre:</strong> Kararın alınmasından itibaren</li>
+                <li><strong>Hak Düşürücü Süre:</strong> Süre geçince dava açılamaz</li>
+                <li><strong>Başlangıç:</strong> Genel kurul tarihinden itibaren</li>
+                <li><strong>İstisna:</strong> Bilmeme durumunda özel düzenlemeler</li>
+            </ul>
+            
+            <h5>İptalin Sonuçları:</h5>
+            <ul>
+                <li><strong>Geleceğe Etki:</strong> Kesinleşme tarihinden itibaren</li>
+                <li><strong>Geçerlilik:</strong> Kesinleşene kadar karar geçerli</li>
+                <li><strong>Üçüncü Kişiler:</strong> İyiniyetli üçüncü kişiler korunur</li>
+                <li><strong>Yeni Karar:</strong> Gerekirse yeni genel kurul kararı</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 447 - Kararların İptali:</strong></p>
+                <p>"Kanuna, esas sözleşmeye veya iyiniyet kurallarına aykırı genel kurul kararları, iptal davası ile iptal edilebilir."</p>
+                
+                <p><strong>TTK Madde 449 - Dava Süresi:</strong></p>
+                <p>"İptal davası, kararın alındığı tarihten itibaren üç ay içinde açılmalıdır."</p>
+                
+                <p><strong>İptal Sebepleri Detayı:</strong></p>
+                <ul>
+                    <li><strong>Maddi Hukuk İhlali:</strong>
+                        <ul>
+                            <li>TTK hükümlerine aykırılık</li>
+                            <li>Esas sözleşme hükümlerine aykırılık</li>
+                            <li>İyiniyet ve dürüstlük kurallarına aykırılık</li>
+                            <li>Eşit muamele ilkesinin ihlali</li>
+                        </ul>
+                    </li>
+                    <li><strong>Usul İhlali:</strong>
+                        <ul>
+                            <li>Genel kurul usulüne aykırılık</li>
+                            <li>Davet usulünün ihlali</li>
+                            <li>Gündem usulüne aykırılık</li>
+                            <li>Oy kullanma usulünün ihlali</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>Dava Açma Yeterliliği:</strong></p>
+                <ul>
+                    <li><strong>Pay Sahipliği:</strong> Kararın alındığı sırada pay sahibi olmak</li>
+                    <li><strong>Menfaat:</strong> Davada hukuki menfaatin bulunması</li>
+                    <li><strong>Meşru Sebep:</strong> İptal için haklı gerekçe</li>
+                    <li><strong>Süre İçinde:</strong> Hak düşürücü süre içinde dava</li>
+                </ul>
+                
+                <p><strong>İptal Davasının Niteliği:</strong></p>
+                <ul>
+                    <li><strong>Bozucu Dava:</strong> Mevcut hukuki durumu bozar</li>
+                    <li><strong>Kurucu Dava:</strong> Mahkeme kararı ile hüküm doğar</li>
+                    <li><strong>Sürekli Dava:</strong> Kararın varlığını sürekli etkiler</li>
+                    <li><strong>Mutlak Dava:</strong> Herkese karşı hüküm doğurur</li>
+                </ul>
+                
+                <p><strong>Mahkeme Yetkisi:</strong></p>
+                <ul>
+                    <li><strong>Asliye Ticaret:</strong> Asliye ticaret mahkemesi</li>
+                    <li><strong>Şirket Merkezi:</strong> Şirket merkezindeki mahkeme</li>
+                    <li><strong>İhtisas:</strong> Ticaret mahkemelerinin uzmanlığı</li>
+                    <li><strong>Temyiz:</strong> Temyiz yolu açık</li>
+                </ul>
+                
+                <p><strong>Dava Sırasında Durum:</strong></p>
+                <ul>
+                    <li><strong>Karar Geçerliliği:</strong> Dava süresince karar geçerli</li>
+                    <li><strong>İhtiyati Tedbir:</strong> Gerekirse ihtiyati tedbir</li>
+                    <li><strong>İcra:</strong> Kararın icrasına devam</li>
+                    <li><strong>Muhafaza:</strong> Mevcut durumun korunması</li>
+                </ul>
+                
+                <p><strong>İptal Kararının Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Hükümsüzlük:</strong> Karar hükümsüz hale gelir</li>
+                    <li><strong>Geleceğe Etki:</strong> Ex nunc etkili</li>
+                    <li><strong>Herkesin Hakkında:</strong> Tüm pay sahiplerini etkiler</li>
+                    <li><strong>Kesin Hüküm:</strong> Kesin hüküm teşkil eder</li>
+                </ul>
+                
+                <p><strong>İyiniyetli Üçüncü Kişiler:</strong></p>
+                <ul>
+                    <li><strong>Koruma:</strong> İyiniyetli üçüncü kişiler korunur</li>
+                    <li><strong>Kazanılmış Haklar:</strong> Kazanılmış haklar saklıdır</li>
+                    <li><strong>Menfaat Dengesi:</strong> Menfaatler arasında denge</li>
+                    <li><strong>İstisnaî Durum:</strong> Çok istisnai hallerde geçmişe etki</li>
+                </ul>
+                
+                <p><strong>Kısmi İptal:</strong></p>
+                <ul>
+                    <li><strong>Bölünebilirlik:</strong> Kararın bölünebilir olması</li>
+                    <li><strong>Kısmi Hükümsüzlük:</strong> Sadece bir kısmının iptali</li>
+                    <li><strong>Kalan Kısım:</strong> Diğer kısımların geçerliliği</li>
+                    <li><strong>Mahkeme Takdiri:</strong> Mahkemenin değerlendirmesi</li>
+                </ul>
+                
+                <p><strong>İptal Sonrası Durum:</strong></p>
+                <ul>
+                    <li><strong>Yeni Karar:</strong> Gerekirse yeni genel kurul</li>
+                    <li><strong>Hukuki Boşluk:</strong> Hukuki boşluğun doldurulması</li>
+                    <li><strong>Geçici Düzenlemeler:</strong> Geçici önlemler</li>
+                    <li><strong>Düzeltici İşlemler:</strong> Gerekli düzeltmeler</li>
+                </ul>
+                
+                <p><strong>Dava Masrafları:</strong></p>
+                <ul>
+                    <li><strong>Harç:</strong> Dava harçlarının ödenmesi</li>
+                    <li><strong>Vekalet:</strong> Avukat vekalet ücreti</li>
+                    <li><strong>Kaybeden Öder:</strong> Kaybeden taraf masrafları öder</li>
+                    <li><strong>Avans:</strong> Masraf avansı yatırma</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 447: Kararların iptali</li>
+                    <li>TTK Madde 449: Dava süresi</li>
+                    <li>TTK Madde 450: İptalin sonuçları</li>
+                    <li>HMK: Genel usul hükümleri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru107.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru109.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

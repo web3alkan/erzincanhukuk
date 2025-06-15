@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 109 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 109</h1>
+        
+        <div class="question">
+            Bağımsız denetim raporu konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Sadece olumlu görüş içerebilir</div>
+            <div class="option">B) Denetçinin görüşü, şartlı görüş, olumsuz görüş veya görüş bildirmeme şeklinde olabilir</div>
+            <div class="option">C) Genel kurulda okunması zorunlu değildir</div>
+            <div class="option">D) Pay sahiplerine açıklanmaz</div>
+            <div class="option">E) Sadece mali durumu değerlendirir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Denetçinin görüşü, şartlı görüş, olumsuz görüş veya görüş bildirmeme şeklinde olabilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK ve denetim standartlarına göre bağımsız denetim raporunda denetçi farklı türlerde görüş bildirebilir: olumlu görüş, şartlı görüş, olumsuz görüş veya görüş bildirmeme. Bu denetimin bağımsızlığı ve objektifliğini gösterir.</p>
+            
+            <h5>Denetçi Görüş Türleri:</h5>
+            <ul>
+                <li><strong>Olumlu Görüş:</strong> Finansal tablolar gerçeği yansıtıyor</li>
+                <li><strong>Şartlı Görüş:</strong> Belirli konularda sınırlı sorunlar</li>
+                <li><strong>Olumsuz Görüş:</strong> Finansal tablolar gerçeği yansıtmıyor</li>
+                <li><strong>Görüş Bildirmeme:</strong> Görüş bildirmek için yeterli kanıt yok</li>
+            </ul>
+            
+            <h5>Denetim Raporunun İçeriği:</h5>
+            <ul>
+                <li><strong>Denetçi Kimliği:</strong> Denetçinin unvan ve kimlik bilgileri</li>
+                <li><strong>Denetim Kapsamı:</strong> Nelerin denetlendiği</li>
+                <li><strong>Denetim Standartları:</strong> Uygulanan denetim standartları</li>
+                <li><strong>Önemli Bulgular:</strong> Tespit edilen önemli hususlar</li>
+                <li><strong>Denetçi Görüşü:</strong> Sonuç olarak verilen görüş</li>
+            </ul>
+            
+            <h5>Raporun Kullanım Alanları:</h5>
+            <ul>
+                <li><strong>Genel Kurul:</strong> Pay sahiplerine sunulma</li>
+                <li><strong>Yönetim:</strong> Yönetim kararları için bilgi</li>
+                <li><strong>Alacaklılar:</strong> Kredi kararları için</li>
+                <li><strong>Kamuoyu:</strong> Şeffaflık ve güven</li>
+                <li><strong>Düzenleyici Kurmlar:</strong> Yasal yükümlülükler</li>
+            </ul>
+            
+            <h5>Raporun Hukuki Sonuçları:</h5>
+            <ul>
+                <li><strong>Ibra Kararı:</strong> Yönetim ibrasında dikkate alınma</li>
+                <li><strong>Kar Dağıtımı:</strong> Kar dağıtım kararlarında referans</li>
+                <li><strong>Yasal Yükümlülükler:</strong> Yasal raporlama gereklilikleri</li>
+                <li><strong>Sorumluluk:</strong> Denetçi ve yönetim sorumluluğu</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 403 - Denetim Raporu:</strong></p>
+                <p>"Bağımsız denetçi, denetim sonucunda bir rapor düzenler ve bu raporda görüşünü açıklar."</p>
+                
+                <p><strong>KGK Denetim Standartları:</strong></p>
+                <p>Bağımsız denetim raporları Kamu Gözetimi Kurumu tarafından belirlenen standartlara uygun olarak hazırlanır.</p>
+                
+                <p><strong>Olumlu Görüş (Unqualified Opinion):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Finansal tablolar her yönüyle gerçeği yansıtıyor</li>
+                    <li><strong>Şartlar:</strong> Tüm denetim prosedürleri tamamlanmış</li>
+                    <li><strong>Standart Uyum:</strong> Muhasebe standartlarına tam uyum</li>
+                    <li><strong>Önemli Hata Yok:</strong> Önemli yanlışlık tespit edilmemiş</li>
+                </ul>
+                
+                <p><strong>Şartlı Görüş (Qualified Opinion):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Belirli konular hariç finansal tablolar doğru</li>
+                    <li><strong>Kapsam Sınırı:</strong> Denetim kapsamında sınırlama</li>
+                    <li><strong>Önemli Hata:</strong> Önemli ancak yaygın olmayan hatalar</li>
+                    <li><strong>İfade Şekli:</strong> "...hariç" veya "...dışında" ifadeleri</li>
+                </ul>
+                
+                <p><strong>Olumsuz Görüş (Adverse Opinion):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Finansal tablolar gerçeği yansıtmıyor</li>
+                    <li><strong>Yaygın Hata:</strong> Çok önemli ve yaygın hatalar</li>
+                    <li><strong>Standart Dışı:</strong> Muhasebe standartlarına aykırılık</li>
+                    <li><strong>Güvenilmezlik:</strong> Tablolara güvenilemez</li>
+                </ul>
+                
+                <p><strong>Görüş Bildirmeme (Disclaimer of Opinion):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Görüş bildirmek için yeterli kanıt yok</li>
+                    <li><strong>Kapsam Sınırı:</strong> Ciddi kapsam sınırlaması</li>
+                    <li><strong>Belirsizlik:</strong> Aşırı belirsizlik durumu</li>
+                    <li><strong>Denetim Eksikliği:</strong> Denetim prosedürleri tamamlanamadı</li>
+                </ul>
+                
+                <p><strong>Denetim Raporunun Bölümleri:</strong></p>
+                <ul>
+                    <li><strong>Başlık:</strong> "Bağımsız Denetim Raporu"</li>
+                    <li><strong>Muhatap:</strong> Pay sahipleri ve yönetim kurulu</li>
+                    <li><strong>Finansal Tablolar:</strong> Denetlenen tablolar</li>
+                    <li><strong>Yönetim Sorumluluğu:</strong> Yönetimin sorumluluğu</li>
+                    <li><strong>Denetçi Sorumluluğu:</strong> Denetçinin sorumluluğu</li>
+                    <li><strong>Denetçi Görüşü:</strong> Ana görüş paragrafı</li>
+                </ul>
+                
+                <p><strong>Önemli Denetim Konuları:</strong></p>
+                <ul>
+                    <li><strong>Key Audit Matters:</strong> En önemli denetim konuları</li>
+                    <li><strong>Risk Alanları:</strong> Yüksek riskli alanlar</li>
+                    <li><strong>Önemli Tahminler:</strong> Kritik muhasebe tahminleri</li>
+                    <li><strong>Karmaşık İşlemler:</strong> Anlaşılması zor işlemler</li>
+                </ul>
+                
+                <p><strong>Diğer Bilgiler:</strong></p>
+                <ul>
+                    <li><strong>Faaliyet Raporu:</strong> Yönetim kurulu faaliyet raporu</li>
+                    <li><strong>Tutarlılık:</strong> Finansal tablolarla tutarlılık</li>
+                    <li><strong>Önemli Yanlışlık:</strong> Tespit edilen yanlışlıklar</li>
+                    <li><strong>Düzeltme:</strong> Gerekli düzeltmeler</li>
+                </ul>
+                
+                <p><strong>Raporun Genel Kurulda Okunması:</strong></p>
+                <ul>
+                    <li><strong>Yasal Zorunluluk:</strong> Genel kurulda okunması gerekir</li>
+                    <li><strong>Pay Sahipliği Hakkı:</strong> Pay sahiplerinin bilgi alma hakkı</li>
+                    <li><strong>Şeffaflık:</strong> Mali durum hakkında bilgilendirme</li>
+                    <li><strong>Karar Alma:</strong> İbra kararları için temel</li>
+                </ul>
+                
+                <p><strong>Raporun Dağıtımı:</strong></p>
+                <ul>
+                    <li><strong>Pay Sahipleri:</strong> Tüm pay sahiplerine erişim</li>
+                    <li><strong>İnternet Sitesi:</strong> Şirket web sitesinde yayın</li>
+                    <li><strong>KAP:</strong> Halka açık şirketlerde KAP'ta ilan</li>
+                    <li><strong>Ticaret Sicili:</strong> Sicil müdürlüğüne ibraz</li>
+                </ul>
+                
+                <p><strong>Denetçi Bağımsızlığı:</strong></p>
+                <ul>
+                    <li><strong>Objektiflik:</strong> Tarafsız değerlendirme</li>
+                    <li><strong>Çıkar Çatışması:</strong> Çıkar çatışması olmaması</li>
+                    <li><strong>Mesleki Şüphe:</strong> Sağlıklı mesleki şüphecilik</li>
+                    <li><strong>Etik Kurallar:</strong> Mesleki etik kurallara uyum</li>
+                </ul>
+                
+                <p><strong>Raporun Yasal Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Sorumluluk Davası:</strong> Yönetim sorumluluk davası için delil</li>
+                    <li><strong>Vergi Denetimi:</strong> Vergi denetiminde referans</li>
+                    <li><strong>Kredi Değerlendirme:</strong> Bankalar için değerlendirme</li>
+                    <li><strong>Yatırımcı Kararı:</strong> Yatırım kararları için bilgi</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 403: Denetim raporu</li>
+                    <li>TTK Madde 404: Raporun içeriği</li>
+                    <li>KGK Denetim Standartları</li>
+                    <li>SPK Tebliğleri: Halka açık şirketler için</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru108.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru110.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

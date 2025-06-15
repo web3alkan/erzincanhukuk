@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 28 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 28</h1>
+        
+        <div class="question">
+            Ticaret sicili tescil prosedürü ve süreleri hakkında aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şirket kuruluşu için tescil başvurusu 30 gün içinde yapılmalıdır</div>
+            <div class="option">B) Ticaret sicili müdürü tescil işlemini 15 gün içinde tamamlamalıdır</div>
+            <div class="option">C) Tescil başvurusu 7 gün içinde sonuçlandırılır</div>
+            <div class="option">D) Eksik belge durumunda süresiz bekleme hakkı vardır</div>
+            <div class="option">E) Tescil süresi şirket türüne göre değişir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Ticaret sicili müdürü tescil işlemini 15 gün içinde tamamlamalıdır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre ticaret sicili müdürü, tescil başvurusu yapıldıktan sonra gerekli incelemelerini yaparak tescil işlemini 15 gün içinde tamamlamalıdır. Bu süre, ticaret sicili işlemlerinin hızlı bir şekilde sonuçlandırılması ve ticaret hayatının aksamadan devam etmesi açısından önemlidir. Eksik belge olması durumunda bu eksikliklerin giderilmesi için ek süre tanınabilir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 36 - Tescil Kararı ve Süresi:</strong></p>
+                <p>Ticaret sicili müdürü, tescil başvurusu üzerine on beş gün içinde tescil hakkında karar verir ve kararını ilgililere bildirir.</p>
+                
+                <p><strong>TTK Madde 35 - Tescil Başvurusu:</strong></p>
+                <p>Tescili zorunlu olan kimse veya olgunun ilgilileri, tescilin yapılması için gerekli belge ve bilgilerle birlikte ticaret sicili müdürlüğüne başvuruda bulunur.</p>
+                
+                <p><strong>Ticaret Sicili Tescil Prosedürü:</strong></p>
+                <ul>
+                    <li><strong>1. Aşama - Başvuru:</strong>
+                        <ul>
+                            <li>Gerekli belgelerle başvuru yapılır</li>
+                            <li>Eksik belge varsa tamamlanması istenir</li>
+                            <li>Başvuru ücreti ödenir</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Aşama - İnceleme:</strong>
+                        <ul>
+                            <li>Ticaret sicili müdürü belgeleri inceler</li>
+                            <li>Kanuni şartların kontrolü yapılır</li>
+                            <li>Gerekirse ek belge talep edilir</li>
+                        </ul>
+                    </li>
+                    <li><strong>3. Aşama - Karar:</strong>
+                        <ul>
+                            <li>15 gün içinde tescil kararı verilir</li>
+                            <li>Ret veya kabul kararı bildirilir</li>
+                            <li>Tescil edilen kayıt ilan edilir</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>TTK Madde 37 - Tescil Kararına İtiraz:</strong></p>
+                <p>Tescil kararına karşı, kararın tebliğinden itibaren on beş gün içinde ticaret mahkemesine itiraz edilebilir.</p>
+                
+                <p><strong>TTK Madde 38 - İlanın Yapılması:</strong></p>
+                <p>Tescil edilen kayıtlar, Türkiye Ticaret Sicili Gazetesinde ilan edilir. İlan, tescilin hüküm doğurması için zorunludur.</p>
+                
+                <p><strong>Tescil Süreleri:</strong></p>
+                <ul>
+                    <li><strong>Tescil kararı:</strong> 15 gün (TTK m. 36)</li>
+                    <li><strong>İtiraz süresi:</strong> 15 gün (TTK m. 37)</li>
+                    <li><strong>İlan süresi:</strong> Tescilden sonra derhal</li>
+                    <li><strong>Hukuki etkinin başlaması:</strong> İlan tarihinden itibaren</li>
+                </ul>
+                
+                <p><strong>TTK Madde 39 - Tescilin Hukuki Sonuçları:</strong></p>
+                <p>Tescil edilmiş kayıtlar, üçüncü kişilere karşı ilan tarihinden itibaren hüküm doğurur. Tescil ve ilan edilmeyen hususlar, iyiniyetli üçüncü kişilere karşı ileri sürülemez.</p>
+                
+                <p><strong>Özel Durumlar:</strong></p>
+                <ul>
+                    <li>Eksik belge durumunda tamamlama süresi tanınır</li>
+                    <li>Ret kararına karşı itiraz hakkı vardır</li>
+                    <li>Acil durumlar için hızlandırılmış prosedür uygulanabilir</li>
+                    <li>Elektronik başvuru sistemleri süreyi kısaltabilir</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 30-34: Ticaret sicilinin tutulması</li>
+                    <li>TTK Madde 40-46: Ticaret sicili gazetesi</li>
+                    <li>Ticaret Sicili Yönetmeliği</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru27.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru29.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

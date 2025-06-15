@@ -3,103 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceza Hukuku Özel Hükümler Testi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Şirketler Hukuku - Çoktan Seçmeli Sorular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .question-link {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .question-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .info {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #007bff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Ceza Hukuku Özel Hükümler</h1>
-        <p>Konu Anlatımlı Test Soruları</p>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Konu Listesi</h2>
-<ul class="topic-list">
-    <li><a href="sorular/soru_1.html">1. Göçmen Kaçakçılığı</a></li>
-    <li><a href="sorular/soru_2.html">2. Kasten Öldürme</a></li>
-    <li><a href="sorular/soru_3.html">3. İntihara Yönlendirme</a></li>
-    <li><a href="sorular/soru_4.html">4. Taksirle Öldürme</a></li>
-    <li><a href="sorular/soru_5.html">5. Kasten Yaralama</a></li>
-    <li><a href="sorular/soru_6.html">6. Taksirle Yaralama</a></li>
-    <li><a href="sorular/soru_7.html">7. İşkence</a></li>
-    <li><a href="sorular/soru_8.html">8. Eziyet</a></li>
-    <li><a href="sorular/soru_9.html">9. Cinsel Saldırı</a></li>
-    <li><a href="sorular/soru_10.html">10. Çocukların Cinsel İstismarı</a></li>
-    <li><a href="sorular/soru_11.html">11. Reşit Olmayanla Cinsel İlişki</a></li>
-    <li><a href="sorular/soru_12.html">12. Tehdit</a></li>
-    <li><a href="sorular/soru_13.html">13. Şantaj</a></li>
-    <li><a href="sorular/soru_14.html">14. Cebir</a></li>
-    <li><a href="sorular/soru_15.html">15. Kişiyi Hürriyetinden Yoksun Kılma</a></li>
-    <li><a href="sorular/soru_16.html">16. Konut Dokunulmazlığının İhlali</a></li>
-    <li><a href="sorular/soru_17.html">17. Hakaret</a></li>
-    <li><a href="sorular/soru_18.html">18. Özel Hayatın Gizliliğini İhlal</a></li>
-    <li><a href="sorular/soru_19.html">19. Hırsızlık</a></li>
-    <li><a href="sorular/soru_20.html">20. Yağma (Gasp)</a></li>
-    <li><a href="sorular/soru_21.html">21. Dolandırıcılık</a></li>
-    <li><a href="sorular/soru_22.html">22. Güveni Kötüye Kullanma</a></li>
-    <li><a href="sorular/soru_23.html">23. Mala Zarar Verme</a></li>
-    <li><a href="sorular/soru_24.html">24. Uyuşturucu Madde Ticareti</a></li>
-    <li><a href="sorular/soru_25.html">25. Kullanmak İçin Uyuşturucu Madde Satın Almak</a></li>
-    <li><a href="sorular/soru_26.html">26. Parada Sahtecilik</a></li>
-    <li><a href="sorular/soru_27.html">27. Resmi Belgede Sahtecilik</a></li>
-    <li><a href="sorular/soru_28.html">28. Özel Belgede Sahtecilik</a></li>
-    <li><a href="sorular/soru_29.html">29. Suçu ve Suçluyu Övme</a></li>
-    <li><a href="sorular/soru_30.html">30. Halkı Kin ve Düşmanlığa Tahrik</a></li>
-    <li><a href="sorular/soru_31.html">31. İftira</a></li>
-    <li><a href="sorular/soru_32.html">32. Suç Uydurma</a></li>
-    <li><a href="sorular/soru_33.html">33. Yalan Tanıklık</a></li>
-    <li><a href="sorular/soru_34.html">34. Suçluyu Kayırma</a></li>
-    <li><a href="sorular/soru_35.html">35. Görevi Yaptırmamak İçin Direnme</a></li>
-    <li><a href="sorular/soru_36.html">36. Zimmet</a></li>
-    <li><a href="sorular/soru_37.html">37. Bilişim Sistemine Girme ve Sistemde Kalma Suçu</a></li>
-    <li><a href="sorular/soru_38.html">38. Sistemi Engelleme, Bozma, Verileri Yok Etme veya Değiştirme</a></li>
-    <li><a href="sorular/soru_39.html">39. Banka veya Kredi Kartlarının Kötüye Kullanılması</a></li>
-    <li><a href="sorular/soru_40.html">40. Yasak Cihaz veya Programlar</a></li>
-    <li><a href="sorular/soru_41.html">41. Soykırım Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_42.html">42. İnsanlığa Karşı Suçlar (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_43.html">43. Göçmen Kaçakçılığı Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_44.html">44. İnsan Ticareti Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_45.html">45. Kasten Öldürme Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_46.html">46. Kasten Yaralama Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_47.html">47. İşkence Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_48.html">48. Eziyet Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_49.html">49. Cinsel Saldırı Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_50.html">50. Çocukların Cinsel İstismarı (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_51.html">51. Reşit Olmayanla Cinsel İlişki (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_52.html">52. Cinsel Taciz Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_53.html">53. Tehdit Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_54.html">54. Şantaj Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_55.html">55. Cebir Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_56.html">56. Kişiyi Hürriyetinden Yoksun Kılma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_57.html">57. Konut Dokunulmazlığının İhlali (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_58.html">58. Hakaret Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_59.html">59. Özel Hayatın Gizliliğini İhlal (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_60.html">60. Hırsızlık Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_61.html">61. Yağma (Gasp) Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_62.html">62. Mala Zarar Verme (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_63.html">63. Güveni Kötüye Kullanma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_64.html">64. Dolandırıcılık Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_65.html">65. Hileli İflas Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_66.html">66. Karşılıksız Yararlanma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_67.html">67. Uyuşturucu Madde Ticareti (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_68.html">68. Kullanmak İçin Uyuşturucu Bulundurma (İçtima)</a></li>
-    <li><a href="sorular/soru_69.html">69. Zehirli Madde Katma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_70.html">70. Parada Sahtecilik (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_71.html">71. Mühürde Sahtecilik (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_72.html">72. Resmi Belgede Sahtecilik (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_73.html">73. Özel Belgede Sahtecilik (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_74.html">74. Suç İşlemek Amacıyla Örgüt Kurma (İçtima)</a></li>
-    <li><a href="sorular/soru_75.html">75. İftira Suçu (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_76.html">76. Yalan Tanıklık (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_77.html">77. Suçluyu Kayırma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_78.html">78. Bilişim Sistemine Girme (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_79.html">79. Sistemi Engelleme, Bozma (İçtima Senaryosu)</a></li>
-    <li><a href="sorular/soru_80.html">80. Banka veya Kredi Kartlarının Kötüye Kullanılması (İçtima Senaryosu)</a></li>
-</ul>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Ceza Hukuku Özel Hükümler Testi. Tüm hakları saklıdır.</p>
-    </footer>
+    <h1>Şirketler Hukuku - Çoktan Seçmeli Test Soruları</h1>
+    
+    <div class="info">
+        <p><strong>Kaynak:</strong> Şirketler 1.pdf ve Şirketler 2.pdf</p>
+        <p><strong>Soru Tipi:</strong> 5 şıklı çoktan seçmeli</p>
+        <p><strong>Özellik:</strong> Her sorunun altında detaylı çözüm ve ilgili TBK/TTK maddeleri bulunmaktadır.</p>
+        <p><strong>Soru 1-30:</strong> Şirketler 1 - Şirket kavramı, türleri, kuruluş</p>
+        <p><strong>Soru 31-50:</strong> Şirketler 2 (Bölüm 1) - Çıkma/Çıkarılma, Sona Erme ve Tasfiye</p>
+        <p><strong>Soru 51-70:</strong> Şirketler 2 (Bölüm 2) - Ticaret Şirketleri ve Anonim Şirket</p>
+        <p><strong>Soru 71-90:</strong> Şirketler 3 - Anonim Şirket Detay ve Kuruluş</p>
+        <p><strong>Soru 91-110:</strong> Şirketler 4 (Bölüm 1) - Genel Kurul, Denetim, Pay Sahipliği</p>
+        <p><strong>Soru 111-125:</strong> Şirketler 4 (Bölüm 2) - Hukuki Sorumluluk ve Limited Şirketler</p>
+    </div>
+
+    <div class="question-grid">
+        <a href="soru1.html" class="question-link">Soru 1</a>
+        <a href="soru2.html" class="question-link">Soru 2</a>
+        <a href="soru3.html" class="question-link">Soru 3</a>
+        <a href="soru4.html" class="question-link">Soru 4</a>
+        <a href="soru5.html" class="question-link">Soru 5</a>
+        <a href="soru6.html" class="question-link">Soru 6</a>
+        <a href="soru7.html" class="question-link">Soru 7</a>
+        <a href="soru8.html" class="question-link">Soru 8</a>
+        <a href="soru9.html" class="question-link">Soru 9</a>
+        <a href="soru10.html" class="question-link">Soru 10</a>
+        <a href="soru11.html" class="question-link">Soru 11</a>
+        <a href="soru12.html" class="question-link">Soru 12</a>
+        <a href="soru13.html" class="question-link">Soru 13</a>
+        <a href="soru14.html" class="question-link">Soru 14</a>
+        <a href="soru15.html" class="question-link">Soru 15</a>
+        <a href="soru16.html" class="question-link">Soru 16</a>
+        <a href="soru17.html" class="question-link">Soru 17</a>
+        <a href="soru18.html" class="question-link">Soru 18</a>
+        <a href="soru19.html" class="question-link">Soru 19</a>
+        <a href="soru20.html" class="question-link">Soru 20</a>
+        <a href="soru21.html" class="question-link">Soru 21</a>
+        <a href="soru22.html" class="question-link">Soru 22</a>
+        <a href="soru23.html" class="question-link">Soru 23</a>
+        <a href="soru24.html" class="question-link">Soru 24</a>
+        <a href="soru25.html" class="question-link">Soru 25</a>
+        <a href="soru26.html" class="question-link">Soru 26</a>
+        <a href="soru27.html" class="question-link">Soru 27</a>
+        <a href="soru28.html" class="question-link">Soru 28</a>
+        <a href="soru29.html" class="question-link">Soru 29</a>
+        <a href="soru30.html" class="question-link">Soru 30</a>
+        <a href="soru31.html" class="question-link">Soru 31</a>
+        <a href="soru32.html" class="question-link">Soru 32</a>
+        <a href="soru33.html" class="question-link">Soru 33</a>
+        <a href="soru34.html" class="question-link">Soru 34</a>
+        <a href="soru35.html" class="question-link">Soru 35</a>
+        <a href="soru36.html" class="question-link">Soru 36</a>
+        <a href="soru37.html" class="question-link">Soru 37</a>
+        <a href="soru38.html" class="question-link">Soru 38</a>
+        <a href="soru39.html" class="question-link">Soru 39</a>
+        <a href="soru40.html" class="question-link">Soru 40</a>
+        <a href="soru41.html" class="question-link">Soru 41</a>
+        <a href="soru42.html" class="question-link">Soru 42</a>
+        <a href="soru43.html" class="question-link">Soru 43</a>
+        <a href="soru44.html" class="question-link">Soru 44</a>
+        <a href="soru45.html" class="question-link">Soru 45</a>
+        <a href="soru46.html" class="question-link">Soru 46</a>
+        <a href="soru47.html" class="question-link">Soru 47</a>
+        <a href="soru48.html" class="question-link">Soru 48</a>
+        <a href="soru49.html" class="question-link">Soru 49</a>
+        <a href="soru50.html" class="question-link">Soru 50</a>
+        <a href="soru51.html" class="question-link">Soru 51</a>
+        <a href="soru52.html" class="question-link">Soru 52</a>
+        <a href="soru53.html" class="question-link">Soru 53</a>
+        <a href="soru54.html" class="question-link">Soru 54</a>
+        <a href="soru55.html" class="question-link">Soru 55</a>
+        <a href="soru56.html" class="question-link">Soru 56</a>
+        <a href="soru57.html" class="question-link">Soru 57</a>
+        <a href="soru58.html" class="question-link">Soru 58</a>
+        <a href="soru59.html" class="question-link">Soru 59</a>
+        <a href="soru60.html" class="question-link">Soru 60</a>
+        <a href="soru61.html" class="question-link">Soru 61</a>
+        <a href="soru62.html" class="question-link">Soru 62</a>
+        <a href="soru63.html" class="question-link">Soru 63</a>
+        <a href="soru64.html" class="question-link">Soru 64</a>
+        <a href="soru65.html" class="question-link">Soru 65</a>
+        <a href="soru66.html" class="question-link">Soru 66</a>
+        <a href="soru67.html" class="question-link">Soru 67</a>
+        <a href="soru68.html" class="question-link">Soru 68</a>
+        <a href="soru69.html" class="question-link">Soru 69</a>
+        <a href="soru70.html" class="question-link">Soru 70</a>
+        <a href="soru71.html" class="question-link">Soru 71</a>
+        <a href="soru72.html" class="question-link">Soru 72</a>
+        <a href="soru73.html" class="question-link">Soru 73</a>
+        <a href="soru74.html" class="question-link">Soru 74</a>
+        <a href="soru75.html" class="question-link">Soru 75</a>
+        <a href="soru76.html" class="question-link">Soru 76</a>
+        <a href="soru77.html" class="question-link">Soru 77</a>
+        <a href="soru78.html" class="question-link">Soru 78</a>
+        <a href="soru79.html" class="question-link">Soru 79</a>
+        <a href="soru80.html" class="question-link">Soru 80</a>
+        <a href="soru81.html" class="question-link">Soru 81</a>
+        <a href="soru82.html" class="question-link">Soru 82</a>
+        <a href="soru83.html" class="question-link">Soru 83</a>
+        <a href="soru84.html" class="question-link">Soru 84</a>
+        <a href="soru85.html" class="question-link">Soru 85</a>
+        <a href="soru86.html" class="question-link">Soru 86</a>
+        <a href="soru87.html" class="question-link">Soru 87</a>
+        <a href="soru88.html" class="question-link">Soru 88</a>
+        <a href="soru89.html" class="question-link">Soru 89</a>
+        <a href="soru90.html" class="question-link">Soru 90</a>
+        <a href="soru91.html" class="question-link">Soru 91</a>
+        <a href="soru92.html" class="question-link">Soru 92</a>
+        <a href="soru93.html" class="question-link">Soru 93</a>
+        <a href="soru94.html" class="question-link">Soru 94</a>
+        <a href="soru95.html" class="question-link">Soru 95</a>
+        <a href="soru96.html" class="question-link">Soru 96</a>
+        <a href="soru97.html" class="question-link">Soru 97</a>
+        <a href="soru98.html" class="question-link">Soru 98</a>
+        <a href="soru99.html" class="question-link">Soru 99</a>
+        <a href="soru100.html" class="question-link">Soru 100</a>
+        <a href="soru101.html" class="question-link">Soru 101</a>
+        <a href="soru102.html" class="question-link">Soru 102</a>
+        <a href="soru103.html" class="question-link">Soru 103</a>
+        <a href="soru104.html" class="question-link">Soru 104</a>
+        <a href="soru105.html" class="question-link">Soru 105</a>
+        <a href="soru106.html" class="question-link">Soru 106</a>
+        <a href="soru107.html" class="question-link">Soru 107</a>
+        <a href="soru108.html" class="question-link">Soru 108</a>
+        <a href="soru109.html" class="question-link">Soru 109</a>
+        <a href="soru110.html" class="question-link">Soru 110</a>
+        <a href="soru111.html" class="question-link">Soru 111</a>
+        <a href="soru112.html" class="question-link">Soru 112</a>
+        <a href="soru113.html" class="question-link">Soru 113</a>
+        <a href="soru114.html" class="question-link">Soru 114</a>
+        <a href="soru115.html" class="question-link">Soru 115</a>
+        <a href="soru116.html" class="question-link">Soru 116</a>
+        <a href="soru117.html" class="question-link">Soru 117</a>
+        <a href="soru118.html" class="question-link">Soru 118</a>
+        <a href="soru119.html" class="question-link">Soru 119</a>
+        <a href="soru120.html" class="question-link">Soru 120</a>
+        <a href="soru121.html" class="question-link">Soru 121</a>
+        <a href="soru122.html" class="question-link">Soru 122</a>
+        <a href="soru123.html" class="question-link">Soru 123</a>
+        <a href="soru124.html" class="question-link">Soru 124</a>
+        <a href="soru125.html" class="question-link">Soru 125</a>
+    </div>
 </body>
-</html> 
+</html>

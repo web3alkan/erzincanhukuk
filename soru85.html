@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 85 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 85</h1>
+        
+        <div class="question">
+            Anonim şirkette nakit sermayenin %25 peşin ödenmesi ve 24 ay kuralı ile ilgili hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Nakit sermayenin %25'i peşin, kalan %75'i 12 ayda ödenir</div>
+            <div class="option">B) Nakit sermayenin %25'i peşin, kalan %75'i 24 ayda ödenir</div>
+            <div class="option">C) Nakit sermayenin %50'si peşin, kalan %50'si 24 ayda ödenir</div>
+            <div class="option">D) Nakit sermayenin tamamı peşin ödenir</div>
+            <div class="option">E) Nakit sermayenin %10'u peşin, kalan %90'ı 36 ayda ödenir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Nakit sermayenin %25'i peşin, kalan %75'i 24 ayda ödenir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre anonim şirketlerde nakit sermayenin ödenmesi konusunda belirli kurallar bulunmaktadır:</p>
+            
+            <h5>Peşin Ödeme Kuralı (%25):</h5>
+            <ul>
+                <li>Nakit sermayenin en az %25'i kurulüş sırasında peşin ödenmelidir</li>
+                <li>Bu oran, asgari sermayenin 50.000 TL olması durumunda en az 12.500 TL demektir</li>
+                <li>Peşin ödeme, şirketin tescili için zorunludur</li>
+                <li>Bu tutar bankada bloke edilir veya emanet hesabına yatırılır</li>
+            </ul>
+            
+            <h5>Vadeli Ödeme Kuralı (24 Ay):</h5>
+            <ul>
+                <li>Nakit sermayenin kalan %75'i en geç 24 ay içinde ödenmelidir</li>
+                <li>Bu süre, şirketin tescil tarihinden itibaren başlar</li>
+                <li>Yönetim kurulu, ödeme çağrısı yapabilir</li>
+                <li>Pay sahipleri temerrüde düştüğünde faiz ve gecikme cezası ödenir</li>
+            </ul>
+            
+            <h5>Kuralın Gerekçeleri:</h5>
+            <ul>
+                <li><strong>Sermaye Güvencesi:</strong> Şirketin temel faaliyetlerini başlatabilmesi</li>
+                <li><strong>Alacaklı Koruması:</strong> Başlangıç sermayesinin garantisi</li>
+                <li><strong>Esneklik:</strong> Pay sahiplerine ödeme kolaylığı</li>
+                <li><strong>Likidite:</strong> Şirketin operasyonel ihtiyaçlarını karşılama</li>
+            </ul>
+            
+            <h5>Temerrüt Durumu:</h5>
+            <ul>
+                <li>Ödeme çağrısına rağmen ödenmeyen tutarlar için gecikme faizi</li>
+                <li>Temerrüde düşen payların satış hakkı</li>
+                <li>Pay sahipliği haklarının askıya alınması</li>
+                <li>Zararlara karşı tazminat sorumluluğu</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 481 - Pay Bedelinin Ödenmesi:</strong></p>
+                <p>"Nakit sermayenin en az dörtte biri kurulüş sırasında ödenmiş olmalıdır. Kalanı, yönetim kurulunun çağrısı üzerine en geç iki yıl içinde ödenir."</p>
+                
+                <p><strong>TTK Madde 482 - Temerrüt:</strong></p>
+                <p>"Pay bedelini ödemede temerrüde düşen pay sahibi, gecikme faizi ödemekle yükümlüdür ve payları satılabilir."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>%25 peşin ödeme kuralı, şirketlerin kurulüş aşamasında minimum bir sermaye güvencesi sağlarken, %75'lik kısmın 24 ay içinde ödenmesi imkanı, girişimcilere finansal esneklik tanır. Bu sistem, hem şirket güvenliğini hem de girişimcilik kolaylığını dengeleyerek tasarlanmıştır.</p>
+                
+                <p><strong>Peşin Ödeme Sisteminin Avantajları:</strong></p>
+                <ul>
+                    <li>Şirketin operasyonel faaliyetlerini başlatabilmesi</li>
+                    <li>Alacaklılara karşı güvence sağlanması</li>
+                    <li>Şirketin ciddi bir girişim olduğunun gösterilmesi</li>
+                    <li>Başlangıç yatırımlarının karşılanabilmesi</li>
+                </ul>
+                
+                <p><strong>24 Ay Kuralının Avantajları:</strong></p>
+                <ul>
+                    <li>Pay sahiplerine finansal esneklik</li>
+                    <li>Şirketin gelir akışına göre ödeme imkanı</li>
+                    <li>Yatırım riskinin zaman içinde yayılması</li>
+                    <li>Büyüme sürecinde sermaye ihtiyacının karşılanması</li>
+                </ul>
+                
+                <p><strong>Ödeme Süreci:</strong></p>
+                <ul>
+                    <li><strong>1. Aşama:</strong> %25 peşin ödeme (kurulüş sırasında)</li>
+                    <li><strong>2. Aşama:</strong> Yönetim kurulu çağrısı</li>
+                    <li><strong>3. Aşama:</strong> Pay sahiplerinin ödemesi</li>
+                    <li><strong>4. Aşama:</strong> Temerrüt durumunda yaptırımlar</li>
+                </ul>
+                
+                <p><strong>Temerrüt Sonuçları:</strong></p>
+                <ul>
+                    <li>Gecikme faizi tahakkuku</li>
+                    <li>Oy haklarının askıya alınması</li>
+                    <li>Payların satışa çıkarılması</li>
+                    <li>Tazminat sorumluluğu</li>
+                </ul>
+                
+                <p><strong>Pratik Örnekler:</strong></p>
+                <ul>
+                    <li>100.000 TL sermaye: 25.000 TL peşin, 75.000 TL vadeli</li>
+                    <li>500.000 TL sermaye: 125.000 TL peşin, 375.000 TL vadeli</li>
+                    <li>1.000.000 TL sermaye: 250.000 TL peşin, 750.000 TL vadeli</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 481: Pay bedelinin ödenmesi</li>
+                    <li>TTK Madde 482: Temerrüt hali</li>
+                    <li>TTK Madde 483: Payların satışı</li>
+                    <li>TTK Madde 484: Ek ödeme yükümlülüğü</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru84.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru86.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

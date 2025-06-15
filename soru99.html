@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 99 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 99</h1>
+        
+        <div class="question">
+            Esas sözleşme değişikliği konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Adi çoğunlukla karar alınabilir</div>
+            <div class="option">B) Genel kurulda temsil edilen sermayenin en az 2/3'ünün katılımı gerekir</div>
+            <div class="option">C) Sadece yönetim kurulu teklif edebilir</div>
+            <div class="option">D) Tescilden önce hüküm doğurur</div>
+            <div class="option">E) Her değişiklik için mahkeme kararı gerekir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Genel kurulda temsil edilen sermayenin en az 2/3'ünün katılımı gerekir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre esas sözleşme değişikliği için ağırlaştırılmış nisap ve çoğunluk gerekir. Genel kurulda temsil edilen sermayenin en az üçte ikisi (2/3) bulunmalı ve bu çoğunluğun kararı alınmalıdır.</p>
+            
+            <h5>Esas Sözleşme Değişikliği Şartları:</h5>
+            <ul>
+                <li><strong>Ağırlaştırılmış Nisap:</strong> Sermayenin en az 2/3'ü hazır bulunmalı</li>
+                <li><strong>Nitelikli Çoğunluk:</strong> Temsil edilen sermayenin 2/3 çoğunluğu</li>
+                <li><strong>Genel Kurul Kararı:</strong> Yetkili organ olarak genel kurul</li>
+                <li><strong>Önceden Duyuru:</strong> Değişiklik önerisinin gündemde yer alması</li>
+                <li><strong>Tescil ve İlan:</strong> Resmi işlemler sonrası yürürlük</li>
+            </ul>
+            
+            <h5>Teklif Edebilecek Organlar:</h5>
+            <ul>
+                <li><strong>Yönetim Kurulu:</strong> Asli teklif yetkisi</li>
+                <li><strong>Pay Sahipleri:</strong> Belirli nisaba sahip pay sahipleri</li>
+                <li><strong>Denetçiler:</strong> Denetim sonucunda teklif</li>
+                <li><strong>Mahkeme:</strong> Bazı durumlarda mahkeme kararı</li>
+            </ul>
+            
+            <h5>Değişiklik Türleri:</h5>
+            <ul>
+                <li><strong>Temel Değişiklikler:</strong> Şirket unvanı, merkez, amaç</li>
+                <li><strong>Sermaye Değişiklikleri:</strong> Sermaye artırımı/azaltımı</li>
+                <li><strong>Yönetim Değişiklikleri:</strong> Yönetim kurulu yapısı</li>
+                <li><strong>Pay Değişiklikleri:</strong> Pay türleri ve hakları</li>
+                <li><strong>Usul Değişiklikleri:</strong> Genel kurul usulü</li>
+            </ul>
+            
+            <h5>Tescil ve İlan Süreci:</h5>
+            <ul>
+                <li><strong>Tescil Başvurusu:</strong> Ticaret sicili müdürlüğüne</li>
+                <li><strong>Belge İbrazı:</strong> Gerekli belgelerin sunulması</li>
+                <li><strong>İnceleme:</strong> Yasal şartların kontrolü</li>
+                <li><strong>Tescil:</strong> Sicile kayıt işlemi</li>
+                <li><strong>İlan:</strong> Ticaret sicili gazetesinde ilan</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 421 - Ağırlaştırılmış Nisap ve Çoğunluk:</strong></p>
+                <p>"Esas sözleşme değişikliği kararı, genel kurulda temsil edilen sermayenin en az üçte ikisinin katılımı ve aynı çoğunluğun kararı ile alınır."</p>
+                
+                <p><strong>TTK Madde 422 - Tescil ve İlan:</strong></p>
+                <p>"Esas sözleşme değişikliği tescil ve ilan edilmedikçe üçüncü kişilere karşı hüküm ifade etmez."</p>
+                
+                <p><strong>Ağırlaştırılmış Nisabın Amacı:</strong></p>
+                <ul>
+                    <li><strong>Şirket Güvenliği:</strong> Temel yapının korunması</li>
+                    <li><strong>Azınlık Korunması:</strong> Azınlık haklarının güvence altına alınması</li>
+                    <li><strong>İstikrar:</strong> Şirket yapısının istikrarı</li>
+                    <li><strong>Ciddiyet:</strong> Önemli kararlar için yeterli katılım</li>
+                </ul>
+                
+                <p><strong>Esas Sözleşme Değişikliği Süreci:</strong></p>
+                <ul>
+                    <li><strong>Teklif Aşaması:</strong> Yetkili organın değişiklik teklifi</li>
+                    <li><strong>Davet Aşaması:</strong> Genel kurulun daveti</li>
+                    <li><strong>Görüşme:</strong> Genel kurulda değişiklik teklifinin görüşülmesi</li>
+                    <li><strong>Karar:</strong> Ağırlaştırılmış çoğunlukla karar alınması</li>
+                    <li><strong>Tescil:</strong> Ticaret sicilinde tescil</li>
+                    <li><strong>İlan:</strong> Resmi gazetede ilan</li>
+                </ul>
+                
+                <p><strong>Nisap ve Çoğunluk Hesabı:</strong></p>
+                <ul>
+                    <li><strong>Nisap:</strong> Toplantıda temsil edilen sermayenin 2/3'ü</li>
+                    <li><strong>Çoğunluk:</strong> Hazır bulunan payların 2/3'ü</li>
+                    <li><strong>Hesaplama:</strong> Oy hakkı olan paylar üzerinden</li>
+                    <li><strong>Çekimser:</strong> Çekimser oylar olumsuz sayılır</li>
+                </ul>
+                
+                <p><strong>Değişiklik Önerisinin İçeriği:</strong></p>
+                <ul>
+                    <li><strong>Değişiklik Nedeni:</strong> Gerekçesi açıklanmalı</li>
+                    <li><strong>Eski Metin:</strong> Değiştirilecek hüküm</li>
+                    <li><strong>Yeni Metin:</strong> Önerilen yeni hüküm</li>
+                    <li><strong>Karşılaştırma:</strong> Eski-yeni hüküm karşılaştırması</li>
+                </ul>
+                
+                <p><strong>Özel Durumlar:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Artırımı:</strong> Özel prosedür ve şartlar</li>
+                    <li><strong>Sermaye Azaltımı:</strong> Alacaklıları koruma önlemleri</li>
+                    <li><strong>Birleşme:</strong> Özel birleşme prosedürü</li>
+                    <li><strong>Tür Değişikliği:</strong> Şirket türü değiştirme</li>
+                </ul>
+                
+                <p><strong>Azınlık Hakları:</strong></p>
+                <ul>
+                    <li><strong>Çıkma Hakkı:</strong> Temel değişikliklerde çıkma</li>
+                    <li><strong>Değer Biçimi:</strong> Payların değer biçimi hakkı</li>
+                    <li><strong>İptal Davası:</strong> Hukuka aykırı kararlara itiraz</li>
+                    <li><strong>Bilgi Alma:</strong> Değişiklik hakkında bilgi alma</li>
+                </ul>
+                
+                <p><strong>Tescil Şartları:</strong></p>
+                <ul>
+                    <li><strong>Genel Kurul Kararı:</strong> Usulüne uygun karar</li>
+                    <li><strong>Yasal Şartlar:</strong> Kanuni şartların yerine getirilmesi</li>
+                    <li><strong>Belge Tamlığı:</strong> Gerekli belgeler</li>
+                    <li><strong>Harç Ödeme:</strong> Tescil harcının ödenmesi</li>
+                </ul>
+                
+                <p><strong>Tescil Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Üçüncü Kişiler:</strong> Üçüncü kişilere karşı hüküm</li>
+                    <li><strong>Şirket İçi:</strong> Şirket içinde geçerlilik</li>
+                    <li><strong>Aleni Karine:</strong> İyiniyetli üçüncü kişiler için koruma</li>
+                    <li><strong>Sicil Kayıtları:</strong> Resmi kayıtlarda değişiklik</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 421: Ağırlaştırılmış nisap ve çoğunluk</li>
+                    <li>TTK Madde 422: Tescil ve ilan</li>
+                    <li>TTK Madde 423: Azınlık hakları</li>
+                    <li>TTK Madde 456-466: Sermaye artırımı</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru98.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru100.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

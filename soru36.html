@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 36 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 36</h1>
+        
+        <div class="question">
+            Çıkan ortağın muaccel olmayan borçlardan sorumluluğu ile ilgili aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Muaccel olmayan borçlardan hiç sorumlu değildir</div>
+            <div class="option">B) Sadece vadesi gelmiş borçlardan sorumludur</div>
+            <div class="option">C) Çıkış öncesi doğmuş muaccel olmayan borçlardan da sorumludur</div>
+            <div class="option">D) Sorumluluk sadece esas borç ile sınırlıdır</div>
+            <div class="option">E) Vade gelene kadar sorumluluk askıda kalır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) Çıkış öncesi doğmuş muaccel olmayan borçlardan da sorumludur</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TBK madde 639'a göre çıkan ortak, çıktığı tarihten önce doğmuş tüm şirket borçlarından sorumludur. Bu sorumluluk borcun muaccel olup olmadığına bakılmaksızın geçerlidir. Muaccel olmayan borçlar da çıkış öncesi doğmuşsa çıkan ortak bu borçlardan sorumlu olur.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Muaccel Olmayan Borçlardan Sorumluluk:</strong></p>
+                
+                <p><strong>TBK Madde 639 - Çıkan Ortağın Durumu:</strong></p>
+                <p>Şirketten çıkan veya çıkarılan ortak, çıktığı tarihten önce doğmuş şirket borçlarından sorumludur.</p>
+                
+                <p><strong>Muaccel/Muaccel Olmayan Borç Ayrımı:</strong></p>
+                <ul>
+                    <li><strong>Muaccel Borç:</strong> Vadesi gelmiş, derhal ödenebilir</li>
+                    <li><strong>Muaccel Olmayan Borç:</strong> Vadesi henüz gelmemiş</li>
+                    <li><strong>Kanun Açık:</strong> Her iki türden de sorumluluk</li>
+                    <li><strong>Vade Kriteri:</strong> Sorumluluk için önemli değil</li>
+                </ul>
+                
+                <p><strong>Sorumluluk Kapsamı:</strong></p>
+                <ul>
+                    <li>Çıkış öncesi tüm borçlar</li>
+                    <li>Vadesi gelmiş borçlar</li>
+                    <li>Vadesi gelmemiş borçlar</li>
+                    <li>Şartlı/belirsiz vadeli borçlar</li>
+                    <li>Faiz ve fer'i borçlar</li>
+                </ul>
+                
+                <p><strong>Muaccel Olmayan Borç Örnekleri:</strong></p>
+                <ul>
+                    <li>Vadeli kredi borçları</li>
+                    <li>İleri tarihli senetler</li>
+                    <li>Kira borçları (gelecek taksitler)</li>
+                    <li>Sigorta primleri</li>
+                    <li>Vergi borçları (tahakkuk etmiş)</li>
+                </ul>
+                
+                <p><strong>Sorumluluk Süresi:</strong></p>
+                <ul>
+                    <li><strong>2 Yıllık Süre:</strong> Tescilden itibaren</li>
+                    <li><strong>Tüm Borçlar İçin:</strong> Muaccel/muaccel olmayan ayırımı yok</li>
+                    <li><strong>Vade Gelince:</strong> Alacaklı takip edebilir</li>
+                    <li><strong>Süre Bitince:</strong> Sorumluluk sona erer</li>
+                </ul>
+                
+                <p><strong>Alacaklının Konumu:</strong></p>
+                <ul>
+                    <li>Vade gelmeden takip edemez</li>
+                    <li>Vade gelince çıkan ortaktan talep edebilir</li>
+                    <li>2 yıllık süreyi beklemek zorunda değil</li>
+                    <li>Zamanaşımı haklarını koruyabilir</li>
+                </ul>
+                
+                <p><strong>Praktik Örnekler:</strong></p>
+                <ul>
+                    <li><strong>Örnek 1:</strong> Ortak Ocak'ta çıktı, Mart vadeli kredi var</li>
+                    <li><strong>Sonuç:</strong> Mart'ta vade gelince sorumlu</li>
+                    <li><strong>Örnek 2:</strong> 5 yıl vadeli kredi, ortak 2. yılda çıktı</li>
+                    <li><strong>Sonuç:</strong> Vade geldiğinde (3 yıl sonra) sorumlu</li>
+                </ul>
+                
+                <p><strong>Zamanaşımı ve Vade İlişkisi:</strong></p>
+                <ul>
+                    <li>Vade geç gelirse sorumluluk süresi bitebilir</li>
+                    <li>2 yıl dolmadan vade gelirse sorumluluk devam eder</li>
+                    <li>Her durum kendi şartlarında değerlendirilir</li>
+                </ul>
+                
+                <p><strong>Çıkan Ortağın Korunması:</strong></p>
+                <ul>
+                    <li>Güvence verme talebi</li>
+                    <li>Borçtan kurtarılma</li>
+                    <li>2 yıllık sınırlı süre</li>
+                    <li>İç rücu hakları</li>
+                </ul>
+                
+                <p><strong>Şartlı Borçlar:</strong></p>
+                <ul>
+                    <li>Çıkış öncesi doğmuş şartlı borçlar</li>
+                    <li>Şart gerçekleşirse sorumluluk</li>
+                    <li>Kefalet, garanti sözleşmeleri</li>
+                    <li>Zarar tazminat borçları</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TBK Madde 89-93: Borçlarda vade</li>
+                    <li>TBK Madde 641: Güvence verme</li>
+                    <li>İİK Madde 68: Muaccelleşme</li>
+                    <li>TTK Madde 252-256: Tescil</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru35.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru37.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

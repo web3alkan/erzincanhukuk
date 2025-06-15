@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 32 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 32</h1>
+        
+        <div class="question">
+            Adi şirkette bir ortağın çıkarılması (exclusion) hangi anda hüküm ifade eder? Aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Çıkarma kararının alındığı anda</div>
+            <div class="option">B) Çıkarma ihbarının yapıldığı anda</div>
+            <div class="option">C) Mahkeme kararının kesinleştiği anda</div>
+            <div class="option">D) Çıkarma kararının ilgili ortağa tebliğ edildiği anda</div>
+            <div class="option">E) Ticaret siciline tescil tarihinde</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Çıkarma kararının ilgili ortağa tebliğ edildiği anda</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TBK madde 638/2'ye göre, çıkarma kararı ilgili ortağa bildirildiği anda hüküm ifade eder. Çıkarma için mahkeme kararı gerekmez, ortakların kararı yeterlidir. Ancak bu karar mutlaka çıkarılan ortağa tebliğ edilmelidir ki hüküm ifade etsin. Tescil işlemi sadece üçüncü kişilere karşı etkilidir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Çıkarılmanın Hüküm İfade Ettiği An:</strong></p>
+                
+                <p><strong>TBK Madde 638 - Çıkarma Kararı ve Sonuçları:</strong></p>
+                <p>2. Çıkarma kararı, ilgili ortağa bildirildiği anda hüküm ifade eder.</p>
+                
+                <p><strong>Çıkarma Prosedürü:</strong></p>
+                <ul>
+                    <li><strong>1. Aşama:</strong> Haklı sebebin varlığı</li>
+                    <li><strong>2. Aşama:</strong> Diğer ortakların çıkarma kararı</li>
+                    <li><strong>3. Aşama:</strong> Kararın çıkarılan ortağa tebliği</li>
+                    <li><strong>4. Aşama:</strong> Tescil (üçüncü kişilere karşı etki)</li>
+                </ul>
+                
+                <p><strong>TBK Madde 637 - Çıkarma Sebepleri:</strong></p>
+                <p>Bir ortak, haklı sebeplerle diğer ortaklar tarafından şirketten çıkarılabilir. Haklı sebepler özellikle şunlardır:</p>
+                <ul>
+                    <li>Ağır kusurlu davranış</li>
+                    <li>Güveni sarsıcı fiiller</li>
+                    <li>Rekabet yasağının ihlali</li>
+                    <li>Şirket menfaatlerine aykırı hareket</li>
+                    <li>Ortaklık yükümlülüklerini yerine getirmeme</li>
+                </ul>
+                
+                <p><strong>Çıkarma Kararının Özellikleri:</strong></p>
+                <ul>
+                    <li><strong>Çoğunluk Kararı:</strong> Çıkarılacak ortak hariç diğerleri</li>
+                    <li><strong>Haklı Sebep:</strong> Mutlaka objektif haklı sebep gerekir</li>
+                    <li><strong>Tebliğ:</strong> Çıkarılan ortağa bildirilmesi şart</li>
+                    <li><strong>Derhal Etki:</strong> Tebliğ anında hüküm ifade eder</li>
+                </ul>
+                
+                <p><strong>Çıkarma Sonrası Durum:</strong></p>
+                <ul>
+                    <li>Çıkarılan ortak derhal ortaklık sıfatını kaybeder</li>
+                    <li>Yönetim ve temsil yetkisi sona erer</li>
+                    <li>Tasfiye payı hesaplanır</li>
+                    <li>Borçlardan sorumluluk devam eder</li>
+                </ul>
+                
+                <p><strong>TBK Madde 639 - Çıkan/Çıkarılan Ortağın Durumu:</strong></p>
+                <p>Şirketten çıkan veya çıkarılan ortak:</p>
+                <ul>
+                    <li>Çıktığı tarihten önce doğmuş şirket borçlarından sorumludur</li>
+                    <li>Bu sorumluluk çıkışın tescilinden iki yıl sonra sona erer</li>
+                    <li>Tasfiye payını alma hakkına sahiptir</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TBK Madde 640: Tasfiye payı hesaplanması</li>
+                    <li>TBK Madde 641: Borçtan kurtarılma</li>
+                    <li>TTK Madde 252-256: Ticaret siciline tescil</li>
+                    <li>HMK: Tebliğ usulleri</li>
+                </ul>
+                
+                <p><strong>Mahkeme Kararı Gereken Durumlar:</strong></p>
+                <ul>
+                    <li>Çıkarma kararına itiraz halinde</li>
+                    <li>Haklı sebebin tartışmalı olması durumunda</li>
+                    <li>Tasfiye payı anlaşmazlığında</li>
+                    <li>Borçtan kurtarılma talebinde</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru31.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru33.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

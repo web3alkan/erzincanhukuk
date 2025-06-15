@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 123 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 123</h1>
+        
+        <div class="question">
+            Limited şirkette ek ödeme yükümlülüğü konusunda aşağıdaki ifadelerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Ek ödeme yükümlülüğü her limited şirkette bulunmak zorundadır</div>
+            <div class="option">B) Anasözleşmede hüküm bulunması halinde ek ödeme yükümlülüğü konulabilir</div>
+            <div class="option">C) Ek ödeme yükümlülüğü sadece kar elde edilmeyen yıllarda uygulanır</div>
+            <div class="option">D) Ek ödeme yükümlülüğü ortakların payları oranında değil eşit olarak uygulanır</div>
+            <div class="option">E) Ek ödeme yükümlülüğü yerine getirilmezse ortağın payları iptal edilir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Anasözleşmede hüküm bulunması halinde ek ödeme yükümlülüğü konulabilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Ek ödeme yükümlülüğü limited şirketlerde zorunlu değildir. Anasözleşmede açık hüküm bulunması halinde ortaklara ek ödeme yükümlülüğü getirilebilir. Bu yükümlülük şirketin finansman ihtiyacını karşılamaya yöneliktir.</p>
+            
+            <h5>Ek Ödeme Yükümlülüğünün Özellikleri:</h5>
+            <ul>
+                <li><strong>İhtiyari Durum:</strong> Zorunlu değil, anasözleşme hükmüne bağlı</li>
+                <li><strong>Açık Düzenleme:</strong> Anasözleşmede açıkça belirtilmeli</li>
+                <li><strong>Pay Oranı:</strong> Genellikle paylar oranında uygulanır</li>
+                <li><strong>Şartlı Yükümlülük:</strong> Belirli şartların gerçekleşmesi halinde</li>
+            </ul>
+            
+            <h5>Ek Ödeme Yükümlülüğünün Şartları:</h5>
+            <ul>
+                <li><strong>Anasözleşme Hükmü:</strong>
+                    <ul>
+                        <li>Açık ve net düzenleme</li>
+                        <li>Ödeme şartlarının belirlenmesi</li>
+                        <li>Miktarın tayini</li>
+                        <li>Ödeme zamanının tespiti</li>
+                    </ul>
+                </li>
+                <li><strong>Objektif Kriterler:</strong>
+                    <ul>
+                        <li>Şirketin zarar etmesi</li>
+                        <li>Sermaye kaybı yaşanması</li>
+                        <li>Likidite sıkıntısı</li>
+                        <li>Genel kurul kararı</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h5>Ek Ödeme Yükümlülüğünün Türleri:</h5>
+            <ul>
+                <li><strong>Mutlak Ek Ödeme:</strong>
+                    <ul>
+                        <li>Belirli şartlarda otomatik doğar</li>
+                        <li>Objektif kriterlere bağlı</li>
+                        <li>Şartlar gerçekleşince yükümlülük doğar</li>
+                    </ul>
+                </li>
+                <li><strong>Şartlı Ek Ödeme:</strong>
+                    <ul>
+                        <li>Genel kurul kararına bağlı</li>
+                        <li>Karar alınması halinde doğar</li>
+                        <li>Takdir yetkisi mevcut</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h5>Ek Ödeme Yükümlülüğünün Miktarı:</h5>
+            <ul>
+                <li><strong>Sabit Miktar:</strong> Belirli bir tutar</li>
+                <li><strong>Oransal Miktar:</strong> Pay oranında belirleme</li>
+                <li><strong>Değişken Miktar:</strong> İhtiyaca göre belirleme</li>
+                <li><strong>Maksimum Sınır:</strong> Üst sınırın konulması</li>
+            </ul>
+            
+            <h5>Ek Ödeme Yükümlülüğünün Yerine Getirilmemesi:</h5>
+            <ul>
+                <li><strong>İfa Davası:</strong> Yükümlülüğün yerine getirilmesi davası</li>
+                <li><strong>Temerrüt Faizi:</strong> Gecikme faizi uygulaması</li>
+                <li><strong>Ortağın Çıkarılması:</strong> Haklı nedenle çıkarma</li>
+                <li><strong>Pay Devri Yasağı:</strong> Ödeme yapılana kadar yasak</li>
+            </ul>
+            
+            <h5>Yan Edim Yükümlülüğü ile Farkları:</h5>
+            <ul>
+                <li><strong>Ek Ödeme Yükümlülüğü:</strong>
+                    <ul>
+                        <li>Para ile ifa edilir</li>
+                        <li>Şirketin sermayesine eklenir</li>
+                        <li>Geri ödenebilir</li>
+                        <li>Şartlı yükümlülük</li>
+                    </ul>
+                </li>
+                <li><strong>Yan Edim Yükümlülüğü:</strong>
+                    <ul>
+                        <li>Para dışı edim</li>
+                        <li>Sermayeye eklenmez</li>
+                        <li>Geri ödeme yoktur</li>
+                        <li>Sürekli yükümlülük</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 595 - Ek Ödeme Yükümlülüğü:</strong></p>
+                <p>"Şirket sözleşmesinde hüküm bulunması koşuluyla, ortaklara ek ödeme yükümlülüğü getirilebilir."</p>
+                
+                <p><strong>TTK Madde 596 - Ek Ödeme Yükümlülüğünün İfası:</strong></p>
+                <p>"Ek ödeme yükümlülüğü, şirket sözleşmesinde belirlenen şartların gerçekleşmesi halinde doğar ve ortaklar bu yükümlülüğü yerine getirmekle yükümlüdür."</p>
+                
+                <p><strong>Anasözleşmede Ek Ödeme Yükümlülüğü Hükmü Örneği:</strong></p>
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0;">
+                    <p><strong>Örnek Hüküm:</strong></p>
+                    <p>"Şirketin bilançosunda zarar görünmesi halinde, ortaklar sahip oldukları paylar oranında ek ödeme yükümlülüğüne tabidirler. Ek ödeme miktarı, ortağın sermaye payının %50'sini geçemez. Ek ödeme yükümlülüğü genel kurul kararı ile talep edilir ve karar tarihinden itibaren 30 gün içinde ödenir."</p>
+                </div>
+                
+                <p><strong>Ek Ödeme Yükümlülüğü Koşulları Tablosu:</strong></p>
+                <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                    <tr style="background-color: #f8f9fa;">
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Koşul Türü</th>
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Örnek</th>
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Uygulama</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Mali Durum</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Zarar etme</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Otomatik doğar</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Sermaye Kaybı</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">%50 kayıp</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Otomatik doğar</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Karar Bağlı</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Genel kurul kararı</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Karar ile doğar</td>
+                    </tr>
+                </table>
+                
+                <p><strong>Ek Ödeme Yükümlülüğünün Avantajları:</strong></p>
+                <ul>
+                    <li><strong>Finansman Sağlama:</strong> Şirkete ek kaynak</li>
+                    <li><strong>Kredi Güvencesi:</strong> Alacaklılar için güvence</li>
+                    <li><strong>İflas Önleme:</strong> Mali sıkıntıyı aşma</li>
+                    <li><strong>Esneklik:</strong> İhtiyaca göre düzenleme</li>
+                </ul>
+                
+                <p><strong>Ek Ödeme Yükümlülüğünün Dezavantajları:</strong></p>
+                <ul>
+                    <li><strong>Ortak Yükü:</strong> Ek mali külfet</li>
+                    <li><strong>Pay Devri Güçlüğü:</strong> Yatırımcı cazibesi azalır</li>
+                    <li><strong>Belirsizlik:</strong> Gelecekteki yükümlülük belirsizliği</li>
+                    <li><strong>Uyuşmazlık:</strong> Ortaklar arası uyuşmazlık riski</li>
+                </ul>
+                
+                <p><strong>Ek Ödeme Yükümlülüğünün Devri:</strong></p>
+                <ul>
+                    <li><strong>Pay ile Birlikte:</strong> Pay devri ile yükümlülük de devredilir</li>
+                    <li><strong>Devralan Bilgisi:</strong> Devralan bilgilendirilmeli</li>
+                    <li><strong>Müteselsil Sorumluluk:</strong> Devir öncesi doğan yükümlülükler</li>
+                    <li><strong>Anasözleşme Hükmü:</strong> Devir koşulları belirlenebilir</li>
+                </ul>
+                
+                <p><strong>Ek Ödeme Yükümlülüğünün Sona Ermesi:</strong></p>
+                <ul>
+                    <li><strong>Anasözleşme Değişikliği:</strong> Hükmün kaldırılması</li>
+                    <li><strong>Şirketin Sona Ermesi:</strong> Tasfiye ile sona erme</li>
+                    <li><strong>Pay Devredi:</strong> Payların tamamının devri</li>
+                    <li><strong>Süre Sonu:</strong> Belirli süreli ise sürenin dolması</li>
+                </ul>
+                
+                <p><strong>Alman Hukuku ile Karşılaştırma:</strong></p>
+                <ul>
+                    <li><strong>Nachschußpflicht:</strong> Alman limited şirket hukukunda ek ödeme</li>
+                    <li><strong>Benzer Düzenleme:</strong> Türk hukuku ile benzer</li>
+                    <li><strong>Uygulama Alanı:</strong> Yaygın kullanım</li>
+                    <li><strong>Koruma Sistemi:</strong> Alacaklı koruması amacı</li>
+                </ul>
+                
+                <p><strong>Uygulamada Karşılaşılan Sorunlar:</strong></p>
+                <ul>
+                    <li><strong>Miktar Belirleme:</strong> Uygun miktarın tespiti</li>
+                    <li><strong>Koşul Belirleme:</strong> Objektif kriterlerin seçimi</li>
+                    <li><strong>İfa Zorlaması:</strong> Ödeme yaptırma yolları</li>
+                    <li><strong>Pay Devri:</strong> Devir sırasında açıklama</li>
+                </ul>
+                
+                <p><strong>Yargıtay İçtihatları:</strong></p>
+                <ul>
+                    <li>Ek ödeme yükümlülüğü anasözleşmede açıkça düzenlenmelidir</li>
+                    <li>Yükümlülük paylar oranında uygulanır</li>
+                    <li>İfa edilmemesi halinde ortağın çıkarılması mümkündür</li>
+                    <li>Pay devri ile yükümlülük de devredilir</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 595: Ek ödeme yükümlülüğü</li>
+                    <li>TTK Madde 596: İfa zorunluluğu</li>
+                    <li>TTK Madde 598: Ortağın çıkarılması</li>
+                    <li>TTK Madde 581: Pay devri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru122.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru124.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

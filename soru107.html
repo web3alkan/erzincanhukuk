@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 107 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 107</h1>
+        
+        <div class="question">
+            Pay sahipliği haklarının kullanımı konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Oy hakkı devredilemez</div>
+            <div class="option">B) Kar payı hakkı pay sahipliğinden ayrılabilir</div>
+            <div class="option">C) Bilgi alma hakkı sınırsızdır</div>
+            <div class="option">D) Pay sahipliği hakları bir bütün olarak devir edilebilir</div>
+            <div class="option">E) Tasfiye payı hakkı kullanılamaz</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Pay sahipliği hakları bir bütün olarak devir edilebilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre pay sahipliği hakları, payın devri ile birlikte bir bütün olarak yeni sahibine geçer. Pay sahipliği hakları pay ile sıkı sıkıya bağlıdır ve kural olarak paydan ayrı olarak devir edilemez.</p>
+            
+            <h5>Pay Sahipliği Haklarının Türleri:</h5>
+            <ul>
+                <li><strong>Mali Haklar:</strong> Kar payı, tasfiye payı, rüçhan hakkı</li>
+                <li><strong>Yönetim Hakları:</strong> Oy hakkı, yönetimde söz sahibi olma</li>
+                <li><strong>Denetim Hakları:</strong> Bilgi alma, denetim isteme</li>
+                <li><strong>Koruyucu Haklar:</strong> İptal davası, sorumluluk davası</li>
+            </ul>
+            
+            <h5>Hakların Devri İlkesi:</h5>
+            <ul>
+                <li><strong>Bütünlük İlkesi:</strong> Haklar bir bütün olarak devir edilir</li>
+                <li><strong>Ayrılmazlık:</strong> Haklar paydan ayrılamaz</li>
+                <li><strong>Otomatik Geçiş:</strong> Pay devriyle haklar kendiliğinden geçer</li>
+                <li><strong>Özel Düzenlemeler:</strong> İstisnai durumlar mümkün</li>
+            </ul>
+            
+            <h5>Oy Hakkının Devri:</h5>
+            <ul>
+                <li><strong>Paydan Ayrı Devir:</strong> Kural olarak mümkün değil</li>
+                <li><strong>Vekalet Sistemi:</strong> Geçici olarak vekalet verilebilir</li>
+                <li><strong>Usufruct:</strong> İntifa hakkı durumunda özel düzen</li>
+                <li><strong>Rehin:</strong> Rehin durumunda özel kurallar</li>
+            </ul>
+            
+            <h5>Bilgi Alma Hakkının Sınırları:</h5>
+            <ul>
+                <li><strong>Ticari Sır:</strong> Ticari sırları koruma</li>
+                <li><strong>Orantılılık:</strong> Payın büyüklüğüne göre sınır</li>
+                <li><strong>Kötüye Kullanım:</strong> Hakkın kötüye kullanılmaması</li>
+                <li><strong>Usul Şartları:</strong> Belirli usul kurallarına uyma</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 434 - Pay Sahipliği Hakları:</strong></p>
+                <p>"Pay sahipliği hakları payın devri ile birlikte yeni sahibine geçer."</p>
+                
+                <p><strong>TTK Madde 435 - Bilgi Alma Hakkı:</strong></p>
+                <p>"Pay sahipleri, şirket işleri hakkında bilgi alma hakkına sahiptir."</p>
+                
+                <p><strong>Pay Sahipliği Haklarının Sınıflandırılması:</strong></p>
+                <ul>
+                    <li><strong>Mali Haklar:</strong>
+                        <ul>
+                            <li>Kar payı alma hakkı</li>
+                            <li>Tasfiye payı alma hakkı</li>
+                            <li>Rüçhan hakkı</li>
+                            <li>Bedelsiz pay alma hakkı</li>
+                        </ul>
+                    </li>
+                    <li><strong>Yönetim Hakları:</strong>
+                        <ul>
+                            <li>Oy kullanma hakkı</li>
+                            <li>Genel kurula katılma hakkı</li>
+                            <li>Gündem önerme hakkı</li>
+                            <li>Yönetici seçme hakkı</li>
+                        </ul>
+                    </li>
+                    <li><strong>Denetim Hakları:</strong>
+                        <ul>
+                            <li>Bilgi alma hakkı</li>
+                            <li>İnceleme hakkı</li>
+                            <li>Özel denetim isteme hakkı</li>
+                            <li>Denetçi belirleme hakkı</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>Hakların Kullanımı:</strong></p>
+                <ul>
+                    <li><strong>Kişisel Kullanım:</strong> Pay sahibi tarafından şahsen</li>
+                    <li><strong>Vekalet ile:</strong> Vekil aracılığıyla kullanım</li>
+                    <li><strong>Sınırlı Durum:</strong> Rehin, intifa hakkı durumları</li>
+                    <li><strong>Kötüye Kullanım Yasağı:</strong> Hakkın amacına uygun kullanım</li>
+                </ul>
+                
+                <p><strong>Oy Hakkının Özellikleri:</strong></p>
+                <ul>
+                    <li><strong>Bağlı Hak:</strong> Paya bağlı devredilemez hak</li>
+                    <li><strong>Kişisel Hak:</strong> Pay sahibinin kişisel hakkı</li>
+                    <li><strong>Vazgeçilemez:</strong> Kalıcı olarak vazgeçilemez</li>
+                    <li><strong>Orantılı:</strong> Pay miktarıyla orantılı</li>
+                </ul>
+                
+                <p><strong>Kar Payı Hakkı:</strong></p>
+                <ul>
+                    <li><strong>Mali Hak:</strong> Dağıtılabilir kardan pay alma</li>
+                    <li><strong>Eşitlik İlkesi:</strong> Paylar arasında eşitlik</li>
+                    <li><strong>İmtiyaz Mümkün:</strong> İmtiyazlı paylar için farklılık</li>
+                    <li><strong>Zamanaşımı:</strong> Kar payı alacağının zamanaşımı</li>
+                </ul>
+                
+                <p><strong>Bilgi Alma Hakkının Kapsamı:</strong></p>
+                <ul>
+                    <li><strong>Finansal Durum:</strong> Mali tablolar ve raporlar</li>
+                    <li><strong>Yönetim Faaliyeti:</strong> Yönetim kurulu işlemleri</li>
+                    <li><strong>Stratejik Kararlar:</strong> Önemli şirket kararları</li>
+                    <li><strong>Denetim Sonuçları:</strong> Denetim raporları</li>
+                </ul>
+                
+                <p><strong>Bilgi Alma Hakkının Sınırları:</strong></p>
+                <ul>
+                    <li><strong>Ticari Sır:</strong> Rekabet gücünü etkileyecek bilgiler</li>
+                    <li><strong>Kişisel Veriler:</strong> Kişisel veri koruma kuralları</li>
+                    <li><strong>Zarar Verme:</strong> Şirket zararına kullanım yasağı</li>
+                    <li><strong>Usul Kuralları:</strong> Belirli usul ve şekil şartları</li>
+                </ul>
+                
+                <p><strong>Rüçhan Hakkı:</strong></p>
+                <ul>
+                    <li><strong>Öncelik Hakkı:</strong> Yeni paylarda öncelik</li>
+                    <li><strong>Orantılı Hak:</strong> Mevcut paylarla orantılı</li>
+                    <li><strong>Devredilebilir:</strong> Başkasına devir mümkün</li>
+                    <li><strong>Süreli Hak:</strong> Belirli süre içinde kullanım</li>
+                </ul>
+                
+                <p><strong>Tasfiye Payı Hakkı:</strong></p>
+                <ul>
+                    <li><strong>Son Hak:</strong> Şirket tasfiyesinde kullanım</li>
+                    <li><strong>Artık Değer:</strong> Borçlar çıktıktan sonra kalan</li>
+                    <li><strong>Orantılı Dağıtım:</strong> Paylarla orantılı dağıtım</li>
+                    <li><strong>İmtiyaz Mümkün:</strong> Tasfiye imtiyazı olabilir</li>
+                </ul>
+                
+                <p><strong>Koruyucu Haklar:</strong></p>
+                <ul>
+                    <li><strong>İptal Davası:</strong> Hukuka aykırı kararlara itiraz</li>
+                    <li><strong>Sorumluluk Davası:</strong> Yöneticilere karşı dava</li>
+                    <li><strong>Çıkma Hakkı:</strong> Belirli durumlarda çıkma</li>
+                    <li><strong>Fesih Davası:</strong> Haklı sebeple fesih isteme</li>
+                </ul>
+                
+                <p><strong>Hakların Kısıtlanması:</strong></p>
+                <ul>
+                    <li><strong>Esas Sözleşme:</strong> Esas sözleşmeyle sınırlama</li>
+                    <li><strong>Kanuni Sınırlar:</strong> Kanundan doğan sınırlar</li>
+                    <li><strong>Genel Kurul:</strong> Genel kurul kararıyla sınırlama</li>
+                    <li><strong>Adillik İlkesi:</strong> Adaletsiz sınırlama yasağı</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 434: Pay sahipliği hakları</li>
+                    <li>TTK Madde 435: Bilgi alma hakkı</li>
+                    <li>TTK Madde 507: Kar payı hakkı</li>
+                    <li>TTK Madde 461: Rüçhan hakkı</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru106.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru108.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

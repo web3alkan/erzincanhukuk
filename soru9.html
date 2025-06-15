@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 9 - Şirket Türleri ve Özellikleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 9</div>
+        
+        <div class="question-text">
+            Aşağıdaki şirket türlerinden hangisinde ortakların sorumluluğu sınırlı değildir?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Anonim şirket</li>
+            <li onclick="checkAnswer(this, false)">B) Limited şirket</li>
+            <li onclick="checkAnswer(this, true)">C) Kollektif şirket</li>
+            <li onclick="checkAnswer(this, false)">D) Sermayesi paylara bölünmüş komandit şirket</li>
+            <li onclick="checkAnswer(this, false)">E) Kooperatif</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: C</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>Kollektif şirkette ortakların sorumluluğu sınırlı değildir. TTK madde 237'ye göre, kollektif şirket ortakları şirket borçlarından kişisel malvarlıklarıyla sınırsız olarak sorumludur.</p>
+                
+                <p><strong>Şirket türlerine göre ortak sorumluluğu:</strong></p>
+                <ul>
+                    <li><strong>Kollektif Şirket:</strong> Ortaklar sınırsız sorumludur</li>
+                    <li><strong>Komandit Şirket:</strong> Komanditer ortaklar sınırlı, komandite ortaklar sınırsız sorumludur</li>
+                    <li><strong>Anonim Şirket:</strong> Pay sahipleri sadece taahhüt ettikleri sermaye miktarı ile sorumludur</li>
+                    <li><strong>Limited Şirket:</strong> Ortaklar sadece sermaye payları ile sorumludur</li>
+                    <li><strong>Sermayesi Paylara Bölünmüş Komandit Şirket:</strong> Pay sahipleri sınırlı sorumludur</li>
+                    <li><strong>Kooperatif:</strong> Ortaklar sınırlı sorumludur</li>
+                </ul>
+                
+                <p>Bu nedenle soruda verilen seçenekler arasında yalnızca kollektif şirkette ortakların sorumluluğu sınırsızdır.</p>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 237 - Ortakların sorumluluğu</strong>
+
+Kollektif şirket ortakları, şirket alacaklılarına karşı şirket borçlarından dolayı kişisel olarak, müteselsilen ve sınırsız sorumludur.
+
+<strong>TTK Madde 480 - Pay sahiplerinin sorumluluğu</strong>
+
+Pay sahipleri, şirkete karşı sadece paylarının itibari değerini ödemekle yükümlüdür. Şirket alacaklılarına karşı herhangi bir sorumlulukları yoktur.
+
+<strong>TTK Madde 595 - Ortakların sorumluluğu</strong>
+
+Limited şirket ortakları şirket borçlarından sorumlu değildir. Şirkete karşı sadece sermaye paylarını ödemekle yükümlüdür.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru8.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru10.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[2].classList.add('correct'); // C şıkkı (index 2)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

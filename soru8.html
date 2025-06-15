@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 8 - Yönetim Kurulunun Görev ve Sorumlulukları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 8</div>
+        
+        <div class="question-text">
+            Anonim şirketlerde yönetim kurulunun devredilemez ve vazgeçilemez görev ve yetkileri ile ilgili aşağıdakilerden hangisi yanlıştır?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Şirketin üst düzeyde yönetimi ve bunlarla ilgili talimatların verilmesi</li>
+            <li onclick="checkAnswer(this, false)">B) Şirket yönetim teşkilatının belirlenmesi</li>
+            <li onclick="checkAnswer(this, false)">C) Muhasebe, finans denetimi ve şirketin yönetiminin gerektirdiği ölçüde, finansal planlama için gerekli düzenin kurulması</li>
+            <li onclick="checkAnswer(this, true)">D) Günlük işlemlerin yürütülmesi ve rutin kararların alınması</li>
+            <li onclick="checkAnswer(this, false)">E) Yıllık faaliyet raporunun ve kurumsal yönetim açıklamasının düzenlenmesi</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: D</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>TTK madde 375'e göre, yönetim kurulunun devredilemez ve vazgeçilemez görev ve yetkileri arasında günlük işlemlerin yürütülmesi ve rutin kararların alınması yer almaz. Aksine, yönetim kurulu bu tür günlük işlemleri ve rutin kararları yönetim teşkilatına veya üçüncü kişilere devredebilir.</p>
+                
+                <p>Yönetim kurulunun devredilemez görevleri şunlardır:</p>
+                <ul>
+                    <li>Şirketin üst düzeyde yönetimi ve bunlarla ilgili talimatların verilmesi</li>
+                    <li>Şirket yönetim teşkilatının belirlenmesi</li>
+                    <li>Muhasebe, finans denetimi ve finansal planlama düzeninin kurulması</li>
+                    <li>Müdürlerin ve aynı işleve sahip kişilerin atanmaları ve görevden alınmaları</li>
+                    <li>Yönetimle görevli kişilerin denetlenmesi</li>
+                    <li>Pay defteri, yönetim kurulu karar defteri ve genel kurul toplantı ve müzakere defteri ile yıllık faaliyet raporunun düzenlenmesi</li>
+                    <li>Genel kurul toplantılarının hazırlanması ve kararlarının yürütülmesi</li>
+                    <li>Borca batıklık durumunda mahkemeye bildirimde bulunulması</li>
+                </ul>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 375 - Devredilemez görev ve yetkiler</strong>
+
+Yönetim kurulunun devredilemez ve vazgeçilemez görev ve yetkileri şunlardır:
+a) Şirketin üst düzeyde yönetimi ve bunlarla ilgili talimatların verilmesi.
+b) Şirket yönetim teşkilatının belirlenmesi.
+c) Muhasebe, finans denetimi ve şirketin yönetiminin gerektirdiği ölçüde, finansal planlama için gerekli düzenin kurulması.
+d) Müdürlerin ve aynı işleve sahip kişiler ile imza yetkisini haiz bulunanların atanmaları ve görevden alınmaları.
+e) Yönetimle görevli kişilerin, özellikle kanunlara, esas sözleşmeye, iç yönergelere ve yönetim kurulunun yazılı talimatlarına uygun hareket edip etmediklerinin üst gözetimi.
+f) Pay, yönetim kurulu karar ve genel kurul toplantı ve müzakere defteri ile komitelerin toplantı ve müzakere defterlerinin tutulması, yıllık faaliyet raporunun ve kurumsal yönetim açıklamasının düzenlenmesi ve genel kurula sunulması, genel kurul toplantılarının hazırlanması ve genel kurul kararlarının yürütülmesi.
+g) Borca batıklık durumunun varlığında mahkemeye bildirimde bulunulması.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru7.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru9.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[3].classList.add('correct'); // D şıkkı (index 3)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 7 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 7</h1>
+        
+        <div class="question">
+            Şahıs şirketleri ile sermaye şirketleri arasındaki farklar konusunda aşağıdaki ifadelerden hangisi YANLIŞTIR?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şahıs şirketlerinde ortakların şahsiyeti ön plandadır (intuitu personae)</div>
+            <div class="option">B) Sermaye şirketlerinde ortakların şirket alacaklarına karşı sorumluluğu yoktur</div>
+            <div class="option">C) Şahıs şirketlerinde ortakların ferdi idare ve temsil yetkileri bulunur</div>
+            <div class="option">D) Sermaye şirketlerinde kararlar oybirliği ile alınır</div>
+            <div class="option">E) Şahıs şirketlerinde ortakların sorumluluğu sınırsızdır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Sermaye şirketlerinde kararlar oybirliği ile alınır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Sermaye şirketlerinde kararlar oybirliği ile değil, kural olarak oy çokluğuyla alınır. Oybirliği ilkesi şahıs şirketlerinin karakteristik özelliğidir. Sermaye şirketlerinde ortakların sayısının çok olması nedeniyle, oybirliği ilkesinin uygulanması şirketin işleyişini zorlaştıracağından, oy çokluğu sistemi benimsenmiştir. Diğer seçenekler şahıs ve sermaye şirketleri arasındaki doğru farkları ifade etmektedir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Şahıs Şirketleri Özellikleri:</strong></p>
+                <ul>
+                    <li>Ortakların şahsiyeti ön plandadır (intuitu personae)</li>
+                    <li>Ferdi idare ve temsil yetkisi</li>
+                    <li>Sınırsız sorumluluk</li>
+                    <li>Oybirliği ile karar alma</li>
+                </ul>
+                
+                <p><strong>Sermaye Şirketleri Özellikleri:</strong></p>
+                <ul>
+                    <li>Sermaye ön plandadır</li>
+                    <li>Organ idaresi</li>
+                    <li>Sınırlı sorumluluk</li>
+                    <li>Oy çokluğu ile karar alma</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 211: Kolektif şirket tanımı</li>
+                    <li>TTK Madde 338: Anonim şirket tanımı</li>
+                    <li>TTK Madde 409: Genel kurul kararları</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru6.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru8.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

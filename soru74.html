@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 74 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 74</h1>
+        
+        <div class="question">
+            TTK Madde 1522-1523'e göre anonim şirket ölçeklerinin (küçük/orta/büyük) belirlenmesinde kullanılan kriterler hangileridir?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Sadece aktif toplamı ve net satış hasılatı</div>
+            <div class="option">B) Aktif toplamı, net satış hasılatı ve çalışan sayısı</div>
+            <div class="option">C) Sadece ödenmiş sermaye tutarı</div>
+            <div class="option">D) Ortak sayısı ve sermaye büyüklüğü</div>
+            <div class="option">E) Sadece yıllık ciro</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Aktif toplamı, net satış hasılatı ve çalışan sayısı</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK Madde 1522-1523'e göre anonim şirketlerin ölçeklerinin belirlenmesinde üç temel kriter kullanılır:</p>
+            
+            <h5>1. Aktif Toplamı:</h5>
+            <ul>
+                <li><strong>Küçük Şirket:</strong> 6 milyon TL'yi geçmeyen</li>
+                <li><strong>Orta Şirket:</strong> 6-40 milyon TL arası</li>
+                <li><strong>Büyük Şirket:</strong> 40 milyon TL'yi aşan</li>
+            </ul>
+            
+            <h5>2. Net Satış Hasılatı:</h5>
+            <ul>
+                <li><strong>Küçük Şirket:</strong> 12 milyon TL'yi geçmeyen</li>
+                <li><strong>Orta Şirket:</strong> 12-80 milyon TL arası</li>
+                <li><strong>Büyük Şirket:</strong> 80 milyon TL'yi aşan</li>
+            </ul>
+            
+            <h5>3. Çalışan Sayısı:</h5>
+            <ul>
+                <li><strong>Küçük Şirket:</strong> 50 kişiyi geçmeyen</li>
+                <li><strong>Orta Şirket:</strong> 50-250 kişi arası</li>
+                <li><strong>Büyük Şirket:</strong> 250 kişiyi aşan</li>
+            </ul>
+            
+            <p>Bu üç kriterden en az ikisinin eşik değerlerini aşması durumunda şirket bir üst kategoriye geçer. Bu sınıflandırma, denetim ve raporlama yükümlülüklerinin belirlenmesinde kullanılır.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 1522 - Küçük Anonim Şirket:</strong></p>
+                <p>"Aktif toplamı altı milyon Türk Lirasını, net satış hasılatı on iki milyon Türk Lirasını geçmeyen ve çalışan sayısı elli kişiyi aşmayan anonim şirketler küçük anonim şirket sayılır."</p>
+                
+                <p><strong>TTK Madde 1523 - Orta Ölçekli Anonim Şirket:</strong></p>
+                <p>"Küçük anonim şirket ölçeğini aşan ancak aktif toplamı kırk milyon Türk Lirasını, net satış hasılatı seksen milyon Türk Lirasını geçmeyen ve çalışan sayısı iki yüz elli kişiyi aşmayan anonim şirketler orta ölçekli anonim şirket sayılır."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>Şirket ölçeklerinin belirlenmesi, şirketlerin tabiî olduğu denetim rejimini ve raporlama yükümlülüklerini doğrudan etkilemektedir. Küçük anonim şirketler daha basit prosedürlere tabi tutulurken, büyük anonim şirketler daha sıkı denetim ve raporlama gerekliliklerine tabidir.</p>
+                
+                <p><strong>Pratik Sonuçlar:</strong></p>
+                <ul>
+                    <li><strong>Küçük Şirket:</strong> Basitleştirilmiş denetim, muafiyetler</li>
+                    <li><strong>Orta Şirket:</strong> Orta düzeyde denetim gereklilikleri</li>
+                    <li><strong>Büyük Şirket:</strong> Tam kapsamlı bağımsız denetim zorunluluğu</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 397: Bağımsız denetim</li>
+                    <li>TTK Madde 402: Denetim raporu</li>
+                    <li>TTK Madde 1524-1526: Büyük anonim şirket düzenlemeleri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru73.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru75.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

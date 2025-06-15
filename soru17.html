@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 17 - Genel Kurul Toplantıları ve Kararları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .options li:hover {
+            background-color: #e2e6ea;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border: 2px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border: 2px solid #dc3545;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #solution {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: #28a745;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: #218838;
+        }
+        .article-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .article-text {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Türk Ticaret Hukuku - Şirketler Hukuku Testi</h1>
+        
+        <div class="question-number">Soru 17</div>
+        
+        <div class="question-text">
+            Anonim şirketlerde olağan genel kurul toplantısı için asgari toplantı nisabı nedir?
+        </div>
+        
+        <ul class="options">
+            <li onclick="checkAnswer(this, false)">A) Sermayenin en az %10'u</li>
+            <li onclick="checkAnswer(this, true)">B) Sermayenin en az %25'i</li>
+            <li onclick="checkAnswer(this, false)">C) Sermayenin en az %50'si</li>
+            <li onclick="checkAnswer(this, false)">D) Sermayenin en az %75'i</li>
+            <li onclick="checkAnswer(this, false)">E) Nisap şartı yoktur</li>
+        </ul>
+        
+        <button onclick="showSolution()">Çözümü Göster</button>
+        <button onclick="resetQuestion()">Soruyu Sıfırla</button>
+        
+        <div id="solution">
+            <h3>Doğru Cevap: B</h3>
+            <div class="explanation">
+                <p><strong>Açıklama:</strong></p>
+                <p>TTK madde 418'e göre, anonim şirketlerde genel kurul toplantısının yapılabilmesi için oy hakkı bulunan payların en az dörtte birini (%25) temsil eden pay sahiplerinin toplantıda hazır bulunması gerekir. Bu asgari toplantı nisabıdır.</p>
+                
+                <p><strong>Genel kurul toplantı nisapları:</strong></p>
+                <ul>
+                    <li><strong>Birinci toplantı:</strong> Sermayenin en az %25'i (TTK m. 418)</li>
+                    <li><strong>İkinci toplantı:</strong> Nisap şartı yoktur, kaç kişi gelirse gelsin toplantı yapılır</li>
+                    <li><strong>Olağanüstü genel kurul:</strong> Aynı kurallar geçerlidir</li>
+                </ul>
+                
+                <p><strong>Karar nisapları:</strong></p>
+                <ul>
+                    <li><strong>Olağan kararlar:</strong> Toplantıda hazır bulunan oyların çoğunluğu</li>
+                    <li><strong>Özel kararlar:</strong> Sermayenin en az yarısını temsil eden oyların üçte ikisinin evet oyu (TTK m. 421)</li>
+                    <li><strong>Esas sözleşme değişikliği:</strong> Özel karar nisabı gerekir</li>
+                </ul>
+                
+                <p><strong>İkinci toplantı:</strong></p>
+                <p>Birinci toplantıda nisap sağlanamazsa, en az bir hafta sonra ikinci toplantı yapılır ve bu toplantıda nisap şartı aranmaz.</p>
+            </div>
+            
+            <div class="article-reference">
+                <h4>İlgili Kanun Maddesi:</h4>
+                <div class="article-text">
+<strong>TTK Madde 418 - Toplantı nisabı</strong>
+
+(1) Genel kurul, oy hakkı bulunan payların en az dörtte birini temsil eden pay sahiplerinin katılımıyla toplanır.
+(2) Esas sözleşme daha yüksek bir nisap öngörebilir.
+(3) Toplantıda yeter sayı sağlanamazsa, ikinci toplantı yapılır ve bu toplantıda nisap aranmaz.
+
+<strong>TTK Madde 419 - Karar nisabı</strong>
+
+(1) Genel kurul kararları, aksi bu Kanunda yazılı olmadıkça, toplantıda hazır bulunan oyların çoğunluğuyla alınır.
+(2) Esas sözleşme, bazı kararlar için daha yüksek çoğunluk öngörebilir.
+
+<strong>TTK Madde 421 - Nitelikli çoğunluk gerektiren kararlar</strong>
+
+(1) Aşağıdaki konularda karar alınabilmesi için, toplantıda hazır bulunan payların sermayenin en az yarısını temsil etmesi ve bu payların üçte ikisinin olumlu oy vermesi şarttır:
+a) Esas sözleşmenin değiştirilmesi.
+b) Yönetim kurulu üyelerinin ve denetçilerin ibrası.
+c) Tasfiye memurlarının seçimi.</div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" onclick="window.location.href='soru16.html'">← Önceki Soru</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button class="nav-button" onclick="window.location.href='soru18.html'">Sonraki Soru →</button>
+        </div>
+    </div>
+    
+    <script>
+        let answered = false;
+        
+        function checkAnswer(element, isCorrect) {
+            if (answered) return;
+            
+            answered = true;
+            
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+            
+            // Doğru cevabı göster
+            const options = document.querySelectorAll('.options li');
+            options[1].classList.add('correct'); // B şıkkı (index 1)
+        }
+        
+        function showSolution() {
+            document.getElementById('solution').style.display = 'block';
+        }
+        
+        function resetQuestion() {
+            answered = false;
+            const options = document.querySelectorAll('.options li');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('solution').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

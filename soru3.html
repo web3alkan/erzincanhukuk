@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 3 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 3</h1>
+        
+        <div class="question">
+            Aşağıdakilerden hangisi tek ortaklı olarak kurulabilir?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Kolektif şirket</div>
+            <div class="option">B) Komandit şirket</div>
+            <div class="option">C) Limited şirket</div>
+            <div class="option">D) Kooperatif</div>
+            <div class="option">E) Adi ortaklık</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) Limited şirket</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Kanun koyucu saman ortaklık sözleşmelerinin artması sebebiyle bu durumun önüne geçmek için anonim ve limited şirketler açısından tek ortakla kurulabilme imkanını getirmiştir. Kolektif ve komandit şirketler en az iki ortakla, kooperatifler en az yedi ortakla kurulur. Adi ortaklık da tanımı gereği en az iki kişi gerektirir. Tek ortaklı şirketler ortaklıklar hukukunun genel anlayışına aykırılık teşkil etse de, pratik ihtiyaçlar nedeniyle kabul edilmiştir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 573 - Limited Şirket Kavramı:</strong></p>
+                <p>(1) Limited şirket, bir veya daha çok gerçek veya tüzel kişi tarafından bir ticaret unvanı altında kurulur; esas sermayesi belirli olup, bu sermaye esas sermaye paylarının toplamından oluşur.</p>
+                <p>(2) Ortaklar, şirket borçlarından sorumlu olmayıp, sadece taahhüt ettikleri esas sermaye paylarını ödemekle ve şirket sözleşmesinde öngörülen ek ödeme ve yan edim yükümlülüklerini yerine getirmekle yükümlüdürler.</p>
+                <p>(3) Limited şirket, kanunen yasak olmayan her türlü ekonomik amaç ve konu için kurulabilir.</p>
+                
+                <p><strong>TTK Madde 338 - Anonim Şirket Asgari Sayı:</strong></p>
+                <p>(1) Anonim şirketin kurulabilmesi için pay sahibi olan bir veya daha fazla kurucunun varlığı şarttır. 330 uncu madde hükmü saklıdır.</p>
+                <p>(2) Pay sahibi sayısı bire düşerse, durum, bu sonucu doğuran işlem tarihinden itibaren yedi gün içinde yönetim kuruluna yazılı olarak bildirilir.</p>
+                
+                <p><strong>TBK Madde 620 - Adi Ortaklık:</strong></p>
+                <p>Adi ortaklık sözleşmesi, iki ya da daha fazla kişinin emeklerini ve mallarını ortak bir amaca erişmek üzere birleştirmeyi üstlendikleri sözleşmedir.</p>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 574: Limited şirkette ortak sayısı (en fazla 50)</li>
+                    <li>Kooperatifler Kanunu: En az yedi ortak</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru2.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru4.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

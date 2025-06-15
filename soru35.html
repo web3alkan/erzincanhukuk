@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 35 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 35</h1>
+        
+        <div class="question">
+            Çıkan ortağın tasfiye payının hesaplanmasında uygulanan "farazi tasfiye" yöntemi ile ilgili aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şirket gerçekten tasfiye edilir ve payı hesaplanır</div>
+            <div class="option">B) Şirket varlık ve borçları çıkış anındaki değerleri ile değerlenir</div>
+            <div class="option">C) Sadece defter değerleri esas alınır</div>
+            <div class="option">D) Gelecekteki kâr ve zararlar da hesaba katılır</div>
+            <div class="option">E) Tasfiye payı sadece esas sermaye payı kadardır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Şirket varlık ve borçları çıkış anındaki değerleri ile değerlenir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TBK madde 640'a göre tasfiye payının hesaplanmasında "farazi tasfiye" yöntemi uygulanır. Bu yöntemde şirket gerçekten tasfiye edilmez, ancak sanki tasfiye edilmiş gibi varlık ve borçları çıkış anındaki gerçek değerleri ile değerlenerek çıkan ortağın payı hesaplanır. Defter değerleri değil, güncel piyasa değerleri esas alınır.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Farazi Tasfiye ve Tasfiye Payı Hesabı:</strong></p>
+                
+                <p><strong>TBK Madde 640 - Tasfiye Payının Hesaplanması:</strong></p>
+                <p>Çıkan ortağın payı, çıktığı tarihte şirketin durumuna göre hesaplanır. Bu hesaplamada şirketin o tarihteki gerçek değeri esas alınır.</p>
+                
+                <p><strong>Farazi Tasfiye Kavramı:</strong></p>
+                <ul>
+                    <li><strong>Teorik İşlem:</strong> Şirket gerçekte tasfiye edilmez</li>
+                    <li><strong>Hesaplama Yöntemi:</strong> Sanki tasfiye edilmiş gibi hesap</li>
+                    <li><strong>Güncel Değerler:</strong> Çıkış anındaki gerçek değerler</li>
+                    <li><strong>Objektif Değerleme:</strong> Piyasa koşulları esas</li>
+                </ul>
+                
+                <p><strong>Hesaplama Yöntemi:</strong></p>
+                <ul>
+                    <li><strong>1. Adım:</strong> Aktif varlıkların güncel değerini belirleme</li>
+                    <li><strong>2. Adım:</strong> Pasif borçların güncel değerini belirleme</li>
+                    <li><strong>3. Adım:</strong> Net aktif hesaplama (Aktif - Pasif)</li>
+                    <li><strong>4. Adım:</strong> Çıkan ortağın pay oranını uygulama</li>
+                </ul>
+                
+                <p><strong>Değerleme Kriterleri:</strong></p>
+                <ul>
+                    <li><strong>Taşınır Varlıklar:</strong> Piyasa değeri</li>
+                    <li><strong>Taşınmaz Varlıklar:</strong> Ekspertiz değeri</li>
+                    <li><strong>Alacaklar:</strong> Tahsil edilebilir tutar</li>
+                    <li><strong>Borçlar:</strong> Nominal değer + faiz</li>
+                    <li><strong>İşletme Değeri:</strong> Goodwill dahil</li>
+                </ul>
+                
+                <p><strong>Hesaba Katılan Unsurlar:</strong></p>
+                <ul>
+                    <li>Maddi duran varlıklar</li>
+                    <li>Maddi olmayan duran varlıklar</li>
+                    <li>Stoklar ve emtia</li>
+                    <li>Alacaklar (tahsil edilebilir kısım)</li>
+                    <li>Nakit ve benzeri</li>
+                    <li>Tüm borçlar ve yükümlülükler</li>
+                </ul>
+                
+                <p><strong>Hesaba Katılmayan Unsurlar:</strong></p>
+                <ul>
+                    <li>Gelecekteki kazançlar</li>
+                    <li>Belirsiz alacaklar</li>
+                    <li>İhtiyari karşılıklar</li>
+                    <li>Şüpheli alacaklar (tahsil edilemeyen)</li>
+                </ul>
+                
+                <p><strong>Praktik Hesaplama Örneği:</strong></p>
+                <ul>
+                    <li><strong>Aktif Toplamı:</strong> 500.000 TL (güncel değer)</li>
+                    <li><strong>Pasif Toplamı:</strong> 200.000 TL</li>
+                    <li><strong>Net Aktif:</strong> 300.000 TL</li>
+                    <li><strong>Çıkan Ortağın Payı:</strong> %25</li>
+                    <li><strong>Tasfiye Payı:</strong> 75.000 TL</li>
+                </ul>
+                
+                <p><strong>Değerleme Anlaşmazlıkları:</strong></p>
+                <ul>
+                    <li>Mahkeme ekspertiz yaptırabilir</li>
+                    <li>Bilirkişi atanabilir</li>
+                    <li>Objektif kriterler uygulanır</li>
+                    <li>İhtiyari değerlemeler kabul edilmez</li>
+                </ul>
+                
+                <p><strong>Zamansal Unsur:</strong></p>
+                <ul>
+                    <li><strong>Değerleme Tarihi:</strong> Çıkış tarihi</li>
+                    <li><strong>Gecikme Durumu:</strong> Faiz işletilir</li>
+                    <li><strong>Değer Değişimi:</strong> Çıkış sonrası değişimler etkilemez</li>
+                </ul>
+                
+                <p><strong>Özel Durumlar:</strong></p>
+                <ul>
+                    <li><strong>Zarar Durumu:</strong> Tasfiye payı sıfır olabilir</li>
+                    <li><strong>Aşırı Borçluluk:</strong> Ek ödeme yükümlülüğü</li>
+                    <li><strong>Gizli Yedekler:</strong> Hesaba dahil edilir</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TBK Madde 639: Çıkan ortağın durumu</li>
+                    <li>TBK Madde 641: Güvence verme</li>
+                    <li>TBK Madde 656-673: Şirketin sona ermesi</li>
+                    <li>SPK: Değerleme standartları</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru34.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru36.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

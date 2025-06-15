@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 97 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 97</h1>
+        
+        <div class="question">
+            Genel kurul toplantı nisabı konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) İlk toplantıda sermayenin yarısından fazlası hazır bulunmalıdır</div>
+            <div class="option">B) İkinci toplantıda nisap aranmaz</div>
+            <div class="option">C) Adi olağan genel kurulda toplantı nisabı sermayenin en az 1/4'üdür</div>
+            <div class="option">D) Olağanüstü genel kurulda nisap her zaman aynıdır</div>
+            <div class="option">E) Toplantı nisabı sadece oy hakkı olan paylar için hesaplanır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) Adi olağan genel kurulda toplantı nisabı sermayenin en az 1/4'üdür</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre adi (basit) olağan genel kurul toplantısında toplantı nisabı, temsil edilen sermayenin en az dörtte biri (1/4) olmalıdır. Bu, en temel nisap türü olup, özel nisap gerektiren durumlar dışında uygulanır.</p>
+            
+            <h5>Toplantı Nisabı Türleri:</h5>
+            <ul>
+                <li><strong>Adi Nisap (1/4):</strong> Basit olağan genel kurul kararları için</li>
+                <li><strong>Mutlak Çoğunluk (1/2):</strong> Bazı önemli kararlar için</li>
+                <li><strong>Ağırlaştırılmış Nisap (2/3):</strong> Esas sözleşme değişiklikleri</li>
+                <li><strong>Özel Nisaplar:</strong> Kanunun özel düzenlediği durumlar</li>
+            </ul>
+            
+            <h5>İlk ve İkinci Toplantı Farkı:</h5>
+            <ul>
+                <li><strong>İlk Toplantı:</strong> Belirlenen nisapla toplanır</li>
+                <li><strong>İkinci Toplantı:</strong> Genellikle daha düşük nisapla toplanabilir</li>
+                <li><strong>Nisap Düşürülmesi:</strong> Kanun veya esas sözleşmeye göre</li>
+                <li><strong>Asgari Sınır:</strong> Nisap belirli bir düzeyin altına inemez</li>
+            </ul>
+            
+            <h5>Nisap Hesaplama Esasları:</h5>
+            <ul>
+                <li><strong>Temsil Edilen Sermaye:</strong> Toplantıda hazır bulunan paylar</li>
+                <li><strong>Oy Hakkı:</strong> Oy hakkı olan ve olmayan tüm paylar</li>
+                <li><strong>Nama Yazılı Paylar:</strong> Pay defterindeki kayıtlar</li>
+                <li><strong>Hamiline Yazılı Paylar:</strong> İbraz edilen paylar</li>
+            </ul>
+            
+            <h5>Nisap Türlerine Göre Kararlar:</h5>
+            <ul>
+                <li><strong>1/4 Nisap:</strong> Adi olağan genel kurul kararları</li>
+                <li><strong>1/2 Nisap:</strong> Yönetim kurulu üyesi seçimi gibi</li>
+                <li><strong>2/3 Nisap:</strong> Esas sözleşme değişikliği</li>
+                <li><strong>3/4 Nisap:</strong> Şirketin tasfiyesi gibi özel durumlar</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 417 - Toplantı ve Karar Nisabı:</strong></p>
+                <p>"Genel kurulun toplanabilmesi için temsil edilen sermayenin en az dörtte birinin toplantıda hazır bulunması gerekir."</p>
+                
+                <p><strong>TTK Madde 418 - İkinci Toplantı:</strong></p>
+                <p>"İlk toplantıda nisap bulunmadığı takdirde, ikinci toplantı için esas sözleşmede daha düşük bir nisap öngörülebilir."</p>
+                
+                <p><strong>Nisap Sisteminin Amacı:</strong></p>
+                <ul>
+                    <li><strong>Demokratik Meşruiyet:</strong> Yeterli katılımın sağlanması</li>
+                    <li><strong>Temsil Adaleti:</strong> Pay sahiplerinin temsil edilmesi</li>
+                    <li><strong>Karar Kalitesi:</strong> Bilinçli ve katılımcı karar alma</li>
+                    <li><strong>Azınlık Korunması:</strong> Azınlık haklarının gözetimi</li>
+                </ul>
+                
+                <p><strong>Nisap Hesaplama Yöntemi:</strong></p>
+                <ul>
+                    <li><strong>Toplam Sermaye:</strong> Şirketin toplam çıkarılmış sermayesi</li>
+                    <li><strong>Hazır Bulunan:</strong> Toplantıda temsil edilen paylar</li>
+                    <li><strong>Oy Hakkı Ayrımı:</strong> Oy hakkı olan-olmayan pay ayrımı</li>
+                    <li><strong>Kendi Payları:</strong> Şirketin kendi payları hariç</li>
+                </ul>
+                
+                <p><strong>Özel Nisap Gerektiren Kararlar:</strong></p>
+                <ul>
+                    <li><strong>Esas Sözleşme Değişikliği:</strong> 2/3 nisap ve çoğunluk</li>
+                    <li><strong>Sermaye Artırımı:</strong> Mutlak çoğunluk</li>
+                    <li><strong>Sermaye Azaltımı:</strong> Ağırlaştırılmış nisap</li>
+                    <li><strong>Şirket Birleşmesi:</strong> Özel nisap kuralları</li>
+                </ul>
+                
+                <p><strong>İkinci Toplantı Düzenlemeleri:</strong></p>
+                <ul>
+                    <li><strong>Nisap Düşürülmesi:</strong> Esas sözleşmeyle belirlenebilir</li>
+                    <li><strong>Asgari Sınır:</strong> Belli bir düzeyin altına inilemez</li>
+                    <li><strong>Toplantı Süresi:</strong> İki toplantı arası süre</li>
+                    <li><strong>Davet Usulü:</strong> İkinci toplantı daveti</li>
+                </ul>
+                
+                <p><strong>Nisap Eksikliğinin Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Toplantı İptali:</strong> Nisap yoksa toplantı yapılamaz</li>
+                    <li><strong>Yeni Davet:</strong> Yeniden davet çıkarılması</li>
+                    <li><strong>İkinci Toplantı:</strong> Düşük nisapla toplanma</li>
+                    <li><strong>Yokluk Riski:</strong> Kararların geçersizlik riski</li>
+                </ul>
+                
+                <p><strong>Nisap Kontrolü:</strong></p>
+                <ul>
+                    <li><strong>Toplantı Başında:</strong> Nisap tespit edilir</li>
+                    <li><strong>Sürekli Kontrol:</strong> Toplantı boyunca kontrol</li>
+                    <li><strong>Eksik Kalma:</strong> Nisabın altına düşerse toplantı tatil</li>
+                    <li><strong>Tutanak:</strong> Nisap durumu tutanağa geçer</li>
+                </ul>
+                
+                <p><strong>Esas Sözleşme Düzenlemeleri:</strong></p>
+                <ul>
+                    <li>Esas sözleşmede nisap artırılabilir</li>
+                    <li>Kanuni asgari nisabın altına inilemez</li>
+                    <li>İkinci toplantı için düşük nisap öngörülebilir</li>
+                    <li>Pay grupları için özel nisap belirlenebilir</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 417: Toplantı ve karar nisabı</li>
+                    <li>TTK Madde 418: İkinci toplantı</li>
+                    <li>TTK Madde 419: Ağırlaştırılmış nisap</li>
+                    <li>TTK Madde 421: Özel çoğunluk</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru96.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru98.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

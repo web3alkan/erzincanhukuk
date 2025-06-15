@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 39 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 39</h1>
+        
+        <div class="question">
+            Çıkan ortağın kâr/zarara katılımı ile ilgili aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Çıkış sonrası tüm kâr/zararlara katılır</div>
+            <div class="option">B) Sadece çıkış öncesi kâr/zararlara katılır</div>
+            <div class="option">C) Hiçbir kâr/zarara katılmaz</div>
+            <div class="option">D) Sadece kâra katılır, zarara katılmaz</div>
+            <div class="option">E) Sadece zarara katılır, kâra katılmaz</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Sadece çıkış öncesi kâr/zararlara katılır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Çıkan ortak sadece çıkış tarihine kadar olan dönemdeki kâr ve zararlara katılır. Çıkıştan sonraki faaliyetlerden doğan kâr ve zararların paylaşımında payı yoktur. Bu durum, ortaklık sıfatının sona ermesinin doğal sonucudur.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Çıkan Ortağın Kâr/Zarar Katılımı:</strong></p>
+                
+                <p><strong>TBK Madde 640 - Tasfiye Payının Hesaplanması:</strong></p>
+                <p>Çıkan ortağın payı, çıktığı tarihteki şirket durumuna göre hesaplanır.</p>
+                
+                <p><strong>Katılım Sınırları:</strong></p>
+                <ul>
+                    <li><strong>Çıkış Öncesi:</strong> Tüm kâr/zararlara katılır</li>
+                    <li><strong>Çıkış Sonrası:</strong> Hiçbir kâr/zarara katılmaz</li>
+                    <li><strong>Kesim Noktası:</strong> Çıkış tarihi</li>
+                    <li><strong>Orantılı Hesap:</strong> Kısmi dönemler için</li>
+                </ul>
+                
+                <p><strong>Hesaplama Yöntemi:</strong></p>
+                <ul>
+                    <li>Yıl ortasında çıkış varsa orantılı hesap</li>
+                    <li>Kâr/zarar dağıtımında pay oranı esas</li>
+                    <li>Biriken kârlar da dahil edilir</li>
+                    <li>Geçmiş zararlar mahsup edilir</li>
+                </ul>
+                
+                <p><strong>Pratik Örnek:</strong></p>
+                <ul>
+                    <li>Şirket yılı: 1 Ocak - 31 Aralık</li>
+                    <li>Ortak 1 Temmuz'da çıktı</li>
+                    <li>6 aylık dönem için kâr/zarara katılır</li>
+                    <li>Kalan 6 ay için katılmaz</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru38.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru40.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

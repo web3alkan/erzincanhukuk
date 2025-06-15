@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 22 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 22</h1>
+        
+        <div class="question">
+            Kooperatiflerin sermaye yapısı bakımından diğer ticaret şirketlerinden farkı nedir?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Esas sermayeli şirket olmaları</div>
+            <div class="option">B) Basit sermayeli şirket olmaları</div>
+            <div class="option">C) Değişir sermayeli şirket olmaları</div>
+            <div class="option">D) Sabit sermayeli şirket olmaları</div>
+            <div class="option">E) Sermaye şartı bulunmaması</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) Değişir sermayeli şirket olmaları</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Kooperatifler değişir sermayeli şirketlerdir. Değişir ortaklı olan kooperatiflerde, ortakların giriş-çıkışıyla birlikte sermaye de değişir. Bu durum kooperatiflerin en karakteristik özelliklerinden biridir. Diğer ticaret şirketleri (kolektif, komandit, anonim, limited) ise değişmez sermayeli şirketlerdir. Kooperatiflerde ortakların sayısı ve dolayısıyla sermaye sürekli değişebilir, bu da açık kapı ilkesi gereğidir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>"Değişir sermayeli şirketler: değişir ortaklı olan kooperatiflerde görülmektedir. Değişmez sermayeli şirketler: kooperatif dışındaki ticaret şirketlerinin sermaye yapısını oluşturmaktadır."</p>
+                
+                <p><strong>Kooperatifler Kanunu Madde 1:</strong></p>
+                <p>Kooperatif, ortaklarının belirli ekonomik menfaatlerini ve özellikle meslek veya geçimlerine ait ihtiyaçlarını, karşılıklı yardım, dayanışma ve kefalet suretiyle sağlayıp korumak amacıyla gerçek ve tüzel kişiler tarafından kurulan değişir ortaklı ve değişir sermayeli teşebbüstür.</p>
+                
+                <p><strong>TTK Madde 195 - Kooperatiflerin Kurulması:</strong></p>
+                <p>Kooperatifler en az yedi ortak tarafından kurulur ve ortak sayısında sürekli değişiklik olabilir.</p>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>Kooperatifler Kanunu Madde 8: Açık kapı ilkesi</li>
+                    <li>Kooperatifler Kanunu Madde 12: Sermaye yapısı</li>
+                    <li>TTK Madde 196-200: Kooperatiflere ilişkin hükümler</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru21.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru23.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

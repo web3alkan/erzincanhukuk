@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 115 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 115</h1>
+        
+        <div class="question">
+            Limited şirketin ortak sayısına ilişkin aşağıdaki ifadelerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) En az 2, en fazla 50 ortak olabilir</div>
+            <div class="option">B) En az 1, en fazla 100 ortak olabilir</div>
+            <div class="option">C) En az 1, en fazla 50 ortak olabilir, aşılması halinde 2 yıl içinde azaltılmalıdır</div>
+            <div class="option">D) Ortak sayısında herhangi bir sınır yoktur</div>
+            <div class="option">E) En fazla 25 ortak olabilir, aşılması halinde şirket kendiliğinden sona erer</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) En az 1, en fazla 50 ortak olabilir, aşılması halinde 2 yıl içinde azaltılmalıdır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre limited şirketin en az 1, en fazla 50 ortağı olabilir. Bu sayının aşılması halinde şirket kendiliğinden sona ermez, ancak 2 yıl içinde ortak sayısının 50'ye düşürülmesi gerekir.</p>
+            
+            <h5>Limited Şirket Ortak Sayısı Kuralları:</h5>
+            <ul>
+                <li><strong>Minimum:</strong> En az 1 ortak (tek ortaklı şirket mümkün)</li>
+                <li><strong>Maksimum:</strong> En fazla 50 ortak</li>
+                <li><strong>Aşma Durumu:</strong> 50'yi aşması halinde 2 yıl süre</li>
+                <li><strong>Süre Dolumu:</strong> 2 yıl sonunda anonim şirkete dönüşüm zorunlu</li>
+            </ul>
+            
+            <h5>Ortak Sayısı Aşılmasının Sonuçları:</h5>
+            <ul>
+                <li><strong>Derhal Sona Erme:</strong> Şirket kendiliğinden sona ermez</li>
+                <li><strong>2 Yıllık Süre:</strong> Ortak sayısını azaltmak için süre tanınır</li>
+                <li><strong>Azaltma Yöntemleri:</strong>
+                    <ul>
+                        <li>Payların devri</li>
+                        <li>Payların birleştirilmesi</li>
+                        <li>Ortakların çıkarılması</li>
+                        <li>Payların şirket tarafından iktisabı</li>
+                    </ul>
+                </li>
+                <li><strong>Süre Dolumu:</strong> Anonim şirkete dönüştürülmesi zorunlu</li>
+            </ul>
+            
+            <h5>Tek Ortaklı Limited Şirket:</h5>
+            <ul>
+                <li><strong>Kurulabilirlik:</strong> Tek kişi tarafından kurulabilir</li>
+                <li><strong>Gerçek Kişi:</strong> Gerçek kişi tek ortak olabilir</li>
+                <li><strong>Tüzel Kişi:</strong> Tüzel kişi de tek ortak olabilir</li>
+                <li><strong>Özel Hükümler:</strong> Tek ortaklı şirketler için özel düzenlemeler</li>
+            </ul>
+            
+            <h5>Ortak Sayısının Tespiti:</h5>
+            <ul>
+                <li><strong>Pay Defteri:</strong> Pay defterindeki kayıtlara göre</li>
+                <li><strong>Tescil Durumu:</strong> Ticaret siciline tescilli duruma göre</li>
+                <li><strong>Hesaplama:</strong> Her pay sahibi bir ortak olarak sayılır</li>
+                <li><strong>Miras Durumu:</strong> Mirasçılar ayrı ortak olarak sayılır</li>
+            </ul>
+            
+            <h5>Anonim Şirkete Dönüşüm Süreci:</h5>
+            <ul>
+                <li><strong>Zorunlu Dönüşüm:</strong> 2 yıl sonunda zorunlu hale gelir</li>
+                <li><strong>Genel Kurul Kararı:</strong> Dönüşüm kararının alınması</li>
+                <li><strong>Sermaye Artırımı:</strong> En az 50.000 TL sermaye gerekli</li>
+                <li><strong>Tescil İşlemleri:</strong> Anonim şirket olarak yeniden tescil</li>
+            </ul>
+            
+            <h5>Ortak Sayısının Azaltılması Yöntemleri:</h5>
+            <ul>
+                <li><strong>Pay Devri:</strong>
+                    <ul>
+                        <li>Ortakların paylarını başkalarına devri</li>
+                        <li>Çoklu pay sahipliği ile ortak sayısının azalması</li>
+                    </ul>
+                </li>
+                <li><strong>Pay Birleştirilmesi:</strong>
+                    <ul>
+                        <li>Aynı kişinin birden fazla payını birleştirmesi</li>
+                        <li>Aile üyeleri arasında birleştirme</li>
+                    </ul>
+                </li>
+                <li><strong>Çıkarılma:</strong>
+                    <ul>
+                        <li>Haklı nedenle ortakların çıkarılması</li>
+                        <li>Anasözleşme hükümlerine göre çıkarma</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 573 - Limited Şirketin Kuruluşu:</strong></p>
+                <p>"Limited şirket bir veya daha çok gerçek ya da tüzel kişi tarafından kurulur. Ortak sayısı elliden fazla olamaz."</p>
+                
+                <p><strong>TTK Madde 595 - Ortak Sayısının Aşılması:</strong></p>
+                <p>"Ortak sayısının elliden fazla olması halinde, şirket iki yıl içinde ortak sayısını azaltmak zorundadır. Bu süre içinde ortak sayısı azaltılmazsa şirket anonim şirkete dönüştürülür."</p>
+                
+                <p><strong>Limited Şirket Özelliklerinin Karşılaştırması:</strong></p>
+                <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                    <tr style="background-color: #f8f9fa;">
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Özellik</th>
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Limited Şirket</th>
+                        <th style="border: 1px solid #dee2e6; padding: 8px;">Anonim Şirket</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Minimum Ortak</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">1</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">1</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Maksimum Ortak</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">50</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Sınırsız</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">Minimum Sermaye</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">50.000 TL</td>
+                        <td style="border: 1px solid #dee2e6; padding: 8px;">50.000 TL</td>
+                    </tr>
+                </table>
+                
+                <p><strong>Tek Ortaklı Şirketin Özellikleri:</strong></p>
+                <ul>
+                    <li><strong>Kuruluş:</strong> Tek kişi tarafından kurulabilir</li>
+                    <li><strong>Karar Alma:</strong> Tek ortak tüm kararları alır</li>
+                    <li><strong>Genel Kurul:</strong> Tek kişilik genel kurul</li>
+                    <li><strong>Temsil Yetkisi:</strong> Tek ortak kendisi temsil edebilir</li>
+                </ul>
+                
+                <p><strong>Ortak Sayısı Aşılmasının Hukuki Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Şirketin Varlığı:</strong> Şirket varlığını sürdürür</li>
+                    <li><strong>İşlem Yapabilme:</strong> Ticari faaliyetlerini sürdürebilir</li>
+                    <li><strong>Yasal Yükümlülük:</strong> 2 yıl içinde düzeltme zorunluluğu</li>
+                    <li><strong>Dönüşüm Zorunluluğu:</strong> Süre sonunda anonim şirkete dönüşüm</li>
+                </ul>
+                
+                <p><strong>Uygulamada Karşılaşılan Durumlar:</strong></p>
+                <ul>
+                    <li><strong>Miras Yoluyla Artış:</strong> Ortağın ölümü ile mirasçılarda artış</li>
+                    <li><strong>Devir İşlemleri:</strong> Pay devirlerinde ortak sayısının artması</li>
+                    <li><strong>Aile Şirketleri:</strong> Nesiller arası geçişlerde artış</li>
+                    <li><strong>Yatırımcı Girişi:</strong> Yeni yatırımcılarla ortak sayısının artması</li>
+                </ul>
+                
+                <p><strong>Pratik Çözüm Önerileri:</strong></p>
+                <ul>
+                    <li><strong>Anasözleşme Hükümleri:</strong> Ortak sayısı kontrolü için hükümler</li>
+                    <li><strong>Ön Rıza Sistemi:</strong> Pay devirleri için ön rıza şartı</li>
+                    <li><strong>Geri Alım Hakkı:</strong> Şirketin pay geri alım hakkı</li>
+                    <li><strong>Profesyonel Takip:</strong> Ortak sayısının düzenli takibi</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 573: Limited şirket kuruluşu</li>
+                    <li>TTK Madde 595: Ortak sayısının aşılması</li>
+                    <li>TTK Madde 621: Anonim şirkete dönüşüm</li>
+                    <li>TTK Madde 580: Pay defteri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru114.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru116.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

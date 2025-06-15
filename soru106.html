@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 106 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 106</h1>
+        
+        <div class="question">
+            Sermaye azaltımı konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Esas sözleşme değişikliği gerektirir</div>
+            <div class="option">B) Alacaklıları koruma önlemleri alınmalıdır</div>
+            <div class="option">C) Genel kurul kararı ile yapılır</div>
+            <div class="option">D) Her durumda pay sahiplerine ödeme yapılır</div>
+            <div class="option">E) Tescil ve ilan edilmelidir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Her durumda pay sahiplerine ödeme yapılır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre sermaye azaltımında her durumda pay sahiplerine ödeme yapılmaz. Sermaye azaltımı çeşitli şekillerde olabilir ve bunların bazılarında (örneğin zararların karşılanması için) pay sahiplerine ödeme yapılmaz.</p>
+            
+            <h5>Sermaye Azaltımı Türleri:</h5>
+            <ul>
+                <li><strong>Nominal Azaltım:</strong> Kaydi azaltım, pay sahiplerine ödeme yok</li>
+                <li><strong>Efektif Azaltım:</strong> Gerçek azaltım, pay sahiplerine ödeme var</li>
+                <li><strong>Zarar Karşılama:</strong> Zararları kapatmak için azaltım</li>
+                <li><strong>Fazla Sermaye:</strong> İhtiyaç fazlası sermayenin iadesi</li>
+            </ul>
+            
+            <h5>Sermaye Azaltımının Şartları:</h5>
+            <ul>
+                <li><strong>Genel Kurul Kararı:</strong> Ağırlaştırılmış çoğunlukla karar</li>
+                <li><strong>Esas Sözleşme Değişikliği:</strong> Tüzük değişikliği zorunlu</li>
+                <li><strong>Alacaklı Korunması:</strong> Alacaklıları koruma önlemleri</li>
+                <li><strong>Asgari Sermaye:</strong> Asgari sermayenin altına inmeme</li>
+                <li><strong>Tescil ve İlan:</strong> Resmi işlemler</li>
+            </ul>
+            
+            <h5>Alacaklıları Koruma Önlemleri:</h5>
+            <ul>
+                <li><strong>İlan Usulü:</strong> Alacaklıları çağırma ilanı</li>
+                <li><strong>İtiraz Hakkı:</strong> Alacaklıların itiraz etme hakkı</li>
+                <li><strong>Teminat Verme:</strong> Alacaklar için teminat gösterme</li>
+                <li><strong>Ödeme:</strong> Muaccel alacakların ödenmesi</li>
+            </ul>
+            
+            <h5>Sermaye Azaltımı Yöntemleri:</h5>
+            <ul>
+                <li><strong>Pay İadesi:</strong> Nominal değer üzerinden iade</li>
+                <li><strong>Pay Yoketme:</strong> Mevcut payların yokedilmesi</li>
+                <li><strong>Nominal Değer Düşürme:</strong> Payların nominal değerini azaltma</li>
+                <li><strong>Birleştirme:</strong> Payları birleştirerek azaltma</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 467 - Sermaye Azaltımı:</strong></p>
+                <p>"Sermaye azaltımı genel kurul kararı ile yapılır ve esas sözleşme değişikliği gerektirir. Alacaklıları koruma önlemleri alınmalıdır."</p>
+                
+                <p><strong>TTK Madde 468 - Alacaklıları Koruma:</strong></p>
+                <p>"Sermaye azaltımında alacaklılar için özel koruma önlemleri öngörülmelidir."</p>
+                
+                <p><strong>Sermaye Azaltımının Amaçları:</strong></p>
+                <ul>
+                    <li><strong>Zarar Karşılama:</strong> Birikmiş zararların karşılanması</li>
+                    <li><strong>Fazla Sermaye:</strong> İhtiyaç fazlası sermayenin iadesi</li>
+                    <li><strong>Sermaye Optimizasyonu:</strong> Optimal sermaye yapısına ulaşma</li>
+                    <li><strong>Vergi Avantajı:</strong> Vergi planlaması amaçlı</li>
+                </ul>
+                
+                <p><strong>Nominal Azaltım (Kaydi Azaltım):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Gerçek ödeme olmaksızın azaltım</li>
+                    <li><strong>Amaç:</strong> Genellikle zarar karşılama</li>
+                    <li><strong>Sonuç:</strong> Pay sahiplerine ödeme yapılmaz</li>
+                    <li><strong>Avantaj:</strong> Nakit çıkışı olmaz</li>
+                </ul>
+                
+                <p><strong>Efektif Azaltım (Gerçek Azaltım):</strong></p>
+                <ul>
+                    <li><strong>Tanım:</strong> Pay sahiplerine ödeme yapılarak azaltım</li>
+                    <li><strong>Amaç:</strong> Fazla sermayenin pay sahiplerine iadesi</li>
+                    <li><strong>Sonuç:</strong> Nakit çıkışı olur</li>
+                    <li><strong>Risk:</strong> Alacaklılar için risk oluşturur</li>
+                </ul>
+                
+                <p><strong>Alacaklı İlanı Süreci:</strong></p>
+                <ul>
+                    <li><strong>İlan Süresi:</strong> En az 6 ay süreyle ilan</li>
+                    <li><strong>İlan İçeriği:</strong> Azaltımın kapsamı ve sebepleri</li>
+                    <li><strong>İtiraz Süresi:</strong> Alacaklıların itiraz için süre</li>
+                    <li><strong>Çözüm:</strong> İtirazların çözülmesi</li>
+                </ul>
+                
+                <p><strong>Teminat Türleri:</strong></p>
+                <ul>
+                    <li><strong>Banka Teminatı:</strong> Banka garantisi verilmesi</li>
+                    <li><strong>Rehin:</strong> Mal varlığı üzerinde rehin</li>
+                    <li><strong>Kefalet:</strong> Üçüncü kişi kefaleti</li>
+                    <li><strong>Bloke Hesap:</strong> Belirli tutarın bloke edilmesi</li>
+                </ul>
+                
+                <p><strong>Genel Kurul Kararının İçeriği:</strong></p>
+                <ul>
+                    <li><strong>Azaltım Tutarı:</strong> Ne kadar azaltılacağı</li>
+                    <li><strong>Azaltım Şekli:</strong> Hangi yöntemle yapılacağı</li>
+                    <li><strong>Azaltım Gerekçesi:</strong> Neden azaltıldığı</li>
+                    <li><strong>Koruma Önlemleri:</strong> Alacaklılar için tedbirler</li>
+                </ul>
+                
+                <p><strong>Asgari Sermaye Sınırı:</strong></p>
+                <ul>
+                    <li><strong>Kanuni Asgari:</strong> TTK'da belirlenen asgari sermaye</li>
+                    <li><strong>Alt Sınır:</strong> Asgari sermayenin altına inilemez</li>
+                    <li><strong>İstisna:</strong> Zarar karşılama durumunda esnek yaklaşım</li>
+                    <li><strong>Sonuç:</strong> Asgari altına inerse fesih riski</li>
+                </ul>
+                
+                <p><strong>Sermaye Azaltımı Süreci:</strong></p>
+                <ul>
+                    <li><strong>Yönetim Kurulu Teklifi:</strong> Azaltım önerisinin hazırlanması</li>
+                    <li><strong>Genel Kurul Kararı:</strong> Ağırlaştırılmış çoğunlukla karar</li>
+                    <li><strong>Alacaklı İlanı:</strong> Alacaklıları koruma süreci</li>
+                    <li><strong>İtirazların Çözümü:</strong> Alacaklı itirazlarının değerlendirilmesi</li>
+                    <li><strong>Uygulama:</strong> Azaltım işleminin uygulanması</li>
+                    <li><strong>Tescil:</strong> Ticaret sicilinde tescil</li>
+                </ul>
+                
+                <p><strong>Azaltımın Sonuçları:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Düşüşü:</strong> Şirket sermayesinin azalması</li>
+                    <li><strong>Pay Yapısı:</strong> Pay sayısı veya nominal değer değişimi</li>
+                    <li><strong>Mali Durum:</strong> Şirketin mali yapısının değişmesi</li>
+                    <li><strong>Alacaklı Güvenliği:</strong> Alacaklılar için güvenlik azalması</li>
+                </ul>
+                
+                <p><strong>Özel Durumlar:</strong></p>
+                <ul>
+                    <li><strong>Zarar Karşılama:</strong> Pay sahiplerine ödeme yapılmaz</li>
+                    <li><strong>Sermaye İadesi:</strong> Pay sahiplerine ödeme yapılır</li>
+                    <li><strong>Kısmi Azaltım:</strong> Sermayenin bir kısmının azaltılması</li>
+                    <li><strong>Tam Azaltım:</strong> Sermayenin tamamen azaltılması</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 467-472: Sermaye azaltımı</li>
+                    <li>TTK Madde 468: Alacaklıları koruma</li>
+                    <li>TTK Madde 421: Ağırlaştırılmış nisap</li>
+                    <li>TTK Madde 329: Asgari sermaye</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru105.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru107.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

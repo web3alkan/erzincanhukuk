@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 94 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 94</h1>
+        
+        <div class="question">
+            Genel kurul kararlarının geçersizliği türlerinden "yokluk" hangi durumda ortaya çıkar?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Kanuna aykırılık halinde</div>
+            <div class="option">B) Şekil ve usul açısından emredici hükümlere aykırılık halinde</div>
+            <div class="option">C) Esas sözleşmeye aykırılık halinde</div>
+            <div class="option">D) Dürüstlük kuralına aykırılık halinde</div>
+            <div class="option">E) Tüm durumlarda</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Şekil ve usul açısından emredici hükümlere aykırılık halinde</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre bir genel kurul kararından söz edilebilmesi için iki unsur gerekir: genel kurul niteliğinde bir kurul ve bu kurulu oluşturan pay sahiplerinin bir kararı. Şekil ve usul açısından emredici hükümlere aykırılık yokluk halini doğurur.</p>
+            
+            <h5>Yokluk Halinin Şartları:</h5>
+            <ul>
+                <li><strong>Genel Kurul Yokluğu:</strong> Toplananlar pay sahipleri değilse</li>
+                <li><strong>Usul Eksikliği:</strong> TTK'nin emrettiği şekil ve usulde toplanmamışlarsa</li>
+                <li><strong>Şekil Eksiklikleri:</strong> Kanuni şekil şartlarına uyulmaması</li>
+                <li><strong>Emredici Hüküm İhlali:</strong> Zorunlu usul kurallarının ihlali</li>
+                <li><strong>Temel Eksiklik:</strong> Kararın varlık şartlarının bulunmaması</li>
+            </ul>
+            
+            <h5>Yokluk Doğuran Durumlar:</h5>
+            <ul>
+                <li><strong>Pay Sahibi Olmama:</strong> Toplantıya pay sahibi olmayanların katılması</li>
+                <li><strong>Davet Usulü İhlali:</strong> Kanuni davet usulüne uyulmaması</li>
+                <li><strong>Toplantı Yeri:</strong> Esas sözleşmede belirlenen yerde yapılmaması</li>
+                <li><strong>Başkanlık Eksikliği:</strong> Kanuni başkanlık düzeninin olmaması</li>
+                <li><strong>Nisap Eksikliği:</strong> Temel toplantı ve karar nisabının bulunmaması</li>
+            </ul>
+            
+            <h5>Yokluk ile Butlan Arasındaki Fark:</h5>
+            <ul>
+                <li><strong>Yokluk:</strong> Şekil ve usul açısından emredici kurallara aykırılık</li>
+                <li><strong>Butlan:</strong> Esas açısından emredici hükümlere aykırılık</li>
+                <li><strong>Yokluk:</strong> Kararın hiç var olmamış sayılması</li>
+                <li><strong>Butlan:</strong> Kararın var olup geçersiz sayılması</li>
+            </ul>
+            
+            <h5>Yokluğun Sonuçları:</h5>
+            <ul>
+                <li><strong>Hiçlik:</strong> Karar hiç alınmamış sayılır</li>
+                <li><strong>Süre Sınırı Yok:</strong> Her zaman ileri sürülebilir</li>
+                <li><strong>Herkes Tarafından:</strong> Tüm ilgililer ileri sürebilir</li>
+                <li><strong>Mahkeme Kontrolü:</strong> Mahkeme re'sen dikkate alır</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 445 - Genel Kurul Kararlarının Geçersizliği:</strong></p>
+                <p>"Bir genel kurul kararından söz edilebilmesi için genel kurul niteliğinde bir kurul ve bu kurulu oluşturan pay sahiplerinin bir kararı gerekir."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>Yokluk, genel kurul kararının en ağır geçersizlik türüdür. Toplananların pay sahipleri olmaması veya TTK'nin emrettiği şekil ve usulde toplanmamaları halinde bir genel kurul kararından bahsedilemez. Şekil ve usul açısından emredici hükümlere aykırılık yokluk halini doğurur.</p>
+                
+                <p><strong>Yokluk Sebepleri Detayı:</strong></p>
+                <ul>
+                    <li><strong>Katılımcı Sorunu:</strong>
+                        <ul>
+                            <li>Pay sahibi olmayanların toplantıya katılması</li>
+                            <li>Temsilci yetkisi olmayanların oy kullanması</li>
+                            <li>Geçersiz temsil belgeli katılım</li>
+                        </ul>
+                    </li>
+                    <li><strong>Toplantı Usulü:</strong>
+                        <ul>
+                            <li>Yasal davet süresinin beklenilmemesi</li>
+                            <li>Gündem bildirimi yapılmaması</li>
+                            <li>Yanlış yerde toplantı yapılması</li>
+                        </ul>
+                    </li>
+                    <li><strong>Karar Alma Süreci:</strong>
+                        <ul>
+                            <li>Nisap hesabının yanlış yapılması</li>
+                            <li>Oy sayımının hatalı olması</li>
+                            <li>Başkanlık makamının işlev görmemesi</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>Şekil ve Usul Emredici Hükümleri:</strong></p>
+                <ul>
+                    <li>TTK Madde 409: Davet usulü</li>
+                    <li>TTK Madde 410: Davet süresi</li>
+                    <li>TTK Madde 411: Toplantı yeri</li>
+                    <li>TTK Madde 417: Toplantı ve karar nisabı</li>
+                </ul>
+                
+                <p><strong>Yokluk Halinin Tespiti:</strong></p>
+                <ul>
+                    <li><strong>Re'sen Dikkate Alma:</strong> Mahkeme kendiliğinden inceler</li>
+                    <li><strong>Her Zaman İleri Sürme:</strong> Zamanaşımı yoktur</li>
+                    <li><strong>Herkes Tarafından:</strong> Tüm ilgililer ileri sürebilir</li>
+                    <li><strong>İspat Yükü:</strong> İddianın ispatlanması gerekir</li>
+                </ul>
+                
+                <p><strong>Uygulamada Görülen Örnekler:</strong></p>
+                <ul>
+                    <li>Davet yapılmadan toplantı gerçekleştirme</li>
+                    <li>Pay defterinde kayıtlı olmayanların oy kullanması</li>
+                    <li>Esas sözleşmede belirtilen yerden başka yerde toplantı</li>
+                    <li>Geçersiz proxy ile temsil edilme</li>
+                </ul>
+                
+                <p><strong>Geçersizlik Türleri Karşılaştırması:</strong></p>
+                <ul>
+                    <li><strong>Yokluk:</strong> Hiç var olmamış sayılma</li>
+                    <li><strong>Butlan:</strong> Esas itibarıyla geçersizlik</li>
+                    <li><strong>İptal:</strong> Mahkeme kararıyla geçersiz kılma</li>
+                    <li><strong>Askıda Hükümsüzlük:</strong> Belirli şartların gerçekleşmesine bağlı geçersizlik</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 445: Yokluk ve butlan</li>
+                    <li>TTK Madde 447: Kararların iptali</li>
+                    <li>TTK Madde 409-411: Genel kurul usulü</li>
+                    <li>TTK Madde 417: Nisap hesabı</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru93.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru95.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

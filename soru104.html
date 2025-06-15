@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 104 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 104</h1>
+        
+        <div class="question">
+            Limited şirketlerin temel özellikleri konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Sermayesi paylara bölünmüştür</div>
+            <div class="option">B) Ortakların sorumluluğu sınırlıdır</div>
+            <div class="option">C) En az bir ortak ile kurulabilir</div>
+            <div class="option">D) Anonim şirkete benzer yönetim yapısına sahiptir</div>
+            <div class="option">E) Sermaye payları "hisse" olarak adlandırılır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: E) Sermaye payları "hisse" olarak adlandırılır</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre limited şirketlerde sermaye payları "hisse" değil "esas sermaye payı" olarak adlandırılır. "Hisse" terimi anonim şirketlere özgüdür ve limited şirketler için kullanılmaz.</p>
+            
+            <h5>Limited Şirketlerin Temel Özellikleri:</h5>
+            <ul>
+                <li><strong>Sermaye Yapısı:</strong> Sermayesi esas sermaye paylarına bölünür</li>
+                <li><strong>Sınırlı Sorumluluk:</strong> Ortaklar sermaye taahhütleriyle sınırlı</li>
+                <li><strong>Esnek Yapı:</strong> Az sayıda ortakla kurulabilir (1-50 ortak)</li>
+                <li><strong>Kapalı Yapı:</strong> Halka açık olmayan şirket türü</li>
+                <li><strong>Basit Yönetim:</strong> Daha basit yönetim yapısı</li>
+            </ul>
+            
+            <h5>Limited Şirket vs Anonim Şirket:</h5>
+            <ul>
+                <li><strong>Terminoloji:</strong> Esas sermaye payı vs Hisse</li>
+                <li><strong>Ortak Sayısı:</strong> 1-50 vs En az 1</li>
+                <li><strong>Yönetim:</strong> Müdür vs Yönetim Kurulu</li>
+                <li><strong>Denetim:</strong> Basit denetim vs Bağımsız denetim</li>
+                <li><strong>Halka Açılma:</strong> Kapalı vs Halka açılabilir</li>
+            </ul>
+            
+            <h5>Esas Sermaye Payının Özellikleri:</h5>
+            <ul>
+                <li><strong>Nominal Değer:</strong> TL cinsinden belirlenen değer</li>
+                <li><strong>Eşit Haklar:</strong> Kural olarak eşit hak ve yükümlülükler</li>
+                <li><strong>Devir Kısıtı:</strong> Devri esas sözleşmeyle sınırlanabilir</li>
+                <li><strong>Tescil:</strong> Ticaret sicilinde ortak değişiklikleri</li>
+            </ul>
+            
+            <h5>Limited Şirketin Kuruluş Şartları:</h5>
+            <ul>
+                <li><strong>Ortak Sayısı:</strong> En az 1, en fazla 50 ortak</li>
+                <li><strong>Asgari Sermaye:</strong> Kanunda belirlenen asgari tutar</li>
+                <li><strong>Esas Sözleşme:</strong> Noter önünde düzenleme</li>
+                <li><strong>Tescil:</strong> Ticaret sicilinde tescil</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 573 - Limited Şirketin Tanımı:</strong></p>
+                <p>"Limited şirket, esas sermayesi belirli olan ve ortaklarının sorumluluğu esas sermaye paylarının toplamı ile sınırlı bulunan şirkettir."</p>
+                
+                <p><strong>TTK Madde 580 - Esas Sermaye Payları:</strong></p>
+                <p>"Limited şirketin sermayesi, esas sermaye paylarına bölünür. Her esas sermaye payının nominal değeri en az bir Türk Lirası olup, eşit tutarda olmak zorundadır."</p>
+                
+                <p><strong>Limited Şirketin Avantajları:</strong></p>
+                <ul>
+                    <li><strong>Basit Yönetim:</strong> Karmaşık organ yapısı yoktur</li>
+                    <li><strong>Esnek Yapı:</strong> Küçük işletmeler için uygundur</li>
+                    <li><strong>Düşük Maliyet:</strong> Kuruluş ve işletme maliyeti düşük</li>
+                    <li><strong>Sınırlı Sorumluluk:</strong> Kişisel malvarlığı korunur</li>
+                </ul>
+                
+                <p><strong>Ortak Sıfatının Özellikleri:</strong></p>
+                <ul>
+                    <li><strong>Gerçek/Tüzel Kişi:</strong> Her ikisi de ortak olabilir</li>
+                    <li><strong>Esas Sermaye Payı:</strong> Sermayede belirli payı</li>
+                    <li><strong>Ortaklık Sıfatı:</strong> Kişisel bir statü</li>
+                    <li><strong>Devir:</strong> Esas sözleşme şartlarına göre devir</li>
+                </ul>
+                
+                <p><strong>Yönetim Yapısı:</strong></p>
+                <ul>
+                    <li><strong>Müdürler:</strong> Şirketi temsil ve idare eden</li>
+                    <li><strong>Ortaklar Kurulu:</strong> En yüksek karar organı</li>
+                    <li><strong>Denetim:</strong> Basit denetim sistemi</li>
+                    <li><strong>Karar Alma:</strong> Ortaklar kurulu kararları</li>
+                </ul>
+                
+                <p><strong>Sermaye Sistemi:</strong></p>
+                <ul>
+                    <li><strong>Esas Sermaye:</strong> Esas sözleşmede belirlenen</li>
+                    <li><strong>Nominal Değer:</strong> Her payın TL cinsinden değeri</li>
+                    <li><strong>Ödeme:</strong> Kuruluşta tam ödeme zorunluluğu</li>
+                    <li><strong>Artırım:</strong> Ortaklar kurulu kararıyla artırım</li>
+                </ul>
+                
+                <p><strong>Ortakların Hak ve Yükümlülükleri:</strong></p>
+                <ul>
+                    <li><strong>Yönetim Hakkı:</strong> Şirket yönetimine katılma</li>
+                    <li><strong>Oy Hakkı:</strong> Ortaklar kurulunda oy kullanma</li>
+                    <li><strong>Kar Payı:</strong> Dağıtılan kardan pay alma</li>
+                    <li><strong>Bilgi Alma:</strong> Şirket işleri hakkında bilgi</li>
+                    <li><strong>Ödeme Yükümlülüğü:</strong> Esas sermaye payı bedeli</li>
+                </ul>
+                
+                <p><strong>Sınırlı Sorumluluğun Kapsamı:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Taahhüdü:</strong> Sadece taahhüt tutarı kadar</li>
+                    <li><strong>Kişisel Koruma:</strong> Kişisel malvarlığı dokunulmaz</li>
+                    <li><strong>Borç Ayrımı:</strong> Şirket-ortak borcu ayrımı</li>
+                    <li><strong>İstisna Durumları:</strong> Kötüye kullanım halleri</li>
+                </ul>
+                
+                <p><strong>Devir ve İntikaller:</strong></p>
+                <ul>
+                    <li><strong>Devir Usulü:</strong> Noter onaylı devir sözleşmesi</li>
+                    <li><strong>Onay Şartı:</strong> Esas sözleşmeyle şart koşulabilir</li>
+                    <li><strong>Öncelik Hakkı:</strong> Diğer ortaklara öncelik</li>
+                    <li><strong>Tescil:</strong> Devrin ticaret sicilinde tescili</li>
+                </ul>
+                
+                <p><strong>Denetim Sistemi:</strong></p>
+                <ul>
+                    <li><strong>İç Denetim:</strong> Ortaklar tarafından denetim</li>
+                    <li><strong>Dış Denetim:</strong> Belirli şartlarda bağımsız denetim</li>
+                    <li><strong>Murakıp:</strong> Özel durumlar için murakıp atama</li>
+                    <li><strong>Hesap Verme:</strong> Yöneticilerin hesap verme yükümlülüğü</li>
+                </ul>
+                
+                <p><strong>Ortaklar Kurulu:</strong></p>
+                <ul>
+                    <li><strong>En Yüksek Organ:</strong> Şirketin en yüksek karar organı</li>
+                    <li><strong>Toplantı Usulü:</strong> Düzenli veya olağanüstü toplantılar</li>
+                    <li><strong>Karar Alma:</strong> Çoğunluk veya oybirliği ile</li>
+                    <li><strong>Yetki Alanı:</strong> Şirketin temel kararları</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 573-644: Limited şirket genel hükümleri</li>
+                    <li>TTK Madde 580: Esas sermaye payları</li>
+                    <li>TTK Madde 616: Müdürler</li>
+                    <li>TTK Madde 617: Ortaklar kurulu</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru103.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru105.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

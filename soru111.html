@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 111 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 111</h1>
+        
+        <div class="question">
+            Yönetim kurulu üyelerinin sorumluluğunu ortadan kaldıran hallerden "ibra" konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Şirketin yönetimi ve denetimi ile görevli kişilerin şirkete karşı sorumlu olmadıklarının genel kurul kararıyla tespiti</div>
+            <div class="option">B) Açık ibra ya da örtülü ibra şeklinde alınabilir</div>
+            <div class="option">C) İbra kararı yeni bir genel kurul kararı ile kaldırılabilir</div>
+            <div class="option">D) İbra kararına olumlu oy verenler sorumluluk davası açamaz</div>
+            <div class="option">E) İbra'nın kapsadığı maddi olaylara dair menfi borç ikrarı anlamına gelir</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: C) İbra kararı yeni bir genel kurul kararı ile kaldırılabilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK ve Yargıtay yerleşik içtihatlarına göre, ibra kararının yeni bir genel kurul kararı ile kaldırılamayacağı şeklinde kanun açık hüküm konulmuştur. İbra kararı alındıktan sonra geri alınamaz ve değiştirilemez.</p>
+            
+            <h5>İbra Kararının Özellikleri:</h5>
+            <ul>
+                <li><strong>Tanım:</strong> Şirketin yönetimi ve denetimi ile görevli kişilerin ilgili dönem itibariyle şirkete karşı sorumlu olmadıklarının genel kurul kararıyla tespiti</li>
+                <li><strong>Türleri:</strong> Açık ibra ya da örtülü (zımni) ibra şeklinde alınabilir</li>
+                <li><strong>Kesinlik:</strong> Yeni bir genel kurul kararı ile kaldırılamaz</li>
+                <li><strong>Bağlayıcılık:</strong> Karara olumlu oy verenler sorumluluk davası açamaz</li>
+            </ul>
+            
+            <h5>İbra Kararının Hukuki Sonuçları:</h5>
+            <ul>
+                <li><strong>Menfi Borç İkrarı:</strong> İbra'nın kapsadığı maddi olaylara dair yönetici ve denetçilerle ilgili menfi borç ikrarı anlamına gelir</li>
+                <li><strong>Dava Hakkının Ortadan Kalkması:</strong> Sorumluluk davası açma hakkını ortadan kaldırır</li>
+                <li><strong>Sınırlı Etki:</strong> Sadece ibra kararına olumlu oy verenler bağlıdır</li>
+                <li><strong>Pay Devrinde Etki:</strong> İbra kararını bilerek pay devralan pay sahipleri de bağlıdır</li>
+            </ul>
+            
+            <h5>İbra Kararı Alamayacak Kişiler:</h5>
+            <ul>
+                <li><strong>Muhalif Pay Sahipleri:</strong> Karara olumsuz oy veren pay sahipleri</li>
+                <li><strong>Toplantıya Katılmayanlar:</strong> Genel kurula katılmayan pay sahipleri</li>
+                <li><strong>Sonradan Pay Alanlar:</strong> İbra kararından sonra pay satın alan kişiler (bilmemeleri halinde)</li>
+                <li><strong>Alacaklılar:</strong> Şirket alacaklıları ibra kararı ile bağlı değildir</li>
+            </ul>
+            
+            <h5>İbra Kararının Kapsamı:</h5>
+            <ul>
+                <li><strong>Belirli Dönem:</strong> İlgili dönem itibariyle sınırlı</li>
+                <li><strong>Açıklanan Olaylar:</strong> Sadece açıklanan maddi olayları kapsar</li>
+                <li><strong>Bilinen Durumlar:</strong> Gizli kalan kusurları kapsamaz</li>
+                <li><strong>Gelecek Kusurlar:</strong> İleride işlenecek kusurları kapsamaz</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 559 - Sorumluluktan Kurtulma:</strong></p>
+                <p>"İbra kararının alınması ile birlikte şirket ve karara olumlu oy veren pay sahipleri ibra edilmiş bulunan yönetici ve denetçilere karşı sorumluluk davası açamazlar."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>İbra'nın kaldırılabilir kaldırılamadığı hususu oldukça tartışmalı bir konudur. Yargıtay'ın yerleşik içtihatları çerçevesinde ibra kararının yeni bir genel kurul kararı ile kaldırılamayacağı şeklinde kanunu açık hüküm konulara çözümlenmiştir.</p>
+                
+                <p><strong>İbra Kararının Alınma Şekilleri:</strong></p>
+                <ul>
+                    <li><strong>Açık İbra:</strong>
+                        <ul>
+                            <li>Yöneticilerin ibra edilmesi konusunda açık karar alınması</li>
+                            <li>Gündemde açıkça belirtilmesi</li>
+                            <li>Hangi dönem için ibra edildiğinin belirtilmesi</li>
+                        </ul>
+                    </li>
+                    <li><strong>Örtülü (Zımni) İbra:</strong>
+                        <ul>
+                            <li>Finansal tabloların onaylanması</li>
+                            <li>Faaliyet raporunun kabulü</li>
+                            <li>Dolaylı olarak ibra anlamına gelen kararlar</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>İbra Kararının Geçersizliği:</strong></p>
+                <ul>
+                    <li><strong>Gizli Bilgiler:</strong> İbra sırasında bilinmeyen kusurlar</li>
+                    <li><strong>Hile ve Aldatma:</strong> Yanlış bilgilerle alınan ibra</li>
+                    <li><strong>Kanuna Aykırılık:</strong> Yasak işlemler için alınan ibra</li>
+                    <li><strong>Ceza Gerektiren Fiiller:</strong> Suç oluşturan davranışlar</li>
+                </ul>
+                
+                <p><strong>Yargıtay İçtihatları:</strong></p>
+                <ul>
+                    <li>İbra kararı kesin ve değiştirilemez niteliktedir</li>
+                    <li>Sonradan çıkan belgeler ibra kararını etkilemez</li>
+                    <li>İbra kararı sadece bilinen durumları kapsar</li>
+                    <li>Alacaklıların hakları ibra ile sınırlanamaz</li>
+                </ul>
+                
+                <p><strong>İbra Kararının Koşulları:</strong></p>
+                <ul>
+                    <li><strong>Genel Kurul Kararı:</strong> Usulüne uygun alınmış olmalı</li>
+                    <li><strong>Yeter Sayı:</strong> Kanuni nisaplara uygun olmalı</li>
+                    <li><strong>Açık İrade:</strong> İbra iradesinin net olması</li>
+                    <li><strong>Bilgi Sahibi Olma:</strong> İlgili durumların bilinmesi</li>
+                </ul>
+                
+                <p><strong>İbra Kararının Sınırları:</strong></p>
+                <ul>
+                    <li>Ceza hukuku bakımından sonuç doğurmaz</li>
+                    <li>Üçüncü kişi haklarını etkilemez</li>
+                    <li>Gelecekteki kusurları önlemez</li>
+                    <li>Kamu düzenine ilişkin sorumlulukları kaldırmaz</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 559: Sorumluluktan kurtulma</li>
+                    <li>TTK Madde 553: Yönetici sorumluluğu</li>
+                    <li>TTK Madde 556: Sorumluluk davası</li>
+                    <li>TBK Madde 132: İbra hükümleri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru110.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru112.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

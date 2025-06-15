@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 110 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 110</h1>
+        
+        <div class="question">
+            Limited şirketlerde ortaklar kurulu toplantısı konusunda hangisi yanlıştır?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Yılda en az bir defa toplanır</div>
+            <div class="option">B) Tüm önemli kararlar ortaklar kurulunca alınır</div>
+            <div class="option">C) Her ortak esas sermaye payı oranında oy hakkına sahiptir</div>
+            <div class="option">D) Toplantı nisabı ortakların çoğunluğudur</div>
+            <div class="option">E) Kararlar adi çoğunlukla alınır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: D) Toplantı nisabı ortakların çoğunluğudur</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre limited şirketlerde ortaklar kurulu toplantısında nisap, ortak sayısının çoğunluğu değil, esas sermaye paylarının çoğunluğudur. Yani sermaye ağırlıklı sistem uygulanır, ortak sayısı değil sermaye miktarı esas alınır.</p>
+            
+            <h5>Ortaklar Kurulunun Özellikleri:</h5>
+            <ul>
+                <li><strong>En Yüksek Organ:</strong> Limited şirketin en yüksek karar organı</li>
+                <li><strong>Yıllık Toplantı:</strong> Yılda en az bir defa olağan toplantı</li>
+                <li><strong>Olağanüstü Toplantı:</strong> İhtiyaç halinde olağanüstü toplantı</li>
+                <li><strong>Karar Alma:</strong> Şirketin önemli kararlarını alma</li>
+            </ul>
+            
+            <h5>Toplantı Nisabı:</h5>
+            <ul>
+                <li><strong>Sermaye Ağırlıklı:</strong> Esas sermaye paylarının çoğunluğu</li>
+                <li><strong>Ortak Sayısı Değil:</strong> Ortak sayısı esas alınmaz</li>
+                <li><strong>En Az Yarı:</strong> Temsil edilen sermayenin yarısından fazlası</li>
+                <li><strong>İlk Toplantı:</strong> İlk toplantıda belirlenen nisap</li>
+                <li><strong>İkinci Toplantı:</strong> İkinci toplantıda daha düşük nisap</li>
+            </ul>
+            
+            <h5>Oy Hakkı Sistemi:</h5>
+            <ul>
+                <li><strong>Sermaye Oranı:</strong> Esas sermaye payı oranında oy</li>
+                <li><strong>Eşit Değil:</strong> Ortaklar eşit oy hakkına sahip değil</li>
+                <li><strong>Sermaye Ağırlığı:</strong> Büyük ortağın daha fazla söz hakkı</li>
+                <li><strong>İstisna:</strong> Esas sözleşmeyle farklı düzenleme</li>
+            </ul>
+            
+            <h5>Karar Alma Süreci:</h5>
+            <ul>
+                <li><strong>Adi Çoğunluk:</strong> Kural olarak adi çoğunlukla karar</li>
+                <li><strong>Nitelikli Çoğunluk:</strong> Özel konularda ağırlaştırılmış çoğunluk</li>
+                <li><strong>Oybirliği:</strong> Bazı durumlarda oybirliği gerekli</li>
+                <li><strong>Çekimser:</strong> Çekimser oyların durumu</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 617 - Ortaklar Kurulu:</strong></p>
+                <p>"Ortaklar kurulu, limited şirketin en yüksek karar organıdır ve esas sermaye payı sahiplerinden oluşur."</p>
+                
+                <p><strong>TTK Madde 619 - Toplantı Nisabı:</strong></p>
+                <p>"Ortaklar kurulu toplantısının yapılabilmesi için esas sermaye paylarının çoğunluğunun temsil edilmesi gerekir."</p>
+                
+                <p><strong>Ortaklar Kurulunun Yetkileri:</strong></p>
+                <ul>
+                    <li><strong>Temel Kararlar:</strong>
+                        <ul>
+                            <li>Esas sözleşme değişikliği</li>
+                            <li>Sermaye artırımı ve azaltımı</li>
+                            <li>Şirketin feshi kararı</li>
+                            <li>Birleşme ve bölünme kararları</li>
+                        </ul>
+                    </li>
+                    <li><strong>Yönetim Kararları:</strong>
+                        <ul>
+                            <li>Müdür atama ve azli</li>
+                            <li>Yönetim politikalarının belirlenmesi</li>
+                            <li>Önemli iş kararları</li>
+                            <li>Bütçe onayı</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mali Kararlar:</strong>
+                        <ul>
+                            <li>Kar dağıtımı kararı</li>
+                            <li>Yedek akçe ayrılması</li>
+                            <li>Mali tabloların onayı</li>
+                            <li>Yönetimin ibra edilmesi</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p><strong>Toplantı Çağrısı:</strong></p>
+                <ul>
+                    <li><strong>Davet Yetkisi:</strong> Müdürler veya ortaklar</li>
+                    <li><strong>Davet Süresi:</strong> En az 15 gün önceden</li>
+                    <li><strong>Davet Şekli:</strong> Yazılı davet gerekli</li>
+                    <li><strong>Gündem:</strong> Toplantı gündeminin belirtilmesi</li>
+                </ul>
+                
+                <p><strong>Nisap Hesaplama:</strong></p>
+                <ul>
+                    <li><strong>Esas Sermaye:</strong> Toplam esas sermaye payları</li>
+                    <li><strong>Temsil Edilen:</strong> Toplantıda hazır bulunan paylar</li>
+                    <li><strong>Çoğunluk:</strong> Yarısından fazlası gerekli</li>
+                    <li><strong>Hesaplama:</strong> Nominal değerler üzerinden</li>
+                </ul>
+                
+                <p><strong>Oy Hakkının Kullanımı:</strong></p>
+                <ul>
+                    <li><strong>Sermaye Oranı:</strong> Sahip olunan esas sermaye payı oranında</li>
+                    <li><strong>Bölünemez:</strong> Pay bölünse de oy hakkı tek</li>
+                    <li><strong>Ortak Kullanım:</strong> Müşterek mülkiyette ortak kullanım</li>
+                    <li><strong>Vekalet:</strong> Vekil aracılığıyla kullanım mümkün</li>
+                </ul>
+                
+                <p><strong>Karar Çoğunluğu:</strong></p>
+                <ul>
+                    <li><strong>Adi Çoğunluk:</strong> Kullanılan oyların yarısından fazlası</li>
+                    <li><strong>Nitelikli Çoğunluk:</strong> Özel durumlar için 2/3 çoğunluk</li>
+                    <li><strong>Oybirliği:</strong> Belirli konularda tüm ortakların onayı</li>
+                    <li><strong>Esas Sözleşme:</strong> Daha yüksek çoğunluk öngörülebilir</li>
+                </ul>
+                
+                <p><strong>Çıkar Çatışması:</strong></p>
+                <ul>
+                    <li><strong>Oy Kullanmama:</strong> Çıkar çatışması halinde oy kullanamama</li>
+                    <li><strong>Kişisel Menfaat:</strong> Kişisel menfaati olan konularda</li>
+                    <li><strong>İşlem Onayı:</strong> Ortakla yapılan işlemler</li>
+                    <li><strong>Aile İlişkisi:</strong> Aile üyeleriyle ilgili kararlar</li>
+                </ul>
+                
+                <p><strong>Toplantı Usulü:</strong></p>
+                <ul>
+                    <li><strong>Başkanlık:</strong> Toplantı başkanının seçimi</li>
+                    <li><strong>Gündem:</strong> Gündem sırasının takibi</li>
+                    <li><strong>Tutanak:</strong> Toplantı tutanağının tutulması</li>
+                    <li><strong>İmza:</strong> Kararların imzalanması</li>
+                </ul>
+                
+                <p><strong>Özel Çoğunluk Gerektiren Kararlar:</strong></p>
+                <ul>
+                    <li><strong>Esas Sözleşme Değişikliği:</strong> 2/3 çoğunluk</li>
+                    <li><strong>Sermaye Değişikliği:</strong> Nitelikli çoğunluk</li>
+                    <li><strong>Şirket Feshi:</strong> Ağırlaştırılmış çoğunluk</li>
+                    <li><strong>Tür Değişikliği:</strong> Özel nisap ve çoğunluk</li>
+                </ul>
+                
+                <p><strong>Kararların Geçerliliği:</strong></p>
+                <ul>
+                    <li><strong>Nisap Şartı:</strong> Yeterli nisapla toplantı</li>
+                    <li><strong>Çoğunluk Şartı:</strong> Gerekli çoğunlukla karar</li>
+                    <li><strong>Usul Uyumu:</strong> Usul kurallarına uygunluk</li>
+                    <li><strong>Gündem Uyumu:</strong> Gündemde yer alma</li>
+                </ul>
+                
+                <p><strong>Toplantı Dışı Karar:</strong></p>
+                <ul>
+                    <li><strong>Yazılı Usul:</strong> Yazılı olarak karar alma</li>
+                    <li><strong>Oybirliği:</strong> Tüm ortakların yazılı onayı</li>
+                    <li><strong>İmza:</strong> Karar metninin imzalanması</li>
+                    <li><strong>Tutanak:</strong> Karar tutanağının düzenlenmesi</li>
+                </ul>
+                
+                <p><strong>Azınlık Hakları:</strong></p>
+                <ul>
+                    <li><strong>Toplantı İsteme:</strong> Belirli nisapta toplantı isteme</li>
+                    <li><strong>Gündem Önerme:</strong> Gündem madde önerisinde bulunma</li>
+                    <li><strong>Bilgi Alma:</strong> Şirket hakkında bilgi alma</li>
+                    <li><strong>İptal Davası:</strong> Hukuka aykırı kararlara itiraz</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 617: Ortaklar kurulu</li>
+                    <li>TTK Madde 619: Toplantı nisabı</li>
+                    <li>TTK Madde 620: Karar çoğunluğu</li>
+                    <li>TTK Madde 621: Çıkar çatışması</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru109.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <span style="color: #6c757d; font-weight: bold;">Son Soru</span>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

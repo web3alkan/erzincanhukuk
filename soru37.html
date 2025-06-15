@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 37 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 37</h1>
+        
+        <div class="question">
+            Çıkan ortağın yönetim ve temsil yetkisinin sona ermesi ile ilgili aşağıdakilerden hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Yetki tescil anında sona erer</div>
+            <div class="option">B) Yetki çıkış anında derhal sona erer</div>
+            <div class="option">C) 30 gün sonra sona erer</div>
+            <div class="option">D) Tasfiye payı ödenene kadar devam eder</div>
+            <div class="option">E) Mahkeme kararı ile sona erer</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Yetki çıkış anında derhal sona erer</p>
+            
+            <h4>Açıklama:</h4>
+            <p>Adi şirkette ortağın çıkması (gönüllü çıkış, çıkarılma, ölüm vb.) ile birlikte yönetim ve temsil yetkisi derhal sona erer. Bu, ortaklık sıfatının sona ermesinin doğal sonucudur. Tescil sadece üçüncü kişilere karşı etkili olup, yetki zaten çıkış anında sona ermiştir.</p>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>Yönetim ve Temsil Yetkisinin Sona Ermesi:</strong></p>
+                
+                <p><strong>TBK Madde 632 - Yönetim Yetkisi:</strong></p>
+                <p>Ortakların yönetim yetkisi ortaklık sıfatına bağlıdır. Ortaklık sona erdiğinde yetki de sona erer.</p>
+                
+                <p><strong>Yetki Sona Erme Sebepleri:</strong></p>
+                <ul>
+                    <li>Gönüllü çıkış</li>
+                    <li>Çıkarılma</li>
+                    <li>Ölüm</li>
+                    <li>Gaiplik</li>
+                    <li>Ortaklık payının devri</li>
+                </ul>
+                
+                <p><strong>Derhal Etki:</strong></p>
+                <ul>
+                    <li>Çıkış anında yetki sona erer</li>
+                    <li>Tescil beklenmez</li>
+                    <li>Üçüncü kişilere karşı tescil gerekir</li>
+                    <li>İyiniyetli üçüncü kişiler korunur</li>
+                </ul>
+                
+                <p><strong>İlgili Diğer Maddeler:</strong></p>
+                <ul>
+                    <li>TBK Madde 633: Temsil yetkisi</li>
+                    <li>TTK Madde 254: Tescil etkisi</li>
+                    <li>TBK Madde 45: İyiniyet koruması</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru36.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru38.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>

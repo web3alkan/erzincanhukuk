@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 88 - Şirketler Hukuku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin: 20px 0;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .option:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .solution {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .solution h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .legal-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .legal-reference h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .show-solution {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .show-solution:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soru 88</h1>
+        
+        <div class="question">
+            Anonim şirket kurulüşunda 3 aylık tescil süresi aşılırsa bedellerin iadesi konusunda hangisi doğrudur?
+        </div>
+        
+        <div class="options">
+            <div class="option">A) Bedeller iade edilmez, şirket kurulur</div>
+            <div class="option">B) Bedeller faiz ile birlikte iade edilir</div>
+            <div class="option">C) Bedellerin yarısı iade edilir</div>
+            <div class="option">D) Sadece nakit bedeller iade edilir</div>
+            <div class="option">E) İade işlemi 1 yıl sonra yapılır</div>
+        </div>
+        
+        <button class="show-solution" onclick="toggleSolution()">Çözümü Göster</button>
+        
+        <div class="solution hidden" id="solution">
+            <h3>Çözüm</h3>
+            <p class="correct-answer">Doğru Cevap: B) Bedeller faiz ile birlikte iade edilir</p>
+            
+            <h4>Açıklama:</h4>
+            <p>TTK'ya göre anonim şirket kurulüşunda 3 aylık tescil süresinin aşılması durumunda, kurulüş başarısız sayılır ve toplanan bedellerin faiz ile birlikte iade edilmesi zorunludur.</p>
+            
+            <h5>3 Aylık Tescil Süresi:</h5>
+            <ul>
+                <li>Esas sözleşmenin imzalanmasından itibaren 3 ay</li>
+                <li>Bu süre içinde tescil başvurusu yapılmalıdır</li>
+                <li>Sürenin geçmesi durumunda kurulüş hükümsüz kalır</li>
+                <li>Yeni kurulüş işlemleri başlatılması gerekir</li>
+            </ul>
+            
+            <h5>Süre Aşımının Sonuçları:</h5>
+            <ul>
+                <li><strong>Kurulüşun Hükümsüzlüğü:</strong> Şirket hukuki varlık kazanamaz</li>
+                <li><strong>Bedel İadesi Zorunluluğu:</strong> Toplanan paralar geri verilmelidir</li>
+                <li><strong>Faiz Ödeme Yükümlülüğü:</strong> Yasal faiz hesaplanır</li>
+                <li><strong>Kurucuların Sorumluluğu:</strong> Gecikme nedeniyle sorumluluk doğar</li>
+            </ul>
+            
+            <h5>İade Edilecek Bedeller:</h5>
+            <ul>
+                <li><strong>Nakit Sermaye:</strong> Ödenen tüm nakit tutarlar</li>
+                <li><strong>Ayni Sermaye:</strong> Getirilen malların değeri veya malın kendisi</li>
+                <li><strong>Kurulüş Masrafları:</strong> Yapılan harcamalar (varsa)</li>
+                <li><strong>Faiz:</strong> Yasal faiz oranında hesaplanır</li>
+            </ul>
+            
+            <h5>Faiz Hesaplama:</h5>
+            <ul>
+                <li>Yasal faiz oranı uygulanır</li>
+                <li>Paranın alındığı tarihten itibaren hesaplanır</li>
+                <li>İade tarihi esas alınır</li>
+                <li>Günlük faiz hesabı yapılır</li>
+            </ul>
+            
+            <h5>İade Süreci:</h5>
+            <ul>
+                <li>Kurucular iade yükümlülüğünü yerine getirir</li>
+                <li>Pay sahiplerine bildirimde bulunulur</li>
+                <li>Bankadaki paralar serbest bırakılır</li>
+                <li>Ayni sermaye iade edilir veya değeri ödenir</li>
+            </ul>
+            
+            <div class="legal-reference">
+                <h4>Hukuki Dayanak</h4>
+                <p><strong>TTK Madde 356 - Tescil Süresi:</strong></p>
+                <p>"Anonim şirketin tescili, esas sözleşmenin imzalanmasından itibaren üç ay içinde yapılmalıdır. Bu süre geçtikten sonra, toplanan bedeller faizi ile birlikte sahiplerine iade edilir."</p>
+                
+                <p><strong>TTK Madde 335 - Kurucuların Sorumluluğu:</strong></p>
+                <p>"Kurucular, kurulüş işlemlerindeki kusurlarından dolayı şirkete ve üçüncü kişilere karşı müteselsilen sorumludur."</p>
+                
+                <p><strong>Ders Notlarından:</strong></p>
+                <p>3 aylık tescil süresi, şirket kurulüşunun makul bir sürede tamamlanmasını sağlamak amacıyla konulmuştur. Bu sürenin aşılması durumunda, yatırımcıların hakları korunmak amacıyla bedellerin faiz ile birlikte iadesi zorunlu kılınmıştır. Bu düzenleme, hem yatırımcı koruması hem de hukuki kesinlik sağlar.</p>
+                
+                <p><strong>Süre Aşımının Nedenleri:</strong></p>
+                <ul>
+                    <li>Kurucuların ihmalı</li>
+                    <li>Belge eksiklikleri</li>
+                    <li>Bürokratik işlemler</li>
+                    <li>Hukuki engeller</li>
+                </ul>
+                
+                <p><strong>Faiz Hesaplama Esasları:</strong></p>
+                <ul>
+                    <li><strong>Başlangıç Tarihi:</strong> Paranın alındığı tarih</li>
+                    <li><strong>Bitiş Tarihi:</strong> İade tarihi</li>
+                    <li><strong>Faiz Oranı:</strong> Yasal faiz oranı</li>
+                    <li><strong>Hesaplama:</strong> Günlük faiz × gün sayısı</li>
+                </ul>
+                
+                <p><strong>İade Yükümlülüğünün Kapsamı:</strong></p>
+                <ul>
+                    <li>Ana para tutarı</li>
+                    <li>Yasal faiz</li>
+                    <li>Ayni sermaye değeri</li>
+                    <li>Makul masraflar (varsa)</li>
+                </ul>
+                
+                <p><strong>Kurucuların Sorumlulukları:</strong></p>
+                <ul>
+                    <li>Zamanında tescil işlemlerini tamamlama</li>
+                    <li>Süre aşımı durumunda iade yapma</li>
+                    <li>Faiz hesaplayıp ödeme</li>
+                    <li>Zararları tazmin etme</li>
+                </ul>
+                
+                <p><strong>Yeni Kurulüş İçin Gereklilikler:</strong></p>
+                <ul>
+                    <li>Yeni esas sözleşme imzalama</li>
+                    <li>Yeni sermaye toplama</li>
+                    <li>Yeni kurulüş işlemleri</li>
+                    <li>3 aylık yeni süre</li>
+                </ul>
+                
+                <p><strong>Koruma Tedbirleri:</strong></p>
+                <ul>
+                    <li>Tescil sürecinin takibi</li>
+                    <li>Zamanında başvuru yapılması</li>
+                    <li>Belgelerin eksiksiz hazırlanması</li>
+                    <li>Profesyonel yardım alınması</li>
+                </ul>
+                
+                <p><strong>İlgili Maddeler:</strong></p>
+                <ul>
+                    <li>TTK Madde 356: Tescil süresi</li>
+                    <li>TTK Madde 335: Kurucuların sorumluluğu</li>
+                    <li>TTK Madde 357: Tescil işlemleri</li>
+                    <li>TBK Madde 88: Yasal faiz</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="soru87.html" class="nav-button">← Önceki Soru</a>
+            <a href="index.html" class="nav-button">Ana Sayfa</a>
+            <a href="soru89.html" class="nav-button">Sonraki Soru →</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            const solution = document.getElementById('solution');
+            const button = document.querySelector('.show-solution');
+            
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                button.textContent = 'Çözümü Gizle';
+            } else {
+                solution.classList.add('hidden');
+                button.textContent = 'Çözümü Göster';
+            }
+        }
+    </script>
+</body>
+</html>
