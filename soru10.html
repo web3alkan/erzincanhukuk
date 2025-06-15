@@ -127,9 +127,9 @@
         
         <ul class="options">
             <li onclick="checkAnswer(this, false)">A) 10.000 TL</li>
-            <li onclick="checkAnswer(this, true)">B) 50.000 TL</li>
+            <li onclick="checkAnswer(this, false)">B) 50.000 TL</li>
             <li onclick="checkAnswer(this, false)">C) 100.000 TL</li>
-            <li onclick="checkAnswer(this, false)">D) 250.000 TL</li>
+            <li onclick="checkAnswer(this, true)">D) 250.000 TL</li>
             <li onclick="checkAnswer(this, false)">E) 500.000 TL</li>
         </ul>
         
@@ -137,18 +137,19 @@
         <button onclick="resetQuestion()">Soruyu Sıfırla</button>
         
         <div id="solution">
-            <h3>Doğru Cevap: B</h3>
+            <h3>Doğru Cevap: D</h3>
             <div class="explanation">
                 <p><strong>Açıklama:</strong></p>
-                <p>TTK madde 332'ye göre, anonim şirketlerde asgari sermaye 50.000 TL'dir. Bu miktar şirketin kuruluşu sırasında tamamen taahhüt edilmeli ve en az dörtte biri nakden ödenmelidir.</p>
+                <p>1 Ocak 2024 tarihinden itibaren yürürlüğe giren değişiklikle, anonim şirketlerde asgari sermaye 250.000 TL'ye yükseltilmiştir. Mevcut şirketler için 31 Aralık 2026 tarihine kadar geçiş süresi tanınmıştır.</p>
                 
-                <p><strong>Farklı şirket türlerinde asgari sermaye miktarları:</strong></p>
+                <p><strong>Farklı şirket türlerinde asgari sermaye miktarları (2024 güncel):</strong></p>
                 <ul>
-                    <li><strong>Anonim Şirket:</strong> 50.000 TL (TTK m. 332)</li>
-                    <li><strong>Limited Şirket:</strong> 10.000 TL (TTK m. 578)</li>
+                    <li><strong>Anonim Şirket:</strong> 250.000 TL (TTK m. 332 - 2024 değişikliği)</li>
+                    <li><strong>Kayıtlı Sermaye Sistemindeki AS:</strong> 500.000 TL</li>
+                    <li><strong>Limited Şirket:</strong> 50.000 TL (TTK m. 578)</li>
                     <li><strong>Kollektif Şirket:</strong> Asgari sermaye şartı yoktur</li>
                     <li><strong>Komandit Şirket:</strong> Asgari sermaye şartı yoktur</li>
-                    <li><strong>Sermayesi Paylara Bölünmüş Komandit Şirket:</strong> 50.000 TL (TTK m. 679)</li>
+                    <li><strong>Sermayesi Paylara Bölünmüş Komandit Şirket:</strong> 250.000 TL</li>
                 </ul>
                 
                 <p>Anonim şirketlerde asgari sermayenin en az dörtte birinin kuruluş sırasında ödenmesi zorunludur. Kalanı ise yönetim kurulu tarafından belirlenen süre içinde ödenebilir.</p>
@@ -157,9 +158,10 @@
             <div class="article-reference">
                 <h4>İlgili Kanun Maddesi:</h4>
                 <div class="article-text">
-<strong>TTK Madde 332 - Asgari sermaye</strong>
+<strong>TTK Madde 332 - Asgari sermaye (2024 Güncel)</strong>
 
-Anonim şirketin sermayesi en az elli bin Türk Lirası olmalıdır.
+Anonim şirketin sermayesi en az iki yüz elli bin Türk Lirası olmalıdır.
+(Not: 1 Ocak 2024 tarihinden itibaren yürürlükte. Mevcut şirketler için 31 Aralık 2026'ya kadar geçiş süresi.)
 
 <strong>TTK Madde 341 - Sermayenin ödenmesi</strong>
 
@@ -168,7 +170,7 @@ Anonim şirketin sermayesi en az elli bin Türk Lirası olmalıdır.
 
 <strong>TTK Madde 578 - Asgari sermaye</strong>
 
-Limited şirketin sermayesi en az on bin Türk Lirası olmalıdır.</div>
+Limited şirketin sermayesi en az elli bin Türk Lirası olmalıdır.</div>
             </div>
         </div>
         
@@ -195,7 +197,7 @@ Limited şirketin sermayesi en az on bin Türk Lirası olmalıdır.</div>
             
             // Doğru cevabı göster
             const options = document.querySelectorAll('.options li');
-            options[1].classList.add('correct'); // B şıkkı (index 1)
+            options[3].classList.add('correct'); // D şıkkı (index 3)
         }
         
         function showSolution() {
